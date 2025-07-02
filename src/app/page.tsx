@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Image from "next/image"; // Added for optimized images
 import { AppSidebar } from "@/components/app-sidebar";
 import {
@@ -57,14 +57,15 @@ export default function Page() {
   const [selectedOtt, setSelectedOtt] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
 
-  const allItems = [
+  const allItems = useMemo(() => [
     ...items2025,
     ...items2024,
     ...items2023,
     ...items2022,
     ...items2021,
     ...items2020,
-  ];
+  ], []);
+  
 
   // Log all items on mount with dependency
   useEffect(() => {
