@@ -25,7 +25,6 @@ import {
 } from "@radix-ui/react-dropdown-menu";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
-import searchBar from "@/components/ui/searchbar";
 
 // Framework type definition
 interface Framework {
@@ -35,6 +34,7 @@ interface Framework {
 
 // OTT platforms
 const frameworks: Framework[] = [
+  { value: "", label: "All OTTs" },
   { value: "amazon-prime", label: "Amazon Prime" },
   { value: "netflix", label: "Netflix" },
   { value: "jiohotstar", label: "JioHotstar" },
@@ -49,43 +49,52 @@ interface Item {
   title: string;
   description: string;
   category: string;
+  year: string;
 }
 
 const items: Item[] = [
-  { id: 1, title: "Movie A", description: "Action blockbuster", category: "amazon-prime" },
-  { id: 2, title: "Series B", description: "Crime drama series", category: "netflix" },
-  { id: 3, title: "Show C", description: "Romantic comedy", category: "jiohotstar" },
-  { id: 4, title: "Film D", description: "Sci-fi adventure", category: "aha" },
-  { id: 5, title: "Drama E", description: "Historical drama", category: "sun-nxt" },
-  { id: 6, title: "Thriller F", description: "Psychological thriller", category: "sony-liv" },
-  { id: 7, title: "Movie G", description: "Family comedy", category: "amazon-prime" },
-  { id: 8, title: "Series H", description: "Fantasy epic", category: "netflix" },
-  { id: 9, title: "Show I", description: "Reality TV", category: "jiohotstar" },
-  { id: 10, title: "Film J", description: "Horror movie", category: "aha" },
-  { id: 11, title: "Drama K", description: "Social drama", category: "sun-nxt" },
-  { id: 12, title: "Thriller L", description: "Mystery thriller", category: "sony-liv" },
-  { id: 13, title: "Movie M", description: "Adventure film", category: "amazon-prime" },
-  { id: 14, title: "Series N", description: "Sci-fi series", category: "netflix" },
-  { id: 15, title: "Show O", description: "Comedy show", category: "jiohotstar" },
-  { id: 16, title: "Film P", description: "Action thriller", category: "aha" },
-  { id: 17, title: "Drama Q", description: "Biographical drama", category: "sun-nxt" },
-  { id: 18, title: "Thriller R", description: "Crime thriller", category: "sony-liv" },
-  { id: 19, title: "Movie S", description: "Romantic drama", category: "amazon-prime" },
-  { id: 20, title: "Series T", description: "Documentary series", category: "netflix" },
+  { id: 1, title: "Movie A", description: "Action blockbuster", category: "amazon-prime", year: "2025" },
+  { id: 2, title: "Series B", description: "Crime drama series", category: "netflix", year: "2024" },
+  { id: 3, title: "Show C", description: "Romantic comedy", category: "jiohotstar", year: "2023" },
+  { id: 4, title: "Film D", description: "Sci-fi adventure", category: "aha", year: "2022" },
+  { id: 5, title: "Drama E", description: "Historical drama", category: "sun-nxt", year: "2021" },
+  { id: 6, title: "Thriller F", description: "Psychological thriller", category: "sony-liv", year: "2020" },
+  { id: 7, title: "Movie G", description: "Family comedy", category: "amazon-prime", year: "2025" },
+  { id: 8, title: "Series H", description: "Fantasy epic", category: "netflix", year: "2024" },
+  { id: 9, title: "Show I", description: "Reality TV", category: "jiohotstar", year: "2023" },
+  { id: 10, title: "Film J", description: "Horror movie", category: "aha", year: "2022" },
+  { id: 11, title: "Drama K", description: "Social drama", category: "sun-nxt", year: "2021" },
+  { id: 12, title: "Thriller L", description: "Mystery thriller", category: "sony-liv", year: "2020" },
+  { id: 13, title: "Movie M", description: "Adventure film", category: "amazon-prime", year: "2025" },
+  { id: 14, title: "Series N", description: "Sci-fi series", category: "netflix", year: "2024" },
+  { id: 15, title: "Show O", description: "Comedy show", category: "jiohotstar", year: "2023" },
+  { id: 16, title: "Film P", description: "Action thriller", category: "aha", year: "2022" },
+  { id: 17, title: "Drama Q", description: "Biographical drama", category: "sun-nxt", year: "2021" },
+  { id: 18, title: "Thriller R", description: "Crime thriller", category: "sony-liv", year: "2020" },
+  { id: 19, title: "Movie S", description: "Romantic drama", category: "amazon-prime", year: "2025" },
+  { id: 20, title: "Series T", description: "Documentary series", category: "netflix", year: "2024" },
 ];
 
 export default function Page() {
   const [viewMode, setViewMode] = useState('grid');
   const [selectedOtt, setSelectedOtt] = useState('');
+  const [selectedYear, setSelectedYear] = useState('');
 
-  // Filter items based on selected OTT platform
-  const filteredItems = selectedOtt
-    ? items.filter((item) => item.category === selectedOtt)
-    : items;
+  // Filter items based on selected OTT platform and year
+  const filteredItems = items.filter((item) => {
+    const matchesOtt = selectedOtt ? item.category === selectedOtt : true;
+    const matchesYear = selectedYear ? item.year === selectedYear : true;
+    return matchesOtt && matchesYear;
+  });
 
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <AppSidebar
+        selectedOtt={selectedOtt}
+        setSelectedOtt={setSelectedOtt}
+        selectedYear={selectedYear}
+        setSelectedYear={setSelectedYear}
+      />
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center justify-between border-b px-4">
           {/* Left Section */}
@@ -201,6 +210,7 @@ export default function Page() {
                   <p className="text-xs text-muted-foreground mt-2">
                     {frameworks.find((f) => f.value === item.category)?.label || item.category}
                   </p>
+                  <p className="text-xs text-muted-foreground mt-1">Year: {item.year}</p>
                 </div>
               ))}
             </div>
@@ -213,6 +223,7 @@ export default function Page() {
                     <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Title</th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Description</th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Category</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Year</th>
                   </tr>
                 </thead>
                 <tbody className="bg-background divide-y divide-muted">
@@ -224,6 +235,7 @@ export default function Page() {
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">
                         {frameworks.find((f) => f.value === item.category)?.label || item.category}
                       </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.year}</td>
                     </tr>
                   ))}
                 </tbody>
