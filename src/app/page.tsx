@@ -25,67 +25,80 @@ import {
 } from "@radix-ui/react-dropdown-menu";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
-
-// Framework type definition
-interface Framework {
-  value: string;
-  label: string;
-}
-
-// OTT platforms
-const frameworks: Framework[] = [
-  { value: "", label: "All OTTs" },
-  { value: "amazon-prime", label: "Amazon Prime" },
-  { value: "netflix", label: "Netflix" },
-  { value: "jiohotstar", label: "JioHotstar" },
-  { value: "aha", label: "Aha" },
-  { value: "sun-nxt", label: "Sun Nxt" },
-  { value: "sony-liv", label: "Sony Liv" },
-];
-
-// Sample data for demonstration
-interface Item {
-  id: number;
-  title: string;
-  description: string;
-  category: string;
-  year: string;
-}
-
-const items: Item[] = [
-  { id: 1, title: "Movie A", description: "Action blockbuster", category: "amazon-prime", year: "2025" },
-  { id: 2, title: "Series B", description: "Crime drama series", category: "netflix", year: "2024" },
-  { id: 3, title: "Show C", description: "Romantic comedy", category: "jiohotstar", year: "2023" },
-  { id: 4, title: "Film D", description: "Sci-fi adventure", category: "aha", year: "2022" },
-  { id: 5, title: "Drama E", description: "Historical drama", category: "sun-nxt", year: "2021" },
-  { id: 6, title: "Thriller F", description: "Psychological thriller", category: "sony-liv", year: "2020" },
-  { id: 7, title: "Movie G", description: "Family comedy", category: "amazon-prime", year: "2025" },
-  { id: 8, title: "Series H", description: "Fantasy epic", category: "netflix", year: "2024" },
-  { id: 9, title: "Show I", description: "Reality TV", category: "jiohotstar", year: "2023" },
-  { id: 10, title: "Film J", description: "Horror movie", category: "aha", year: "2022" },
-  { id: 11, title: "Drama K", description: "Social drama", category: "sun-nxt", year: "2021" },
-  { id: 12, title: "Thriller L", description: "Mystery thriller", category: "sony-liv", year: "2020" },
-  { id: 13, title: "Movie M", description: "Adventure film", category: "amazon-prime", year: "2025" },
-  { id: 14, title: "Series N", description: "Sci-fi series", category: "netflix", year: "2024" },
-  { id: 15, title: "Show O", description: "Comedy show", category: "jiohotstar", year: "2023" },
-  { id: 16, title: "Film P", description: "Action thriller", category: "aha", year: "2022" },
-  { id: 17, title: "Drama Q", description: "Biographical drama", category: "sun-nxt", year: "2021" },
-  { id: 18, title: "Thriller R", description: "Crime thriller", category: "sony-liv", year: "2020" },
-  { id: 19, title: "Movie S", description: "Romantic drama", category: "amazon-prime", year: "2025" },
-  { id: 20, title: "Series T", description: "Documentary series", category: "netflix", year: "2024" },
-];
+import { frameworks, items2025, items2024, items2023, items2022, items2021, items2020 } from "@/components/data";
 
 export default function Page() {
   const [viewMode, setViewMode] = useState('grid');
   const [selectedOtt, setSelectedOtt] = useState('');
   const [selectedYear, setSelectedYear] = useState('');
 
-  // Filter items based on selected OTT platform and year
-  const filteredItems = items.filter((item) => {
-    const matchesOtt = selectedOtt ? item.category === selectedOtt : true;
-    const matchesYear = selectedYear ? item.year === selectedYear : true;
-    return matchesOtt && matchesYear;
-  });
+  const allItems = [
+    ...items2025,
+    ...items2024,
+    ...items2023,
+    ...items2022,
+    ...items2021,
+    ...items2020,
+  ];
+
+  const filteredItems = selectedYear
+    ? allItems.filter((item) => item.year === selectedYear && (selectedOtt ? item.category === selectedOtt : true))
+    : allItems.filter((item) => (selectedOtt ? item.category === selectedOtt : true));
+
+  const renderItems = () => {
+    if (filteredItems.length === 0) {
+      return <div className="text-muted-foreground">No movies available for the selected year or OTT platform.</div>;
+    }
+
+    return viewMode === "grid" ? (
+      <div className="grid auto-rows-min gap-4 md:grid-cols-4">
+        {filteredItems.map((item) => (
+          <div key={item.id} className="bg-muted/50 rounded-xl p-4 flex items-center">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-24 h-24 object-cover rounded-md mr-4"
+            />
+            <div className="flex-1">
+              <h3 className="font-semibold text-foreground">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
+              <p className="text-xs text-muted-foreground mt-2">
+                {frameworks.find((f) => f.value === item.category)?.label || item.category}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">Year: {item.year}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-muted">
+          <thead className="bg-muted/50">
+            <tr>
+              <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">ID</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Title</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Description</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Category</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Year</th>
+            </tr>
+          </thead>
+          <tbody className="bg-background divide-y divide-muted">
+            {filteredItems.map((item) => (
+              <tr key={item.id}>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.id}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">{item.title}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.description}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">
+                  {frameworks.find((f) => f.value === item.category)?.label || item.category}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.year}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
 
   return (
     <SidebarProvider>
@@ -97,7 +110,6 @@ export default function Page() {
       />
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center justify-between border-b px-4">
-          {/* Left Section */}
           <div className="flex items-center gap-2">
             <SidebarTrigger />
             <Separator orientation="vertical" className="mr-2 h-4" />
@@ -111,7 +123,6 @@ export default function Page() {
               </BreadcrumbList>
             </Breadcrumb>
             <ExampleCombobox value={selectedOtt} setValue={setSelectedOtt} frameworks={frameworks} />
-            {/* View Toggle Buttons */}
             <div className="flex items-center gap-2 rounded-lg border border-gray-200 p-1.5 px-1.5">
               <button
                 className={`rizzui-action-icon-root inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-50 transition-colors duration-200 p-0.5 w-7 h-7 rounded-md border-transparent focus-visible:ring-offset-2 focus-visible:ring-gray-900/30 text-gray-1000 group hover:enabled:bg-gray-100 dark:hover:enabled:bg-gray-200 ${viewMode === 'table' ? 'bg-gray-900 dark:bg-gray-200 text-white' : 'bg-transparent'}`}
@@ -153,10 +164,7 @@ export default function Page() {
               </button>
             </div>
           </div>
-
-          {/* Right Section */}
           <div className="flex items-center gap-4">
-            {/* Notification Bell */}
             <button className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
               <span className="sr-only">View notifications</span>
               <svg
@@ -174,11 +182,7 @@ export default function Page() {
               </svg>
               <span className="absolute top-1 right-1 inline-block h-2 w-2 rounded-full bg-red-500" />
             </button>
-
-            {/* Theme Toggle */}
             <ThemeToggle />
-
-            {/* Profile Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Avatar>
@@ -199,49 +203,8 @@ export default function Page() {
             </DropdownMenu>
           </div>
         </header>
-
         <div className="flex flex-1 flex-col gap-4 p-4">
-          {viewMode === 'grid' ? (
-            <div className="grid auto-rows-min gap-4 md:grid-cols-4">
-              {filteredItems.map((item) => (
-                <div key={item.id} className="bg-muted/50 aspect-video rounded-xl p-4">
-                  <h3 className="font-semibold text-foreground">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    {frameworks.find((f) => f.value === item.category)?.label || item.category}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-1">Year: {item.year}</p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-muted">
-                <thead className="bg-muted/50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">ID</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Title</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Description</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Category</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Year</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-background divide-y divide-muted">
-                  {filteredItems.map((item) => (
-                    <tr key={item.id}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.id}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">{item.title}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.description}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">
-                        {frameworks.find((f) => f.value === item.category)?.label || item.category}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.year}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
+          {renderItems()}
         </div>
       </SidebarInset>
     </SidebarProvider>

@@ -29,7 +29,7 @@ import {
 interface NavItem {
   title: string;
   url: string;
-  icon: LucideIcon; // Changed to non-optional to match NavMain
+  icon: LucideIcon;
   isActive?: boolean;
   items?: { title: string; url: string; onClick?: () => void; isActive?: boolean }[];
 }
@@ -136,12 +136,12 @@ export function AppSidebar({
   };
 
   const handleOttClick = (title: string) => {
-    console.log("Clicked OTT:", title, "Mapped to:", ottValueMap[title] || ""); // Debug log
+    console.log("Clicked OTT:", title, "Mapped to:", ottValueMap[title] || "");
     setSelectedOtt(ottValueMap[title] || "");
   };
 
   const handleYearClick = (title: string) => {
-    console.log("Clicked Year:", title); // Debug log
+    console.log("Clicked Year:", title);
     setSelectedYear(title === selectedYear ? "" : title);
   };
 
