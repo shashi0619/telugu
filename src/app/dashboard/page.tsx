@@ -13,11 +13,16 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { SetStateAction } from "react"
 
 export default function Page() {
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <AppSidebar selectedOtt={""} setSelectedOtt={function (value: SetStateAction<string>): void {
+        throw new Error("Function not implemented.")
+      } } selectedYear={""} setSelectedYear={function (value: SetStateAction<string>): void {
+        throw new Error("Function not implemented.")
+      } } />
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center gap-2">
           <div className="flex items-center gap-2 px-4">
