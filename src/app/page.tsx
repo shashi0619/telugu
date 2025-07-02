@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import Image from "next/image"; // Added for optimized images
+import Image from "next/image";
 import { AppSidebar } from "@/components/app-sidebar";
 import {
   Breadcrumb,
@@ -51,71 +51,36 @@ const categoryColors: Record<Category | string, ColorClass> = {
 };
 
 export default function Page() {
-  console.log("[Page] Component mounted");
-
   const [viewMode, setViewMode] = useState("grid");
   const [selectedOtt, setSelectedOtt] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
 
-  const allItems = useMemo(() => [
-    ...items2025,
-    ...items2024,
-    ...items2023,
-    ...items2022,
-    ...items2021,
-    ...items2020,
-  ], []);
-  
-
-  // Log all items on mount with dependency
-  useEffect(() => {
-    console.log("[Page] Initial allItems:", allItems.map(item => ({
-      title: item.title,
-      year: item.year,
-      category: item.category,
-    })));
-  }, [allItems]); // Added allItems to dependencies
+  const allItems = useMemo(
+    () => [
+      ...items2025,
+      ...items2024,
+      ...items2023,
+      ...items2022,
+      ...items2021,
+      ...items2020,
+    ],
+    []
+  );
 
   const extractYear = (date: string): string => {
-    try {
-      if (!date) {
-        console.warn("[Page] Empty date provided");
-        return "";
-      }
-      const parts = date.split("-");
-      if (parts.length === 3 && parts[2].length === 4) {
-        console.log(`[Page] Extracted year: ${parts[2]} from date: ${date}`);
-        return parts[2];
-      }
-      console.warn(`[Page] Invalid date format: ${date}`);
-      return "";
-    } catch (error) {
-      console.error(`[Page] Error parsing date: ${date}`, error);
-      return "";
-    }
+    if (!date) return "";
+    const parts = date.split("-");
+    return parts.length === 3 && parts[2].length === 4 ? parts[2] : "";
   };
 
   const filteredItems = allItems.filter((item) => {
     const itemYear = extractYear(item.year);
     const yearMatch = selectedYear ? itemYear === selectedYear : true;
     const ottMatch = selectedOtt ? item.category === selectedOtt : true;
-    console.log(`[Page] Filter: ${item.title}, year: ${item.year}, extracted: ${itemYear}, yearMatch: ${yearMatch}, ottMatch: ${ottMatch}`);
     return yearMatch && ottMatch;
   });
 
   const renderItems = () => {
-    console.log("[Page] Render:", {
-      selectedOtt,
-      selectedYear,
-      filteredItems: filteredItems.map(item => ({
-        title: item.title,
-        year: item.year,
-        extractedYear: extractYear(item.year),
-        category: item.category,
-      })),
-      allItemsCount: allItems.length,
-    });
-
     if (filteredItems.length === 0) {
       return (
         <div className="text-muted-foreground text-center">
@@ -124,47 +89,55 @@ export default function Page() {
       );
     }
 
-    return viewMode === "grid" ? (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-        {filteredItems.map((item) => {
-          const bgColorClass = categoryColors[item.category] || "bg-gray-100 hover:bg-gray-200 active:bg-gray-200";
+    if (viewMode === "grid") {
+      return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+          {filteredItems.map((item) => {
+            const bgColorClass =
+              categoryColors[item.category] ||
+              "bg-gray-100 hover:bg-gray-200 active:bg-gray-200";
 
-          return (
-            <div
-              key={`${item.title}-${item.year}`}
-              className={`border border-transparent hover:border-primary/50 active:border-primary/50 shadow-md hover:shadow-2xl active:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[1.02] bg-white dark:bg-gray-800 ${bgColorClass} cursor-pointer`}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                width={20}
-                height={20}
-                className="w-20 h-20 sm:w-16 sm:h-16 object-cover rounded-md mr-3"
-                onError={(e) => {
-                  console.warn(`[Page] Image failed to load: ${item.image}`);
-                  (e.target as HTMLImageElement).src = "https://placehold.co/100x100?text=Fallback";
-                }}
-              />
-              <div className="flex-1">
-                <h3 className="font-semibold text-foreground text-sm sm:text-base">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-muted-foreground line-clamp-2">
-                  {item.description}
-                </p>
-                <p className="text-[11px] text-muted-foreground mt-1">
-                  OTT Streaming: {frameworks.find((f) => f.value === item.category)?.label ||
-                    item.category}
-                </p>
-                <p className="text-[11px] text-muted-foreground mt-0.5" style={{ whiteSpace: "nowrap" }}>
-                  OTT Release Date: {item.year}
-                </p>
+            return (
+              <div
+                key={`${item.title}-${item.year}`}
+                className={`border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-white dark:bg-gray-800 ${bgColorClass} cursor-pointer`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  width={20}
+                  height={20}
+                  className="w-20 h-20 sm:w-16 sm:h-16 object-cover rounded-md mr-3"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src =
+                      "https://placehold.co/100x100?text=Fallback";
+                  }}
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-foreground text-sm sm:text-base">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-2">
+                    {item.description}
+                  </p>
+                  <p className="text-[11px] text-muted-foreground mt-1">
+                    OTT Streaming: {
+                      frameworks.find((f) => f.value === item.category)?.label ||
+                      item.category
+                    }
+                  </p>
+                  <p className="text-[11px] text-muted-foreground mt-0.5 whitespace-nowrap">
+                    OTT Release Date: {item.year}
+                  </p>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    ) : (
+            );
+          })}
+        </div>
+      );
+    }
+
+    return (
       <div className="overflow-x-auto rounded-lg border border-slate-200 shadow-sm">
         <table className="min-w-full divide-y divide-slate-200 text-slate-800 text-sm">
           <thead className="bg-slate-100 dark:bg-transparent">
@@ -184,28 +157,25 @@ export default function Page() {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-slate-100 dark:bg-transparent dark:divide-muted">
-            {filteredItems.map((item) => {
-              console.log(`[Page] Rendering table row: ${item.title}, year: "${item.year}", type: ${typeof item.year}`);
-              return (
-                <tr
-                  key={`${item.title}-${item.year}`}
-                  className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100"
-                >
-                  <td className="px-3 py-2 font-semibold text-black dark:text-white">
-                    {item.title}
-                  </td>
-                  <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground">
-                    {item.description}
-                  </td>
-                  <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground">
-                    {frameworks.find((f) => f.value === item.category)?.label || item.category}
-                  </td>
-                  <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground" style={{ whiteSpace: "nowrap" }}>
-                    {item.year}
-                  </td>
-                </tr>
-              );
-            })}
+            {filteredItems.map((item) => (
+              <tr
+                key={`${item.title}-${item.year}`}
+                className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01]"
+              >
+                <td className="px-3 py-2 font-semibold text-black dark:text-white">
+                  {item.title}
+                </td>
+                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground">
+                  {item.description}
+                </td>
+                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground">
+                  {frameworks.find((f) => f.value === item.category)?.label || item.category}
+                </td>
+                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
+                  {item.year}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -241,34 +211,26 @@ export default function Page() {
             />
             <div className="flex items-center gap-2 rounded-lg border border-gray-200 p-1.5">
               <button
-                className={`rizzui-action-icon-root inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
                   viewMode === "table"
                     ? "bg-gray-900 dark:bg-gray-200 text-white"
                     : "bg-transparent"
                 }`}
                 onClick={() => setViewMode("table")}
               >
-                <svg
-                  className="h-5 w-5"
-                  viewBox="0 0 256 256"
-                  fill="currentColor"
-                >
+                <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
                   <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
                 </svg>
               </button>
               <button
-                className={`rizzui-action-icon-root inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
                   viewMode === "grid"
                     ? "bg-gray-900 dark:bg-gray-200 text-white"
                     : "bg-transparent"
                 }`}
                 onClick={() => setViewMode("grid")}
               >
-                <svg
-                  className="h-5 w-5"
-                  viewBox="0 0 256 256"
-                  fill="currentColor"
-                >
+                <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
                   <path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z" />
                 </svg>
               </button>
