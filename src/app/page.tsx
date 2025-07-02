@@ -134,7 +134,7 @@ export default function Page() {
               key={`${item.title}-${item.year}`}
               className={`border border-transparent hover:border-primary/50 active:border-primary/50 shadow-md hover:shadow-2xl active:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[1.02] bg-white dark:bg-gray-800 ${bgColorClass} cursor-pointer`}
             >
-              <Image
+              <img
                 src={item.image}
                 alt={item.title}
                 width={20}
