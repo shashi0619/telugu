@@ -1,6 +1,7 @@
+// src/app/page.tsx
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import Image from "next/image";
 import { AppSidebar } from "@/components/app-sidebar";
 import {
@@ -36,7 +37,6 @@ import {
   items2020,
 } from "@/components/data";
 
-// Define the category types based on frameworks
 type Category = typeof frameworks[number]["value"];
 type ColorClass = string;
 
@@ -47,7 +47,7 @@ const categoryColors: Record<Category | string, ColorClass> = {
   "aha": "bg-blue-100 hover:bg-blue-200 active:bg-blue-200",
   "sun-nxt": "bg-orange-100 hover:bg-orange-200 active:bg-orange-200",
   "sony-liv": "bg-purple-100 hover:bg-purple-200 active:bg-purple-200",
-  "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200", // Default for "All OTTs"
+  "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200",
 };
 
 export default function Page() {
@@ -198,9 +198,7 @@ export default function Page() {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block text-xl md:text-2xl font-bold text-black dark:text-white">
-                  <BreadcrumbLink href="#">
-                    Building Your Application
-                  </BreadcrumbLink>
+                  <BreadcrumbLink href="#">Building Your Application</BreadcrumbLink>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -211,11 +209,7 @@ export default function Page() {
             />
             <div className="flex items-center gap-2 rounded-lg border border-gray-200 p-1.5">
               <button
-                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
-                  viewMode === "table"
-                    ? "bg-gray-900 dark:bg-gray-200 text-white"
-                    : "bg-transparent"
-                }`}
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${viewMode === "table" ? "bg-gray-900 dark:bg-gray-200 text-white" : "bg-transparent"}`}
                 onClick={() => setViewMode("table")}
               >
                 <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
@@ -223,11 +217,7 @@ export default function Page() {
                 </svg>
               </button>
               <button
-                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
-                  viewMode === "grid"
-                    ? "bg-gray-900 dark:bg-gray-200 text-white"
-                    : "bg-transparent"
-                }`}
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${viewMode === "grid" ? "bg-gray-900 dark:bg-gray-200 text-white" : "bg-transparent"}`}
                 onClick={() => setViewMode("grid")}
               >
                 <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
