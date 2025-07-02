@@ -73,7 +73,7 @@ export default function Page() {
         {filteredItems.map((item) => (
           <div
             key={item.title}
-            className="bg-muted/50 border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-start transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:bg-muted/70 cursor-pointer"
+            className="bg-white border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-start transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:bg-muted/70 cursor-pointer"
           >
             <img
               src={item.image}
