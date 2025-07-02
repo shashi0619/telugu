@@ -40,13 +40,13 @@ type Category = typeof frameworks[number]["value"];
 type ColorClass = string;
 
 const categoryColors: Record<Category | string, ColorClass> = {
-  "amazon-prime": "bg-amber-100 hover:bg-amber-200",
-  "netflix": "bg-red-100 hover:bg-red-200",
-  "jiohotstar": "bg-green-100 hover:bg-green-200",
-  "aha": "bg-blue-100 hover:bg-blue-200",
-  "sun-nxt": "bg-orange-100 hover:bg-orange-200",
-  "sony-liv": "bg-purple-100 hover:bg-purple-200",
-  "": "bg-gray-100 hover:bg-gray-200", // Default for "All OTTs"
+  "amazon-prime": "bg-amber-100 hover:bg-amber-200 active:bg-amber-200",
+  "netflix": "bg-red-100 hover:bg-red-200 active:bg-red-200",
+  "jiohotstar": "bg-green-100 hover:bg-green-200 active:bg-green-200",
+  "aha": "bg-blue-100 hover:bg-blue-200 active:bg-blue-200",
+  "sun-nxt": "bg-orange-100 hover:bg-orange-200 active:bg-orange-200",
+  "sony-liv": "bg-purple-100 hover:bg-purple-200 active:bg-purple-200",
+  "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200", // Default for "All OTTs"
 };
 
 export default function Page() {
@@ -125,12 +125,13 @@ export default function Page() {
     return viewMode === "grid" ? (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
         {filteredItems.map((item) => {
-          const bgColorClass = categoryColors[item.category] || "bg-gray-100 hover:bg-gray-200";
+          const bgColorClass = categoryColors[item.category] || "bg-gray-100 hover:bg-gray-200 active:bg-gray-200";
 
           return (
             <div
               key={`${item.title}-${item.year}`}
-              className={`border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-white dark:bg-gray-800 hover:${bgColorClass} cursor-pointer`}            >
+              className={`border border-transparent hover:border-primary/50 active:border-primary/50 shadow-md hover:shadow-2xl active:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[1.02] bg-white dark:bg-gray-800 ${bgColorClass} cursor-pointer`}
+            >
               <img
                 src={item.image}
                 alt={item.title}
@@ -184,7 +185,7 @@ export default function Page() {
               return (
                 <tr
                   key={`${item.title}-${item.year}`}
-                  className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[0.98]"
+                  className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100"
                 >
                   <td className="px-3 py-2 font-semibold text-black dark:text-white">
                     {item.title}
