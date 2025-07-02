@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image"; // Added for optimized images
 import { AppSidebar } from "@/components/app-sidebar";
 import {
   Breadcrumb,
@@ -65,14 +66,14 @@ export default function Page() {
     ...items2020,
   ];
 
-  // Log all items on mount
+  // Log all items on mount with dependency
   useEffect(() => {
     console.log("[Page] Initial allItems:", allItems.map(item => ({
       title: item.title,
       year: item.year,
       category: item.category,
     })));
-  }, []);
+  }, [allItems]); // Added allItems to dependencies
 
   const extractYear = (date: string): string => {
     try {
@@ -132,13 +133,15 @@ export default function Page() {
               key={`${item.title}-${item.year}`}
               className={`border border-transparent hover:border-primary/50 active:border-primary/50 shadow-md hover:shadow-2xl active:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[1.02] bg-white dark:bg-gray-800 ${bgColorClass} cursor-pointer`}
             >
-              <img
+              <Image
                 src={item.image}
                 alt={item.title}
+                width={20}
+                height={20}
                 className="w-20 h-20 sm:w-16 sm:h-16 object-cover rounded-md mr-3"
                 onError={(e) => {
                   console.warn(`[Page] Image failed to load: ${item.image}`);
-                  e.currentTarget.src = "https://placehold.co/100x100?text=Fallback";
+                  (e.target as HTMLImageElement).src = "https://placehold.co/100x100?text=Fallback";
                 }}
               />
               <div className="flex-1">
