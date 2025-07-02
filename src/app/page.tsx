@@ -22,37 +22,66 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@radix-ui/react-dropdown-menu"; // Updated import
+} from "@radix-ui/react-dropdown-menu";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
 import searchBar from "@/components/ui/searchbar";
 
+// Framework type definition
+interface Framework {
+  value: string;
+  label: string;
+}
+
+// OTT platforms
+const frameworks: Framework[] = [
+  { value: "amazon-prime", label: "Amazon Prime" },
+  { value: "netflix", label: "Netflix" },
+  { value: "jiohotstar", label: "JioHotstar" },
+  { value: "aha", label: "Aha" },
+  { value: "sun-nxt", label: "Sun Nxt" },
+  { value: "sony-liv", label: "Sony Liv" },
+];
+
 // Sample data for demonstration
-const items = [
-  { id: 1, title: "Item 1", description: "Description 1", category: "Category A" },
-  { id: 2, title: "Item 2", description: "Description 2", category: "Category B" },
-  { id: 3, title: "Item 3", description: "Description 3", category: "Category A" },
-  { id: 4, title: "Item 4", description: "Description 4", category: "Category B" },
-  { id: 5, title: "Item 5", description: "Description 5", category: "Category A" },
-  { id: 6, title: "Item 6", description: "Description 6", category: "Category B" },
-  { id: 7, title: "Item 7", description: "Description 7", category: "Category A" },
-  { id: 8, title: "Item 8", description: "Description 8", category: "Category B" },
-  { id: 9, title: "Item 9", description: "Description 9", category: "Category A" },
-  { id: 10, title: "Item 10", description: "Description 10", category: "Category B" },
-  { id: 11, title: "Item 11", description: "Description 11", category: "Category A" },
-  { id: 12, title: "Item 12", description: "Description 12", category: "Category B" },
-  { id: 13, title: "Item 13", description: "Description 13", category: "Category A" },
-  { id: 14, title: "Item 14", description: "Description 14", category: "Category B" },
-  { id: 15, title: "Item 15", description: "Description 15", category: "Category A" },
-  { id: 16, title: "Item 16", description: "Description 16", category: "Category B" },
-  { id: 17, title: "Item 17", description: "Description 17", category: "Category A" },
-  { id: 18, title: "Item 18", description: "Description 18", category: "Category B" },
-  { id: 19, title: "Item 19", description: "Description 19", category: "Category A" },
-  { id: 20, title: "Item 20", description: "Description 20", category: "Category B" },
+interface Item {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+}
+
+const items: Item[] = [
+  { id: 1, title: "Movie A", description: "Action blockbuster", category: "amazon-prime" },
+  { id: 2, title: "Series B", description: "Crime drama series", category: "netflix" },
+  { id: 3, title: "Show C", description: "Romantic comedy", category: "jiohotstar" },
+  { id: 4, title: "Film D", description: "Sci-fi adventure", category: "aha" },
+  { id: 5, title: "Drama E", description: "Historical drama", category: "sun-nxt" },
+  { id: 6, title: "Thriller F", description: "Psychological thriller", category: "sony-liv" },
+  { id: 7, title: "Movie G", description: "Family comedy", category: "amazon-prime" },
+  { id: 8, title: "Series H", description: "Fantasy epic", category: "netflix" },
+  { id: 9, title: "Show I", description: "Reality TV", category: "jiohotstar" },
+  { id: 10, title: "Film J", description: "Horror movie", category: "aha" },
+  { id: 11, title: "Drama K", description: "Social drama", category: "sun-nxt" },
+  { id: 12, title: "Thriller L", description: "Mystery thriller", category: "sony-liv" },
+  { id: 13, title: "Movie M", description: "Adventure film", category: "amazon-prime" },
+  { id: 14, title: "Series N", description: "Sci-fi series", category: "netflix" },
+  { id: 15, title: "Show O", description: "Comedy show", category: "jiohotstar" },
+  { id: 16, title: "Film P", description: "Action thriller", category: "aha" },
+  { id: 17, title: "Drama Q", description: "Biographical drama", category: "sun-nxt" },
+  { id: 18, title: "Thriller R", description: "Crime thriller", category: "sony-liv" },
+  { id: 19, title: "Movie S", description: "Romantic drama", category: "amazon-prime" },
+  { id: 20, title: "Series T", description: "Documentary series", category: "netflix" },
 ];
 
 export default function Page() {
   const [viewMode, setViewMode] = useState('grid');
+  const [selectedOtt, setSelectedOtt] = useState('');
+
+  // Filter items based on selected OTT platform
+  const filteredItems = selectedOtt
+    ? items.filter((item) => item.category === selectedOtt)
+    : items;
 
   return (
     <SidebarProvider>
@@ -72,7 +101,7 @@ export default function Page() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <ExampleCombobox />
+            <ExampleCombobox value={selectedOtt} setValue={setSelectedOtt} frameworks={frameworks} />
             {/* View Toggle Buttons */}
             <div className="flex items-center gap-2 rounded-lg border border-gray-200 p-1.5 px-1.5">
               <button
@@ -119,10 +148,10 @@ export default function Page() {
           {/* Right Section */}
           <div className="flex items-center gap-4">
             {/* Notification Bell */}
-            <button className="relative p-2 rounded-full hover:bg-gray-100">
+            <button className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
               <span className="sr-only">View notifications</span>
               <svg
-                className="h-6 w-6 text-gray-600"
+                className="h-6 w-6 text-gray-600 dark:text-gray-300"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -165,32 +194,36 @@ export default function Page() {
         <div className="flex flex-1 flex-col gap-4 p-4">
           {viewMode === 'grid' ? (
             <div className="grid auto-rows-min gap-4 md:grid-cols-4">
-              {items.map((item) => (
+              {filteredItems.map((item) => (
                 <div key={item.id} className="bg-muted/50 aspect-video rounded-xl p-4">
-                  <h3 className="font-semibold">{item.title}</h3>
-                  <p className="text-sm text-gray-600">{item.description}</p>
-                  <p className="text-xs text-gray-500 mt-2">{item.category}</p>
+                  <h3 className="font-semibold text-foreground">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    {frameworks.find((f) => f.value === item.category)?.label || item.category}
+                  </p>
                 </div>
               ))}
             </div>
           ) : (
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
+              <table className="min-w-full divide-y divide-muted">
+                <thead className="bg-muted/50">
                   <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">ID</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Title</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Description</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Category</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {items.map((item) => (
+                <tbody className="bg-background divide-y divide-muted">
+                  {filteredItems.map((item) => (
                     <tr key={item.id}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.id}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.description}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.category}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.id}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">{item.title}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">{item.description}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground">
+                        {frameworks.find((f) => f.value === item.category)?.label || item.category}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
