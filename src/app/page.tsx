@@ -38,14 +38,14 @@ import {
 
 import UserMenuSimple from "@/components/user-dropdown-01";
 
-type Category = typeof frameworks[number]["value"];
+type Category = (typeof frameworks)[number]["value"];
 type ColorClass = string;
 
 const categoryColors: Record<Category | string, ColorClass> = {
   "amazon-prime": "bg-amber-100 hover:bg-amber-200 active:bg-amber-200",
-  "netflix": "bg-red-100 hover:bg-red-200 active:bg-red-200",
-  "jiohotstar": "bg-green-100 hover:bg-green-200 active:bg-green-200",
-  "aha": "bg-blue-100 hover:bg-blue-200 active:bg-blue-200",
+  netflix: "bg-red-100 hover:bg-red-200 active:bg-red-200",
+  jiohotstar: "bg-green-100 hover:bg-green-200 active:bg-green-200",
+  aha: "bg-blue-100 hover:bg-blue-200 active:bg-blue-200",
   "sun-nxt": "bg-orange-100 hover:bg-orange-200 active:bg-orange-200",
   "sony-liv": "bg-purple-100 hover:bg-purple-200 active:bg-purple-200",
   "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200",
@@ -128,10 +128,9 @@ export default function Page() {
                     {item.description}
                   </p>
                   <p className="text-[11px] text-muted-foreground mt-1 truncate">
-                    OTT Streaming: {
-                      frameworks.find((f) => f.value === item.category)?.label ||
-                      item.category
-                    }
+                    OTT Streaming:{" "}
+                    {frameworks.find((f) => f.value === item.category)?.label ||
+                      item.category}
                   </p>
                   <p className="text-[11px] text-muted-foreground mt-0.5 truncate">
                     OTT Release Date: {item.year}
@@ -176,7 +175,8 @@ export default function Page() {
                   {item.description}
                 </td>
                 <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground truncate">
-                  {frameworks.find((f) => f.value === item.category)?.label || item.category}
+                  {frameworks.find((f) => f.value === item.category)?.label ||
+                    item.category}
                 </td>
                 <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
                   {item.year}
@@ -198,99 +198,128 @@ export default function Page() {
         setSelectedYear={setSelectedYear}
       />
       <SidebarInset>
-      <header className="flex flex-wrap sm:flex-nowrap sm:items-center sm:justify-between border-b px-4 py-2 gap-y-3">
-  {/* Left side: wraps into 2 rows on mobile */}
-  <div className="flex flex-col gap-y-2 w-full sm:flex-row sm:items-center sm:gap-2 sm:w-auto">
-    {/* Row 1 (mobile) or left group (desktop) */}
-    <div className="flex items-center gap-2">
-      <SidebarTrigger />
-      <Separator orientation="vertical" className="hidden sm:block h-4" />
-      <ExampleCombobox
-        value={selectedOtt}
-        setValue={setSelectedOtt}
-        frameworks={frameworks}
-      />
-      <ThemeToggle />
-    </div>
+        <header className="flex flex-wrap sm:flex-nowrap sm:items-center sm:justify-between border-b px-4 py-2 gap-y-3">
+          {/* Left side: wraps into 2 rows on mobile */}
+          <div className="flex flex-col gap-y-2 w-full sm:flex-row sm:items-center sm:gap-2 sm:w-auto">
+            {/* Row 1 (mobile) or left group (desktop) */}
+            <div className="flex items-center gap-2">
+              <SidebarTrigger />
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem className="hidden md:block text-lg md:text-xl font-bold text-black dark:text-white truncate">
+                    <BreadcrumbLink href="#">
+                      Building Your Application
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+              <Separator
+                orientation="vertical"
+                className="hidden sm:block h-4"
+              />
+              <ExampleCombobox
+                value={selectedOtt}
+                setValue={setSelectedOtt}
+                frameworks={frameworks}
+              />
+              <ThemeToggle />
+            </div>
 
-    {/* Row 2 (mobile only) */}
-    <div className="flex items-center gap-2 sm:hidden">
-      <input
-        type="text"
-        placeholder="Search movies..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="px-3 py-1.5 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white dark:border-gray-600 w-full"
-      />
-      <div className="flex items-center gap-1 rounded-lg border border-gray-200 dark:border-gray-700 p-1.5">
-        <button
-          className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
-            viewMode === "table"
-              ? "bg-gray-900 dark:bg-gray-200 text-white"
-              : "bg-transparent"
-          } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
-          onClick={() => setViewMode("table")}
-        >
-          <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
-            <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
-          </svg>
-        </button>
-        <button
-          className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
-            viewMode === "grid"
-              ? "bg-gray-900 dark:bg-gray-200 text-white"
-              : "bg-transparent"
-          } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
-          onClick={() => setViewMode("grid")}
-        >
-          <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
-            <path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
+            {/* Row 2 (mobile only) */}
+            <div className="flex items-center gap-2 sm:hidden">
+              <input
+                type="text"
+                placeholder="Search movies..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="px-3 py-1.5 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white dark:border-gray-600 w-full"
+              />
+              <div className="flex items-center gap-1 rounded-lg border border-gray-200 dark:border-gray-700 p-1.5">
+                <button
+                  className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
+                    viewMode === "table"
+                      ? "bg-gray-900 dark:bg-gray-200 text-white"
+                      : "bg-transparent"
+                  } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
+                  onClick={() => setViewMode("table")}
+                >
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 256 256"
+                    fill="currentColor"
+                  >
+                    <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
+                  </svg>
+                </button>
+                <button
+                  className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
+                    viewMode === "grid"
+                      ? "bg-gray-900 dark:bg-gray-200 text-white"
+                      : "bg-transparent"
+                  } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
+                  onClick={() => setViewMode("grid")}
+                >
+                  <svg
+                    className="h-5 w-5"
+                    viewBox="0 0 256 256"
+                    fill="currentColor"
+                  >
+                    <path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
 
-  {/* Right side (desktop only): search and view toggle */}
-  <div className="hidden sm:flex items-center gap-2">
-    <input
-      type="text"
-      placeholder="Search movies..."
-      value={searchQuery}
-      onChange={(e) => setSearchQuery(e.target.value)}
-      className="px-3 py-1.5 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white dark:border-gray-600 w-64"
-    />
-    <div className="flex items-center gap-1 rounded-lg border border-gray-200 dark:border-gray-700 p-1.5">
-      <button
-        className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
-          viewMode === "table"
-            ? "bg-gray-900 dark:bg-gray-200 text-white"
-            : "bg-transparent"
-        } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
-        onClick={() => setViewMode("table")}
-      >
-        <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
-          <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
-        </svg>
-      </button>
-      <button
-        className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
-          viewMode === "grid"
-            ? "bg-gray-900 dark:bg-gray-200 text-white"
-            : "bg-transparent"
-        } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
-        onClick={() => setViewMode("grid")}
-      >
-        <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
-          <path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
+          {/* Right side (desktop only): search and view toggle */}
+          <div className="hidden sm:flex items-center gap-2">
+            <input
+              type="text"
+              placeholder="Search movies..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="px-3 py-1.5 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white dark:border-gray-600 w-64"
+            />
+            <div className="flex items-center gap-1 rounded-lg border border-gray-200 dark:border-gray-700 p-1.5">
+              <button
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
+                  viewMode === "table"
+                    ? "bg-gray-900 dark:bg-gray-200 text-white"
+                    : "bg-transparent"
+                } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
+                onClick={() => setViewMode("table")}
+              >
+                <svg
+                  className="h-5 w-5"
+                  viewBox="0 0 256 256"
+                  fill="currentColor"
+                >
+                  <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
+                </svg>
+              </button>
+              <button
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${
+                  viewMode === "grid"
+                    ? "bg-gray-900 dark:bg-gray-200 text-white"
+                    : "bg-transparent"
+                } hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
+                onClick={() => setViewMode("grid")}
+              >
+                <svg
+                  className="h-5 w-5"
+                  viewBox="0 0 256 256"
+                  fill="currentColor"
+                >
+                  <path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
 
-
-        <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">{renderItems()}</div>
+        <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">
+          {renderItems()}
+        </div>
       </SidebarInset>
     </SidebarProvider>
   );
