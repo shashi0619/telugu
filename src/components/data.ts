@@ -22,7 +22,7 @@ export const frameworks: Framework[] = [
 ];
 
 export const items2025: Item[] = [
-  { title: "Movie A", description: "Action blockbuster", category: "amazon-prime", year: "06-04-2025", image: "/images/Kubera.jpg" },
+  { title: "Movie A", description: "Action blockbuster", category: "amazon-prime", year: "comming soon", image: "/images/Kubera.jpg" },
   { title: "Movie G", description: "Family comedy", category: "amazon-prime", year: "09-07-2025", image: "/images/Kubera.jpg" },
   { title: "Movie M", description: "Adventure film", category: "amazon-prime", year: "22-09-2025", image: "/images/01.png" },
   { title: "Movie S", description: "Romantic drama", category: "amazon-prime", year: "07-07-2025", image: "https://placehold.co/100x100?text=Movie+S" },
