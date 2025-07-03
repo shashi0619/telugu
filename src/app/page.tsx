@@ -36,6 +36,8 @@ import {
   items2020,
 } from "@/components/data";
 
+import UserMenuSimple from "@/components/user-dropdown-01";
+
 type Category = typeof frameworks[number]["value"];
 type ColorClass = string;
 
@@ -165,7 +167,7 @@ export default function Page() {
             {filteredItems.map((item) => (
               <tr
                 key={`${item.title}-${item.year}`}
-                className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out"
+                className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100"
               >
                 <td className="px-3 py-2 font-semibold text-black dark:text-white truncate">
                   {item.title}
@@ -212,7 +214,6 @@ export default function Page() {
               setValue={setSelectedOtt}
               frameworks={frameworks}
             />
-          
           </div>
           <div className="flex items-center gap-2">
           <input
@@ -220,12 +221,11 @@ export default function Page() {
               placeholder="Search movies..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="px-3 py-1.5 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white dark:border-gray-600 w-40 sm:w-48 md:w-64"
+              className="px-3 py-1.5 text-sm rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800 dark:text-white dark:border-gray-600 w-40 sm:w-48 md:w-64 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
             />
-           
             <div className="flex items-center gap-2 rounded-lg border border-gray-200 p-1.5">
               <button
-                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${viewMode === "table" ? "bg-gray-900 dark:bg-gray-200 text-white" : "bg-transparent"}`}
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${viewMode === "table" ? "bg-gray-900 dark:bg-gray-200 text-white" : "bg-transparent"} hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
                 onClick={() => setViewMode("table")}
               >
                 <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
@@ -233,7 +233,7 @@ export default function Page() {
                 </svg>
               </button>
               <button
-                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${viewMode === "grid" ? "bg-gray-900 dark:bg-gray-200 text-white" : "bg-transparent"}`}
+                className={`inline-flex items-center justify-center p-0.5 w-7 h-7 rounded-md ${viewMode === "grid" ? "bg-gray-900 dark:bg-gray-200 text-white" : "bg-transparent"} hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-105`}
                 onClick={() => setViewMode("grid")}
               >
                 <svg className="h-5 w-5" viewBox="0 0 256 256" fill="currentColor">
@@ -243,7 +243,7 @@ export default function Page() {
             </div>
             <ThemeToggle />
             <div className="hidden sm:flex items-center gap-2">
-              <button className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+              <button className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 hover:scale-105">
                 <span className="sr-only">View notifications</span>
                 <svg
                   className="h-6 w-6 text-gray-600 dark:text-gray-300"
@@ -260,24 +260,7 @@ export default function Page() {
                 </svg>
                 <span className="absolute top-1 right-1 inline-block h-2 w-2 rounded-full bg-red-500" />
               </button>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Avatar>
-                    <AvatarImage
-                      className="rounded-full w-8 h-8"
-                      src="https://github.com/shadcn.png"
-                    />
-                  </Avatar>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Profile</DropdownMenuItem>
-                  <DropdownMenuItem>Billing</DropdownMenuItem>
-                  <DropdownMenuItem>Team</DropdownMenuItem>
-                  <DropdownMenuItem>Subscription</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <UserMenuSimple />
             </div>
           </div>
         </header>

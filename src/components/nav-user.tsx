@@ -82,8 +82,8 @@ export function NavUser({
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuItem>
-                <Sparkles />
-                Upgrade to Pro
+               
+               
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
@@ -93,8 +93,8 @@ export function NavUser({
                 Account
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <CreditCard />
-                Billing
+               
+               
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Bell />
