@@ -3,6 +3,8 @@
 import * as React from "react";
 import {
   BookOpen,
+  ChevronDown,
+  ChevronUp,
   Command,
   Frame,
   LifeBuoy,
@@ -13,7 +15,6 @@ import {
   SquareTerminal,
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
-import { NavMain } from "@/components/nav-main";
 import { NavSecondary } from "@/components/nav-secondary";
 import { NavUser } from "@/components/nav-user";
 import {
@@ -95,8 +96,8 @@ const data: SidebarData = {
       items: [
         { title: "General", url: "#" },
         { title: "Team", url: "#" },
-        { title: "Billing", url: "#" },
-        { title: "Limits", url: "#" },
+        
+       
       ],
     },
   ],
@@ -135,13 +136,17 @@ export function AppSidebar({
     "Sony Liv": "sony-liv",
   };
 
+  const [expandedMenus, setExpandedMenus] = React.useState<Record<string, boolean>>({});
+
+  const toggleMenu = (title: string) => {
+    setExpandedMenus((prev) => ({ ...prev, [title]: !prev[title] }));
+  };
+
   const handleOttClick = (title: string) => {
-    console.log("Clicked OTT:", title, "Mapped to:", ottValueMap[title] || "");
     setSelectedOtt(ottValueMap[title] || "");
   };
 
   const handleYearClick = (title: string) => {
-    console.log("Clicked Year:", title);
     setSelectedYear(title === selectedYear ? "" : title);
   };
 
@@ -164,29 +169,73 @@ export function AppSidebar({
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
+
       <SidebarContent>
-        <NavMain
-          items={data.navMain.map((section) => ({
-            ...section,
-            items: section.items?.map((item) => ({
-              ...item,
-              onClick:
-                section.title === "Playground"
-                  ? () => handleOttClick(item.title)
-                  : section.title === "Select Year"
-                  ? () => handleYearClick(item.title)
-                  : undefined,
-              isActive:
-                section.title === "Playground"
-                  ? ottValueMap[item.title] === selectedOtt
-                  : section.title === "Select Year"
-                  ? item.title === selectedYear
-                  : false,
-            })),
-          }))}
-        />
+        <div className="px-2">
+          {data.navMain.map((section) => (
+            <div key={section.title} className="mb-2">
+              <button
+                onClick={() =>
+                  section.title === "Playground" || section.title === "Select Year"
+                    ? toggleMenu(section.title)
+                    : undefined
+                }
+                className="w-full flex items-center justify-between p-2 rounded hover:bg-muted/60"
+              >
+                <div className="flex items-center gap-2 text-sm font-medium">
+                  <section.icon className="w-4 h-4" />
+                  {section.title}
+                </div>
+                {(section.title === "Playground" || section.title === "Select Year") && (
+                  expandedMenus[section.title] ? (
+                    <ChevronUp className="w-4 h-4" />
+                  ) : (
+                    <ChevronDown className="w-4 h-4" />
+                  )
+                )}
+              </button>
+
+              {(section.title !== "Playground" &&
+                section.title !== "Select Year") ||
+              expandedMenus[section.title] ? (
+                <div className="ml-6 mt-1 space-y-1">
+                  {section.items?.map((item) => {
+                    const isActive =
+                      section.title === "Playground"
+                        ? ottValueMap[item.title] === selectedOtt
+                        : section.title === "Select Year"
+                        ? item.title === selectedYear
+                        : false;
+
+                    return (
+                      <button
+                        key={item.title}
+                        onClick={() =>
+                          section.title === "Playground"
+                            ? handleOttClick(item.title)
+                            : section.title === "Select Year"
+                            ? handleYearClick(item.title)
+                            : undefined
+                        }
+                        className={`block w-full text-left text-sm px-2 py-1 rounded ${
+                          isActive
+                            ? "bg-red-500 text-white"
+                            : "hover:bg-muted text-muted-foreground"
+                        }`}
+                      >
+                        {item.title}
+                      </button>
+                    );
+                  })}
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
+
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
