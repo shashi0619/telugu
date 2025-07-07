@@ -15,15 +15,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@radix-ui/react-dropdown-menu";
+
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
 import {
@@ -36,7 +28,7 @@ import {
   items2020,
 } from "@/components/data";
 
-import UserMenuSimple from "@/components/user-dropdown-01";
+
 
 type Category = (typeof frameworks)[number]["value"];
 type ColorClass = string;
