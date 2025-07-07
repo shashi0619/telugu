@@ -146,20 +146,22 @@ export default function Page() {
     return (
       <div className="overflow-x-auto rounded-lg border border-slate-200 shadow-sm">
         <table className="min-w-full divide-y divide-slate-200 text-slate-800 text-sm">
-          <thead className="bg-slate-100 dark:bg-transparent">
+          <thead className="bg-black dark:bg-transparent">
             <tr>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider dark:text-muted-foreground w-[25%]">
+              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[25%]">
                 Title
               </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider dark:text-muted-foreground w-[40%]">
-                Description
+              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[15%]">
+              Release Date
               </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider dark:text-muted-foreground w-[20%]">
+            
+              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[20%]">
                 Category
               </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider dark:text-muted-foreground w-[15%]">
-                Year
+              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[40%]">
+                Description
               </th>
+              
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-slate-200 dark:bg-transparent dark:divide-muted">
@@ -171,16 +173,18 @@ export default function Page() {
                 <td className="px-3 py-2 font-semibold text-black dark:text-white truncate">
                   {item.title}
                 </td>
-                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground line-clamp-2">
-                  {item.description}
+                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
+                  {item.year}
                 </td>
+              
                 <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground truncate">
                   {frameworks.find((f) => f.value === item.category)?.label ||
                     item.category}
                 </td>
-                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
-                  {item.year}
+                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground line-clamp-2">
+                  {item.description}
                 </td>
+               
               </tr>
             ))}
           </tbody>
