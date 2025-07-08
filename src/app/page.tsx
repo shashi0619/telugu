@@ -37,25 +37,43 @@ const categoryColors: Record<Category | string, ColorClass> = {
   "sun-nxt": "bg-orange-100 hover:bg-orange-200 active:bg-orange-200",
   "sony-liv": "bg-purple-100 hover:bg-purple-200 active:bg-purple-200",
   "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200",
+  zee5: "bg-teal-100 hover:bg-teal-200 active:bg-teal-200",
+  "etv-win": "bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-200",
+  "lionsgate-play": "bg-pink-100 hover:bg-pink-200 active:bg-pink-200",
+  "bms-stream": "bg-yellow-100 hover:bg-yellow-200 active:bg-yellow-200",
+  "disney-hotstar": "bg-blue-200 hover:bg-blue-300 active:bg-blue-300",
+  jiocinema: "bg-red-200 hover:bg-red-300 active:bg-red-300",
+  "hungama-play": "bg-green-200 hover:bg-green-300 active:bg-green-300",
+  "galaxy-ott": "bg-purple-200 hover:bg-purple-300 active:bg-purple-300",
 };
 
 export default function Page() {
-  const [viewMode, setViewMode] = useState("grid");
-  const [selectedOtt, setSelectedOtt] = useState("");
-  const [selectedYear, setSelectedYear] = useState("");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [viewMode, setViewMode] = useState<"grid" | "table">("grid");
+  const [selectedOtt, setSelectedOtt] = useState<string>("");
+  const [selectedYear, setSelectedYear] = useState<string>("");
+  const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const allItems = useMemo(
-    () => [
-      ...items2025,
-      ...items2024,
-      ...items2023,
-      ...items2022,
-      ...items2021,
-      ...items2020,
-    ],
-    []
-  );
+  interface Framework {
+    value: string;
+    label: string;
+  }
+
+  interface Item {
+    title: string;
+    description: string;
+    category: string;
+    year: string;
+    image: string;
+  }
+
+  const allItems = useMemo<Item[]>(() => [
+    ...items2025,
+    ...items2024,
+    ...items2023,
+    ...items2022,
+    ...items2021,
+    ...items2020,
+  ], []);
 
   const extractYear = (date: string): string => {
     if (!date) return "";
@@ -63,7 +81,11 @@ export default function Page() {
     return parts.length === 3 && parts[2].length === 4 ? parts[2] : "";
   };
 
-  const filteredItems = allItems.filter((item) => {
+  const countWords = (title: string): number => {
+    return title.trim().split(/\s+/).length;
+  };
+
+  const filteredItems = allItems.filter((item: Item) => {
     const itemYear = extractYear(item.year);
     const yearMatch = selectedYear ? itemYear === selectedYear : true;
     const ottMatch = selectedOtt ? item.category === selectedOtt : true;
@@ -87,10 +109,11 @@ export default function Page() {
     if (viewMode === "grid") {
       return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-          {filteredItems.map((item) => {
+          {filteredItems.map((item: Item) => {
             const bgColorClass =
               categoryColors[item.category] ||
               "bg-gray-100 hover:bg-gray-200 active:bg-gray-200";
+            const isLongTitle = countWords(item.title) > 15;
 
             return (
               <div
@@ -109,7 +132,11 @@ export default function Page() {
                   }}
                 />
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-foreground text-sm sm:text-base truncate">
+                  <h3
+                    className={`font-semibold text-foreground text-sm sm:text-base ${
+                      isLongTitle ? "line-clamp-2" : "truncate"
+                    }`}
+                  >
                     {item.title}
                   </h3>
                   <p className="text-xs text-muted-foreground line-clamp-2">
@@ -117,7 +144,7 @@ export default function Page() {
                   </p>
                   <p className="text-[11px] text-muted-foreground mt-1 truncate">
                     OTT Streaming:{" "}
-                    {frameworks.find((f) => f.value === item.category)?.label ||
+                    {frameworks.find((f: Framework) => f.value === item.category)?.label ||
                       item.category}
                   </p>
                   <p className="text-[11px] text-muted-foreground mt-0.5 truncate">
@@ -132,11 +159,11 @@ export default function Page() {
     }
 
     return (
-      <div className=" overflow-x-hidden rounded-lg border border-slate-200 shadow-xl">
-        <table className="min-w-full divide-y divide-slate-200  text-slate-800 text-[10px] sm:text-sm">
-          <thead className="bg-black   dark:bg-transparent">
+      <div className="overflow-x-hidden rounded-lg border border-slate-200 shadow-xl">
+        <table className="min-w-full divide-y divide-slate-200 text-slate-800 text-[7px] sm:text-sm">
+          <thead className="bg-black dark:bg-transparent">
             <tr>
-              <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[30%] sm:w-[25%]">
+              <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[30%] sm:w-[20%]">
                 Title
               </th>
               <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[20%] sm:w-[15%]">
@@ -150,27 +177,35 @@ export default function Page() {
               </th>
             </tr>
           </thead>
-          <tbody className="bg-white  divide-y divide-slate-200 dark:bg-transparent dark:divide-muted">
-            {filteredItems.map((item) => (
-              <tr
-                key={`${item.title}-${item.year}`}
-                className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100"
-              >
-                <td className="px-1 sm:px-3 py-1 sm:py-2 font-semibold text-black dark:text-white truncate">
-                  {item.title}
-                </td>
-                <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
-                  {item.year}
-                </td>
-                <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground truncate">
-                  {frameworks.find((f) => f.value === item.category)?.label ||
-                    item.category}
-                </td>
-                <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground line-clamp-2">
-                  {item.description}
-                </td>
-              </tr>
-            ))}
+          <tbody className="bg-white divide-y divide-slate-200 dark:bg-transparent dark:divide-muted">
+            {filteredItems.map((item: Item) => {
+              const isLongTitle = countWords(item.title) > 15;
+
+              return (
+                <tr
+                  key={`${item.title}-${item.year}`}
+                  className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100"
+                >
+                  <td
+                    className={`px-1 sm:px-3 py-1 sm:py-2 font-semibold text-black dark:text-white ${
+                      isLongTitle ? "line-clamp-2" : "truncate"
+                    }`}
+                  >
+                    {item.title}
+                  </td>
+                  <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
+                    {item.year}
+                  </td>
+                  <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground truncate">
+                    {frameworks.find((f: Framework) => f.value === item.category)?.label ||
+                      item.category}
+                  </td>
+                  <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground line-clamp-2">
+                    {item.description}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -193,9 +228,7 @@ export default function Page() {
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block text-lg md:text-xl font-bold text-black dark:text-white truncate">
-                    <BreadcrumbLink href="#">
-                    Welcome to OTT Biriyani! 
-                    </BreadcrumbLink>
+                    <BreadcrumbLink href="#">Welcome to OTT Biriyani!</BreadcrumbLink>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
@@ -232,7 +265,7 @@ export default function Page() {
                     viewBox="0 0 256 256"
                     fill="currentColor"
                   >
-                    <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A allotted,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
+                    <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
                   </svg>
                 </button>
                 <button
