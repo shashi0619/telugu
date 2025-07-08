@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ottbiryani.com
+
+# Sitemaps
+Sitemap: https://www.ottbiryani.com/sitemap.xml
