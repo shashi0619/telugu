@@ -194,7 +194,7 @@ export default function Page() {
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block text-lg md:text-xl font-bold text-black dark:text-white truncate">
                     <BreadcrumbLink href="#">
-                      Building Your Application
+                    Welcome to OTT Biriyani! 
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                 </BreadcrumbList>
