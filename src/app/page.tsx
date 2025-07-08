@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-
 import { AppSidebar } from "@/components/app-sidebar";
 import {
   Breadcrumb,
@@ -15,7 +14,6 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
 import {
@@ -27,8 +25,6 @@ import {
   items2021,
   items2020,
 } from "@/components/data";
-
-
 
 type Category = (typeof frameworks)[number]["value"];
 type ColorClass = string;
@@ -136,47 +132,43 @@ export default function Page() {
     }
 
     return (
-      <div className="overflow-x-auto rounded-lg border border-slate-200 shadow-sm">
-        <table className="min-w-full divide-y divide-slate-200 text-slate-800 text-sm">
-          <thead className="bg-black dark:bg-transparent">
+      <div className=" overflow-x-hidden rounded-lg border border-slate-200 shadow-xl">
+        <table className="min-w-full divide-y divide-slate-200  text-slate-800 text-[10px] sm:text-sm">
+          <thead className="bg-black   dark:bg-transparent">
             <tr>
-              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[25%]">
+              <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[30%] sm:w-[25%]">
                 Title
               </th>
-              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[15%]">
-              Release Date
+              <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[20%] sm:w-[15%]">
+                Release Date
               </th>
-            
-              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[20%]">
+              <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[25%] sm:w-[20%]">
                 Category
               </th>
-              <th className="px-3 py-2 text-left text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[40%]">
+              <th className="px-1 sm:px-3 py-1 sm:py-2 text-left text-[10px] sm:text-xs font-bold text-white uppercase tracking-wider dark:text-muted-foreground w-[25%] sm:w-[40%]">
                 Description
               </th>
-              
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-slate-200 dark:bg-transparent dark:divide-muted">
+          <tbody className="bg-white  divide-y divide-slate-200 dark:bg-transparent dark:divide-muted">
             {filteredItems.map((item) => (
               <tr
                 key={`${item.title}-${item.year}`}
                 className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100"
               >
-                <td className="px-3 py-2 font-semibold text-black dark:text-white truncate">
+                <td className="px-1 sm:px-3 py-1 sm:py-2 font-semibold text-black dark:text-white truncate">
                   {item.title}
                 </td>
-                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
+                <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap">
                   {item.year}
                 </td>
-              
-                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground truncate">
+                <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground truncate">
                   {frameworks.find((f) => f.value === item.category)?.label ||
                     item.category}
                 </td>
-                <td className="px-3 py-2 text-slate-600 dark:text-muted-foreground line-clamp-2">
+                <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground line-clamp-2">
                   {item.description}
                 </td>
-               
               </tr>
             ))}
           </tbody>
@@ -195,9 +187,7 @@ export default function Page() {
       />
       <SidebarInset>
         <header className="flex flex-wrap sm:flex-nowrap sm:items-center sm:justify-between border-b px-4 py-2 gap-y-3">
-          {/* Left side: wraps into 2 rows on mobile */}
           <div className="flex flex-col gap-y-2 w-full sm:flex-row sm:items-center sm:gap-2 sm:w-auto">
-            {/* Row 1 (mobile) or left group (desktop) */}
             <div className="flex items-center gap-2">
               <SidebarTrigger />
               <Breadcrumb>
@@ -220,8 +210,6 @@ export default function Page() {
               />
               <ThemeToggle />
             </div>
-
-            {/* Row 2 (mobile only) */}
             <div className="flex items-center gap-2 sm:hidden">
               <input
                 type="text"
@@ -244,7 +232,7 @@ export default function Page() {
                     viewBox="0 0 256 256"
                     fill="currentColor"
                   >
-                    <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
+                    <path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A allotted,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z" />
                   </svg>
                 </button>
                 <button
@@ -266,8 +254,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
-          {/* Right side (desktop only): search and view toggle */}
           <div className="hidden sm:flex items-center gap-2">
             <input
               type="text"
@@ -312,7 +298,6 @@ export default function Page() {
             </div>
           </div>
         </header>
-
         <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">
           {renderItems()}
         </div>
