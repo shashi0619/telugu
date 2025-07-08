@@ -25,6 +25,11 @@ import {
   items2021,
   items2020,
 } from "@/components/data";
+import { Head } from "next/document";
+
+<Head>
+  <meta name="google-site-verification" content="XYZ" />
+</Head>
 
 type Category = (typeof frameworks)[number]["value"];
 type ColorClass = string;
