@@ -24,8 +24,10 @@ export const frameworks: Framework[] = [
 export const items2025: Item[] = [
   { title: "Thammudu", description: "Action Thriller film", category: "netflix", year: "Coming soon", image: "/images/Thammudu.jpeg" },
   { title: "Kuberaa", description: "Crime Thriller", category: "amazon-prime", year: "Coming soon", image: "/images/Kubera.jpg" },
-  { title: "Bhairavam", description: "Thriller Action", category: "zee5", year: "Coming soon", image: "/images/bhairavam.jpeg" },
-  { title: "8 Vasantalu", description: "Romance", category: "netflix", year: "11-07-2025", image: "/images/8Vasantalu .jpeg" },
+  { title: "Bhairavam", description: "Thriller Action", category: "zee5", year: "18 Jul 2025", image: "/images/bhairavam.jpeg" },
+  { title: "Narivetta", description: "thriller", category: "sony-liv", year: "11-07-2025", image: "/images/Narivetta.jpeg" },
+  { title: "Mr.Rani", description: "comedy", category: "lionsgate-play", year: "11-07-2025", image: "/images/MR.RANI.jpeg" },
+ { title: "8 Vasantalu", description: "Romance", category: "netflix", year: "11-07-2025", image: "/images/8Vasantalu .jpeg" },
   { title: "Sri Sri Sri Raajavaru", description: "Film", category: "aha", year: "04-07-2025", image: "/images/SriRaajavaru .jpeg" },
   { title: "Uppu Kappurambu", description: "Film", category: "amazon-prime", year: "04-07-2025", image: "/images/UppuKappurambu .jpeg" },
   { title: "Jagamerigina Satyam", description: "Film", category: "sun-nxt", year: "04-07-2025", image: "/images/JagameriginaSatyam .jpeg" },

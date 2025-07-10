@@ -41,7 +41,7 @@ const categoryColors: Record<Category | string, ColorClass> = {
   zee5: "bg-teal-100 hover:bg-teal-200 active:bg-teal-200",
   "etv-win": "bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-200",
   "lionsgate-play": "bg-pink-100 hover:bg-pink-200 active:bg-pink-200",
-  "bms-stream": "bg-yellow-100 hover:bg-yellow-200 active:bg-yellow-200",
+"bms-stream": "bg-white hover:bg-yellow-100 active:bg-yellow-200",
   "disney-hotstar": "bg-blue-200 hover:bg-blue-300 active:bg-blue-300",
   jiocinema: "bg-red-200 hover:bg-red-300 active:bg-red-300",
   "hungama-play": "bg-green-200 hover:bg-green-300 active:bg-green-300",
