@@ -22,8 +22,7 @@ import {
   items2024,
   items2023,
   items2022,
-  items2021,
-  items2020,
+
 } from "@/components/data";
 
 
