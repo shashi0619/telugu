@@ -158,10 +158,7 @@ export const items2025: Item[] = [
 ];
 
 export const items2024: Item[] = [
-  { title: "Series B", description: "Crime drama series", category: "netflix", year: "15-03-2024", image: "https://placehold.co/100x100?text=Series+B" },
-  { title: "Series H", description: "Fantasy epic", category: "netflix", year: "20-06-2024", image: "https://placehold.co/100x100?text=Series+H" },
-  { title: "Series N", description: "Sci-fi series", category: "netflix", year: "10-09-2024", image: "https://placehold.co/100x100?text=Series+N" },
-  { title: "Series T", description: "Documentary series", category: "netflix", year: "05-12-2024", image: "https://placehold.co/100x100?text=Series+T" },
+  
   { title: "KCR (Keshava Chandra Ramavath)", description: "Film", category: "aha", year: "28-12-2024", image: "https://placehold.co/100x100?text=KCR" },
   { title: "RRR Behind And Beyond", description: "Documentary", category: "netflix", year: "27-12-2024", image: "https://placehold.co/100x100?text=RRR+Behind+And+Beyond" },
   { title: "Rahasyam Idam Jagath", description: "Film", category: "etv-win", year: "26-12-2024", image: "https://placehold.co/100x100?text=Rahasyam+Idam+Jagath" },
