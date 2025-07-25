@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Latest Telugu OTT release dates",
-  description: "Latest Telugu OTT release dates",
+  title: "Latest Telugu OTT release dates 2025",
+  description: "Latest Telugu OTT release dates 2025",
 };
 
 export default function RootLayout({
