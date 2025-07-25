@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Latest Telugu OTT release dates 2025",
-  description: "Latest Telugu OTT release dates 2025",
+  description: "Telugu OTT Updates | Latest Releases, Reviews & Watchlist – OTT Biryani",
 };
 
 export default function RootLayout({
