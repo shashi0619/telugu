@@ -142,7 +142,7 @@ export const items2025: Item[] = [
   { title: "Razakar", description: "Action/Drama", category: "aha", year: "24-01-2025", image: "/images/Razakar.jpeg" },
   { title: "Sivarapalli", description: "Web Series", category: "amazon-prime", year: "24-01-2025", image: "/images/Sivarapalli.jpg" },
   { title: "Fear", description: "psychological thriller", category: "amazon-prime", year: "23-01-2025", image: "/images/Fear.jpg" },
-  { title: "Wife Off", description: "Crime Thriller", category: "etv-win", year: "23-01-2025", image: "/images/WifeOff.jpeg" },
+  { title: "Wife Off", description: "Crime Thriller", category: "etv-win", year: "23-01-2025", image: "/images/WifeOfff.jpeg" },
   { title: "Barroz ", description: "Action, Adventure", category: "jiohotstar", year: "22-01-2025", image: "/images/Barroz.jpeg" },
   { title: "Vidudala Part 2", description: "Action/Drama", category: "amazon-prime", year: "19-01-2025", image: "/images/Vidudala.jpeg" },
   { title: "Ramnagar Bunny", description: "Romance Comedy", category: "aha", year: "17-01-2025", image: "/images/RamnagarBunny.jpeg" },
