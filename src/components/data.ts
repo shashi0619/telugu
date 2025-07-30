@@ -29,10 +29,18 @@ export const frameworks: Framework[] = [
 ];
 
 export const items2025: Item[] = [
+  
+  { title: "Arabia Kadali	", description: "Web Series", category: "amazon-prime", year: "08-09-2025", image: "/images/ArabiaKadali.jpeg" },
+  { title: "Mayasabha", description: "Political", category: "sony-liv", year: "07-08-2025", image: "/images/Mayasabha.jpeg" },
+
   { title: "Thammudu", description: "Action Thriller film", category: "netflix", year: "01-08-2025", image: "/images/Thammudu.jpeg" },
+
   { title: "Kannappa", description: "Action Fantasy", category: "amazon-prime", year: "Coming Soon", image: "/images/Kannappa.jpeg" },
-  { title: "3BHK", description: "Family Drama", category: "amazon-prime", year: "Coming Soon", image: "/images/3BHK.jpeg" },
-  { title: "Memiddaram", description: "love story", category: "etv-win", year: "27-07-2025", image: "/images/Memiddaram.jpeg" },
+  { title: "3BHK", description: "Family Drama", category: "amazon-prime", year: "01-08-2025", image: "/images/3BHK.jpeg" },
+  { title: "Red Sandal Wood	", description: "Crime Thriller", category: "etv-win", year: "31-07-2025", image: "/images/RedSandalWood.jpeg" },
+  { title: "Solo Boy", description: "Romantic", category: "aha", year: "25-07-2025", image: "/images/SoloBoy.jpeg" },
+  { title: "Memiddaram", description: "Love Story", category: "etv-win", year: "27-07-2025", image: "/images/Memiddaram.jpeg" },
+  { title: "Sarzameen", description: "Thriller/Drama", category: "jiohotstar", year: "25-07-2025", image: "/images/Sarzameen.jpeg" },
   { title: "Rangeen", description: "Web Series", category: "amazon-prime", year: "25-07-2025", image: "/images/Rangeen.jpeg" },
 
   { title: "ShowTime", description: "Crime,Thriller", category: "sun-nxt", year: "25-07-2025", image: "/images/ShowTime.jpeg" },
