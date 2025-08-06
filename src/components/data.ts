@@ -106,7 +106,7 @@ export const items2025: Item[] = [
     description:
       "Kannappa is a Telugu mythological epic fantasy based on the legendary warrior Thinnadu, who transforms from a tribal hunter into a devout follower of Lord Shiva through faith, sacrifice, and devotion.",
     category: "amazon-prime",
-    year: "27‑06‑2025", // Theatrical release date; OTT likely later in July 2025
+    year: "Cooming Soon", // Theatrical release date; OTT likely later in July 2025
     image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/Kannappa.jpeg",
     trailerUrl: "https://www.youtube.com/watch?v=3HqKCPTOHKw",
     genre: "Action, Fantasy, Mythological",
