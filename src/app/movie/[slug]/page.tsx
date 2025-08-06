@@ -1,15 +1,13 @@
-import { items2025,items2024, items2023,items2022 } from "@/components/data";
-
+import { items2025, items2024, items2023, items2022 } from "@/components/data";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import SafeImage from "@/components/SafeImage";
 
+// Define Props type with params as a Promise
 interface Props {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 }
-/* Removed duplicate default export MovieDetailsWrapper to resolve redeclaration error. */
+
 // Server-side SEO metadata generator
 export async function generateMetadata({
   params,
@@ -24,9 +22,6 @@ export async function generateMetadata({
   const movie = allItems.find(
     (item) => item.title.replace(/\s+/g, " ").trim().toLowerCase() === decodedSlug
   );
-
-  
-
 
   if (!movie) {
     return {
@@ -66,11 +61,16 @@ export async function generateMetadata({
 }
 
 // Server component
-export default function MovieDetailsPage({ params }: Props) {
-  const allItems = [...items2025, ...items2024, ...items2023, ...items2022];
-  const decodedSlug = decodeURIComponent(params.slug)
+export default async function MovieDetailsPage({ params }: Props) {
+  // Await params to get the slug
+  const { slug } = await params;
+
+  const decodedSlug = decodeURIComponent(slug)
     .replace(/-/g, " ")
     .toLowerCase();
+
+  // Search across all years for the movie
+  const allItems = [...items2025, ...items2024, ...items2023, ...items2022];
   const movie = allItems.find(
     (item) => item.title.replace(/\s+/g, " ").trim().toLowerCase() === decodedSlug
   );
@@ -80,66 +80,64 @@ export default function MovieDetailsPage({ params }: Props) {
   return (
     <div className="p-6 max-w-4xl mx-auto space-y-6">
       <div className="bg-blue-50 rounded-md p-4">
-      <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
-      <SafeImage
-        src={movie.image}
-        alt={movie.title}
-        className="w-full h-96 object-cover rounded-md mb-6"
-      />
+        <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
+        <SafeImage
+          src={movie.image}
+          alt={movie.title}
+          className="w-full h-96 object-cover rounded-md mb-6"
+        />
       </div>
 
       <div className="bg-green-50 rounded-md p-4">
-      <p className="text-md text-gray-500">
-        <strong>Release Date:</strong> {movie.year}
-      </p>
-      <p className="text-md text-gray-500">
-        <strong>Genre:</strong> {movie.genre}
-      </p>
+        <p className="text-md text-gray-500">
+          <strong>Release Date:</strong> {movie.year}
+        </p>
+        <p className="text-md text-gray-500">
+          <strong>Genre:</strong> {movie.genre}
+        </p>
       </div>
 
       <div className="bg-yellow-50 rounded-md p-4">
-      <p className="text-md text-gray-500">
-        <strong>Cast:</strong> {movie.cast}
-      </p>
+        <p className="text-md text-gray-500">
+          <strong>Cast:</strong> {movie.cast}
+        </p>
       </div>
 
       <div className="bg-purple-50 rounded-md p-4">
-      <p className="text-lg text-gray-700 mb-2">
-        <strong>Description:</strong> {movie.description}
-      </p>
+        <p className="text-lg text-gray-700 mb-2">
+          <strong>Description:</strong> {movie.description}
+        </p>
       </div>
 
       <div className="bg-pink-50 rounded-md p-4">
-      <p className="text-md text-gray-500">
-        <strong>Category:</strong> {movie.category}
-      </p>
-      <p className="text-md text-gray-500">
-        <strong>Tags:</strong> {movie.tags}
-      </p>
+        <p className="text-md text-gray-500">
+          <strong>Category:</strong> {movie.category}
+        </p>
+        <p className="text-md text-gray-500">
+          <strong>Tags:</strong> {movie.tags}
+        </p>
       </div>
 
       <div className="bg-orange-50 rounded-md p-4">
-      <p className="text-md text-gray-500">
-        <strong>Trailer:</strong>
-        {movie.trailerUrl ? (
-        <div className="mt-2 flex justify-center">
-          <iframe
-          width="75%"
-          height="315"
-          src={movie.trailerUrl.replace("watch?v=", "embed/")}
-          title={`${movie.title} Trailer`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="rounded-lg"
-          ></iframe>
-        </div>
-        ) : (
-        <span> Not available</span>
-        )}
-      </p>
+        <p className="text-md text-gray-500">
+          <strong>Trailer:</strong>
+          {movie.trailerUrl ? (
+            <div className="mt-2 flex justify-center">
+              <iframe
+                width="75%"
+                height="315"
+                src={movie.trailerUrl.replace("watch?v=", "embed/")}
+                title={`${movie.title} Trailer`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="rounded-lg"
+              ></iframe>
+            </div>
+          ) : (
+            <span> Not available</span>
+          )}
+        </p>
       </div>
     </div>
-
-    
   );
 }
