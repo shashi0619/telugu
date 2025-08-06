@@ -543,825 +543,3381 @@ export const items2025: Item[] = [
     ],
   },
 
-  {
-    title: "Uppu Kappurambu",
-    description: "Genre Comedy, Drama",
-    category: "amazon-prime",
-    year: "04-07-2025",
-    image: "/images/UppuKappurambu .jpeg",
-  },
-  {
-    title: "Jagamerigina Satyam",
-    description: "Thriller/Romance",
-    category: "sun-nxt",
-    year: "04-07-2025",
-    image: "/images/JagameriginaSatyam .jpeg",
-  },
-  {
-    title: "Usha Parinayam",
-    description: "Romance/Drama",
-    category: "bms-stream",
-    year: "04-07-2025",
-    image: "/images/UshaParinayam .jpeg",
-  },
-  {
-    title: "Thug Life ",
-    description: "Action/Drama",
-    category: "netflix",
-    year: "03-07-2025",
-    image: "/images/ThugLife.jpg",
-  },
-  {
-    title: "AIR",
-    description: "Web Series",
-    category: "etv-win",
-    year: "03-07-2025",
-    image: "/images/AIR.jpeg",
-  },
-  {
-    title: "23 (Iravai Moodu)",
-    description: "Thriller/Drama",
-    category: "amazon-prime",
-    year: "27-06-2025",
-    image: "/images/23 (Iravai Moodu).jpeg",
-  },
-  {
-    title: "Oka Pathakam Prakaaram",
-    description: "Thriller",
-    category: "sun-nxt",
-    year: "27-06-2025",
-    image: "/images/OkaPathakamPrakaaram .jpeg",
-  },
-  {
-    title: "Saaree",
-    description: "Psychological Thriller",
-    category: "lionsgate-play",
-    year: "27-06-2025",
-    image: "/images/Saaree.jpeg",
-  },
-  {
-    title: "Viraatapalem",
-    description: "WebSeries",
-    category: "zee5",
-    year: "27-06-2025",
-    image: "/images/Viraatapalem.jpeg",
-  },
-  {
-    title: "Oka Brundavanam",
-    description: "Action Adventure",
-    category: "etv-win",
-    year: "20-06-2025",
-    image: "/images/OkaBrundavanam .jpeg",
-  },
-  {
-    title: "Ghatikachalam",
-    description: "Horror, Thriller",
-    category: "amazon-prime",
-    year: "20-06-2025",
-    image: "/images/Ghatikachalam.jpeg",
-  },
-  {
-    title: "Alappuzha Gymkhana ",
-    description: "Sport/Comedy",
-    category: "aha",
-    year: "20-06-2025",
-    image: "/images/AlappuzhaGymkhana.jpeg",
-  },
-  {
-    title: "Kolla ",
-    description: "Thriller",
-    category: "etv-win",
-    year: "19-06-2025",
-    image: "/images/Kolla.jpeg",
-  },
-  {
-    title: "Haddhu Ledhu Raa",
-    description: "Action",
-    category: "amazon-prime",
-    year: "19-06-2025",
-    image: "/images/HaddhuLedhuRaa.jpeg",
-  },
-  {
-    title: "Subham",
-    description: "Horror Comedy",
-    category: "jiohotstar",
-    year: "13-06-2025",
-    image: "/images/Subham.jpeg",
-  },
-  {
-    title: "Eleven ",
-    description: "Crime Thriller",
-    category: "amazon-prime",
-    year: "13-06-2025",
-    image: "/images/Eleven.jpeg",
-  },
-  {
-    title: "Blind Spot",
-    description: "Thriller",
-    category: "amazon-prime",
-    year: "13-06-2025",
-    image: "/images/BlindSpot.jpeg",
-  },
-  {
-    title: "DD Next Level ",
-    description: "Horror/Comedy",
-    category: "zee5",
-    year: "13-06-2025",
-    image: "/images/DDNextLevel.jpeg",
-  },
-  {
-    title: "Dear Uma",
-    description: "Romantic/Drama",
-    category: "sun-nxt",
-    year: "13-06-2025",
-    image: "/images/DearUma.jpeg",
-  },
-  {
-    title: "Ace",
-    description: "Crime Thriller",
-    category: "amazon-prime",
-    year: "13-06-2025",
-    image: "/images/Ace.jpeg",
-  },
-  {
-    title: "Rana Naidu S2",
-    description: "WebSeries",
-    category: "netflix",
-    year: "13-06-2025",
-    image: "/images/RanaNaiduS2 .jpeg",
-  },
-  {
-    title: "Karthika Missing Case",
-    description: "Thriller",
-    category: "aha",
-    year: "13-06-2025",
-    image: "/images/KarthikaMissingCase .jpeg",
-  },
-  {
-    title: "Dear Daddy",
-    description: "Emotional Drama",
-    category: "etv-win",
-    year: "08-06-2025",
-    image: "/images/DearDaddy.jpeg",
-  },
-  {
-    title: "Single",
-    description: "Romantic Comedy",
-    category: "amazon-prime",
-    year: "06-06-2025",
-    image: "/images/Single.jpeg",
-  },
-  {
-    title: "Devika & Danny",
-    description: "Web Series",
-    category: "jiohotstar",
-    year: "06-06-2025",
-    image: "/images/Devika&Danny .jpeg",
-  },
-  {
-    title: "Pelli Kani Prasad",
-    description: "Comedy Drama",
-    category: "etv-win",
-    year: "05-06-2025",
-    image: "/images/PelliKaniPrasad .jpeg",
-  },
-  {
-    title: "Jigel",
-    description: "Action/Drama",
-    category: "sun-nxt",
-    year: "04-06-2025",
-    image: "/images/Jigel.jpeg",
-  },
-  {
-    title: "Tourist Family ",
-    description: "Comedy/Drama",
-    category: "jiohotstar",
-    year: "02-06-2025",
-    image: "/images/TouristFamily.jpeg",
-  },
-  {
-    title: "Retro ",
-    description: "Action Thriller ",
-    category: "netflix",
-    year: "30-05-2025",
-    image: "/images/Retro.jpeg",
-  },
-  {
-    title: "Thudarum ",
-    description: "Thriller/Drama",
-    category: "jiohotstar",
-    year: "30-05-2025",
-    image: "/images/Thudarum.jpeg",
-  },
-  {
-    title: "HIT: The Third Case",
-    description: "Crime, Mystery, Thriller",
-    category: "netflix",
-    year: "29-05-2025",
-    image: "/images/HIT.jpeg",
-  },
-  {
-    title: "Chaurya Paatham",
-    description: "Comedy Crime ",
-    category: "amazon-prime",
-    year: "27-05-2025",
-    image: "/images/ChauryaPaatham.jpeg",
-  },
-  {
-    title: "Tantra",
-    description: "Horror ThrillerDrama",
-    category: "amazon-prime",
-    year: "24-05-2025",
-    image: "/images/Tantra.jpeg",
-  },
-  {
-    title: "Sarangapani Jathakam",
-    description: "romantic drama",
-    category: "amazon-prime",
-    year: "23-05-2025",
-    image: "/images/SarangapaniJathakam.jpeg",
-  },
-  {
-    title: "#Viral Prapancham",
-    description: "Thriller,Mystery",
-    category: "sun-nxt",
-    year: "23-05-2025",
-    image: "/images/ViralPrapancham.jpeg",
-  },
-  {
-    title: "Pendulum ",
-    description: "Thriller",
-    category: "etv-win",
-    year: "22-05-2025",
-    image: "/images/Pendulum.jpeg",
-  },
-  {
-    title: "Bhavani Ward 1997",
-    description: "horror",
-    category: "amazon-prime",
-    year: "20-05-2025",
-    image: "/images/BhavaniWard.jpeg",
-  },
-  {
-    title: "Arjun Son Of Vyjayanthi",
-    description: "Action",
-    category: "amazon-prime",
-    year: "16-05-2025",
-    image: "/images/ArjunSonOfVyjayanthi.jpeg",
-  },
-  {
-    title: "Amruthangamaya",
-    description: "action-romantic drama",
-    category: "bms-stream",
-    year: "16-05-2025",
-    image: "/images/Amruthangamaya.jpeg",
-  },
-  {
-    title: "Anaganaga",
-    description: "family drama",
-    category: "etv-win",
-    year: "15-05-2025",
-    image: "/images/Anaganaga.jpeg",
-  },
-  {
-    title: "Jolly O Gymkhana ",
-    description: "Comedy",
-    category: "aha",
-    year: "15-05-2025",
-    image: "/images/JollyOGymkhana.jpeg",
-  },
-  {
-    title: "Robinhood",
-    description: "action comedy",
-    category: "zee5",
-    year: "10-05-2025",
-    image: "/images/Robinhood.jpg",
-  },
-  {
-    title: "Karna Pisachi",
-    description: "suspense thriller",
-    category: "amazon-prime",
-    year: "10-05-2025",
-    image: "/images/KarnaPisachi.jpg",
-  },
-  {
-    title: "Mercy Killing",
-    description: "Action/Romance",
-    category: "amazon-prime",
-    year: "10-05-2025",
-    image: "/images/MercyKilling.jpeg",
-  },
-  {
-    title: "Kaalamega Karigindhi",
-    description: "Romance",
-    category: "sun-nxt",
-    year: "09-05-2025",
-    image: "/images/KaalamegaKarigindhi1.jpeg",
-  },
-  {
-    title: "Odela 2",
-    description: "Thriller",
-    category: "amazon-prime",
-    year: "08-05-2025",
-    image: "/images/Odela2.jpeg",
-  },
-  {
-    title: "Jack",
-    description: "spy action comedy",
-    category: "netflix",
-    year: "08-05-2025",
-    image: "/images/Jack.jpeg",
-  },
-  {
-    title: "Good Bad Ugly ",
-    description: "Action",
-    category: "netflix",
-    year: "08-05-2025",
-    image: "/images/GoodBadUgly.jpg",
-  },
-  {
-    title: "Akkada Ammayi Ikkada Abbayi",
-    description: "comedy drama",
-    category: "etv-win",
-    year: "08-05-2025",
-    image: "/images/AkkadaAmmayiIkkadaAbbai1.jpg",
-  },
-  {
-    title: "28 Degree Celsius",
-    description: " Romance/Thriller",
-    category: "amazon-prime",
-    year: "29-04-2025",
-    image: "/images/28DegreeCelsius.jpeg",
-  },
-  {
-    title: "MAD Square",
-    description: "Comedy,Drama",
-    category: "netflix",
-    year: "25-04-2025",
-    image: "/images/MADSquare1.jpeg",
-  },
-  {
-    title: "Yaathisai",
-    description: "Action/Drama",
-    category: "aha",
-    year: "25-04-2025",
-    image: "/images/Yaathisai.jpeg",
-  },
-  {
-    title: "Mazaka",
-    description: "Romantic comedy",
-    category: "amazon-prime",
-    year: "25-04-2025",
-    image: "/images/Mazaka.jpeg",
-  },
-  {
-    title: "Veera Dheera Soora",
-    description: "Action/Drama",
-    category: "amazon-prime",
-    year: "24-04-2025",
-    image: "/images/VeeraDheeraSoora.jpeg",
-  },
-  {
-    title: "L2: Empuraan ",
-    description: "Action/Thriller",
-    category: "jiohotstar",
-    year: "24-04-2025",
-    image: "/images/L2- Empuraan.jpeg",
-  },
-  {
-    title: "Guardian",
-    description: "horror",
-    category: "aha",
-    year: "24-04-2025",
-    image: "/images/Guardian1.jpeg",
-  },
-  {
-    title: "Pranayam 1947",
-    description: "Drama",
-    category: "aha",
-    year: "24-04-2025",
-    image: "/images/Pranayam1947.jpeg",
-  },
-  {
-    title: "Chhaava ",
-    description: "History movie",
-    category: "netflix",
-    year: "12-04-2025",
-    image: "/images/Chhavva.jpeg",
-  },
-  {
-    title: "Court",
-    description: "legal drama",
-    category: "netflix",
-    year: "11-04-2025",
-    image: "/images/Court.jpeg",
-  },
-  {
-    title: "Shanmukha",
-    description: "Thriller/Fantasy",
-    category: "aha",
-    year: "11-04-2025",
-    image: "/images/Shanmukha.jpeg",
-  },
-  {
-    title: "Racharikam",
-    description: "Political drama",
-    category: "lionsgate-play",
-    year: "11-04-2025",
-    image: "/images/Racharikam.jpg",
-  },
-  {
-    title: "Tuk Tuk",
-    description: "Drama Fantasy",
-    category: "etv-win",
-    year: "10-04-2025",
-    image: "/images/TukTuk.jpeg",
-  },
-  {
-    title: "Laxmi Kataksham",
-    description: "political thriller",
-    category: "aha",
-    year: "04-04-2025",
-    image: "/images/LaxmiKataksham.jpeg",
-  },
-  {
-    title: "14 Days Girlfriend Intlo",
-    description: "Romantic comedy",
-    category: "amazon-prime",
-    year: "04-04-2025",
-    image: "/images/14DaysGirlfriendIntlo.jpeg",
-  },
-  {
-    title: "Hometown",
-    description: "Web Series",
-    category: "aha",
-    year: "04-04-2025",
-    image: "/images/Hometown.jpeg",
-  },
-  {
-    title: "Inti Number 13",
-    description: "Horror",
-    category: "amazon-prime",
-    year: "04-04-2025",
-    image: "/images/IntiNumber13.jpeg",
-  },
-  {
-    title: "Jaabilamma Neeku Antha K...",
-    description: "Comedy, Romantic",
-    category: "amazon-prime",
-    year: "31-03-2025",
-    image: "/images/JaabilammaNeekuAnthaKopama.jpeg",
-  },
-  {
-    title: "Madhushala",
-    description: "crime drama",
-    category: "etv-win",
-    year: "31-03-2025",
-    image: "/images/Madhushala.webp",
-  },
-  {
-    title: "Mazaka",
-    description: "Romantic comedy",
-    category: "zee5",
-    year: "28-03-2025",
-    image: "/images/Mazaka.jpeg",
-  },
-  {
-    title: "Aghathiyaa",
-    description: "Horror/Thriller",
-    category: "sun-nxt",
-    year: "28-03-2025",
-    image: "/images/Aghathiyaa.jpeg",
-  },
-  {
-    title: "Return of the Dragon",
-    description: "Romance/Comedy",
-    category: "netflix",
-    year: "21-03-2025",
-    image: "/images/Dragon.avif",
-  },
-  {
-    title: "Gandhi Tatha Chettu",
-    description: "Drama ",
-    category: "amazon-prime",
-    year: "21-03-2025",
-    image: "/images/GandhiTathaChettu.jpeg",
-  },
-  {
-    title: "Brahma Anandam",
-    description: "comedy drama",
-    category: "aha",
-    year: "20-03-2025",
-    image: "/images/BrahmaAnandam.jpeg",
-  },
-  {
-    title: "Officer On Duty",
-    description: "Crime Thriller",
-    category: "netflix",
-    year: "20-03-2025",
-    image: "/images/OfficerOnDuty.jpeg",
-  },
-  {
-    title: "Jithender Reddy",
-    description: "Action Drama",
-    category: "etv-win",
-    year: "20-03-2025",
-    image: "/images/JithenderReddy1.jpeg",
-  },
-  {
-    title: "Rekhachithram ",
-    description: "Thriller/Crime",
-    category: "aha",
-    year: "14-03-2025",
-    image: "/images/Rekhachithram.jpeg",
-  },
-  {
-    title: "Ramam Raghavam",
-    description: "Drama Thriller",
-    category: "etv-win",
-    year: "14-03-2025",
-    image: "/images/RamamRaghavam.png",
-  },
-  {
-    title: "Agent",
-    description: "Action/Thriller",
-    category: "sony-liv",
-    year: "14-03-2025",
-    image: "/images/Agent.jpeg",
-  },
-  {
-    title: "Hathya",
-    description: "Political Crime Thriller ",
-    category: "amazon-prime",
-    year: "12-03-2025",
-    image: "/images/Hathya.jpeg",
-  },
-  {
-    title: "Laila",
-    description: "Action Comedy",
-    category: "amazon-prime",
-    year: "09-03-2025",
-    image: "/images/Laila.jpeg",
-  },
-  {
-    title: "Thandel",
-    description: "Action/Romance",
-    category: "netflix",
-    year: "07-03-2025",
-    image: "/images/Thandel.jpeg",
-  },
-  {
-    title: "Manamey",
-    description: "Romantic Comedy",
-    category: "amazon-prime",
-    year: "07-03-2025",
-    image: "/images/Manamey.jpeg",
-  },
-  {
-    title: "Baapu",
-    description: "Comedy,Drama",
-    category: "jiohotstar",
-    year: "07-03-2025",
-    image: "/images/Baapu.jpeg",
-  },
-  {
-    title: "Rewind",
-    description: "Thriller ",
-    category: "lionsgate-play",
-    year: "07-03-2025",
-    image: "/images/Rewind.jpg",
-  },
-  {
-    title: "Pattudala",
-    description: "Action/Thriller",
-    category: "netflix",
-    year: "03-03-2025",
-    image: "/images/Pattudala.jpeg",
-  },
-  {
-    title: "Sankranthiki Vasthunam",
-    description: "Action Comedy Romantic",
-    category: "zee5",
-    year: "01-03-2025",
-    image: "/images/SankranthikiVasthunam.jpeg",
-  },
-  {
-    title: "Madraskaaran ",
-    description: "Action, Thriller ",
-    category: "aha",
-    year: "26-02-2025",
-    image: "/images/Madraskaaran.jpeg",
-  },
-  {
-    title: "Daaku Maharaaj",
-    description: "Action",
-    category: "netflix",
-    year: "21-02-2025",
-    image: "/images/DaakuMaharaaj.jpeg",
-  },
-  {
-    title: "Sammelanam",
-    description: "Romantic Comedy",
-    category: "etv-win",
-    year: "21-02-2025",
-    image: "/images/Sammelanam.jpeg",
-  },
-  {
-    title: "Marco (Telugu)",
-    description: "Action",
-    category: "aha",
-    year: "21-02-2025",
-    image: "/images/Marco.jpeg",
-  },
-  {
-    title: "Bhairathi Ranagal ",
-    description: "Action/Drama",
-    category: "aha",
-    year: "13-02-2025",
-    image: "/images/BhairathiRanagal.jpeg",
-  },
-  {
-    title: "Kadhalikka Neramillai",
-    description: "Romantic Comedy",
-    category: "netflix",
-    year: "11-02-2025",
-    image: "/images/KadhalikkaNeramillai.jpeg",
-  },
-  {
-    title: "Game Changer",
-    description: "Action/Thriller",
-    category: "amazon-prime",
-    year: "07-02-2025",
-    image: "/images/GameChanger.jpeg",
-  },
-  {
-    title: "Vivekanandan Viral",
-    description: "Comedy Drama",
-    category: "aha",
-    year: "07-02-2025",
-    image: "/images/VivekanandanViral.jpeg",
-  },
-  {
-    title: "Kobali",
-    description: "Crime Drama",
-    category: "jiohotstar",
-    year: "04-02-2025",
-    image: "/images/Kobali.jpeg",
-  },
-  {
-    title: "Dark",
-    description: "Mystery Thriller",
-    category: "amazon-prime",
-    year: "03-02-2025",
-    image: "/images/Dark.jpeg",
-  },
-  {
-    title: "Identity",
-    description: "Thriller",
-    category: "zee5",
-    year: "31-01-2025",
-    image: "/images/Identity.jpg",
-  },
-  {
-    title: "Dhoom Dhaam",
-    description: "Family, Romantic",
-    category: "amazon-prime",
-    year: "31-01-2025",
-    image: "/images/DhoomDhaam.jpeg",
-  },
-  {
-    title: "Coffee With A Killer",
-    description: "Comedy thriller",
-    category: "aha",
-    year: "31-01-2025",
-    image: "/images/CoffeeWithAKiller.avif",
-  },
-  {
-    title: "Pushpa 2 The Rule",
-    description: "Action/Thriller",
-    category: "netflix",
-    year: "30-01-2025",
-    image: "/images/Pushpa2.jpeg",
-  },
-  {
-    title: "Pothugadda",
-    description: "Political thriller",
-    category: "etv-win",
-    year: "30-01-2025",
-    image: "/images/Pothugadda.jpeg",
-  },
-  {
-    title: "Srikakulam Sherlockholmes",
-    description: "Comedy/Mystery",
-    category: "etv-win",
-    year: "24-01-2025",
-    image: "/images/SrikakulamSherlockholmes.webp",
-  },
-  {
-    title: "Razakar",
-    description: "Action/Drama",
-    category: "aha",
-    year: "24-01-2025",
-    image: "/images/Razakar.jpeg",
-  },
-  {
-    title: "Sivarapalli",
-    description: "Web Series",
-    category: "amazon-prime",
-    year: "24-01-2025",
-    image: "/images/Sivarapalli.jpg",
-  },
-  {
-    title: "Fear",
-    description: "psychological thriller",
-    category: "amazon-prime",
-    year: "23-01-2025",
-    image: "/images/Fear.jpg",
-  },
-  {
-    title: "Wife Off",
-    description: "Crime Thriller",
-    category: "etv-win",
-    year: "23-01-2025",
-    image: "/images/WifeOfff.jpeg",
-  },
-  {
-    title: "Barroz ",
-    description: "Action, Adventure",
-    category: "jiohotstar",
-    year: "22-01-2025",
-    image: "/images/Barroz.jpeg",
-  },
-  {
-    title: "Vidudala Part 2",
-    description: "Action/Drama",
-    category: "amazon-prime",
-    year: "19-01-2025",
-    image: "/images/Vidudala.jpeg",
-  },
-  {
-    title: "Ramnagar Bunny",
-    description: "Romance Comedy",
-    category: "aha",
-    year: "17-01-2025",
-    image: "/images/RamnagarBunny.jpeg",
-  },
-  {
-    title: "Mokshapatam",
-    description: "Crime/Thriller",
-    category: "aha",
-    year: "14-01-2025",
-    image: "/images/Mokshapatam.jpg",
-  },
-  {
-    title: "Sookshmadarshini",
-    description: "Thriller/Mystery",
-    category: "jiohotstar",
-    year: "11-01-2025",
-    image: "/images/Sookshmadarshini.jpeg",
-  },
-  {
-    title: "Miss You",
-    description: "Romance Comedy",
-    category: "amazon-prime",
-    year: "10-01-2025",
-    image: "/images/MissYou.jpg",
-  },
-  {
-    title: "Bachhala Malli",
-    description: "Tragedy Drama ",
-    category: "amazon-prime",
-    year: "10-01-2025",
-    image: "/images/BachhalaMalli.jpg",
-  },
-  {
-    title: "Hide N Seek",
-    description: "Crime,Thriller ",
-    category: "aha",
-    year: "10-01-2025",
-    image: "/images/HideNSeek.jpeg",
-  },
-  {
-    title: "Neeli Megha Shyama",
-    description: "Comedy/Romance",
-    category: "aha",
-    year: "09-01-2025",
-    image: "/images/NeeliMeghaShyama.webp",
-  },
-  {
-    title: "Breakout",
-    description: "Thriller",
-    category: "etv-win",
-    year: "09-01-2025",
-    image: "/images/Breakout.jpeg",
-  },
-  {
-    title: "Love Reddy",
-    description: "Romantic Drama",
-    category: "aha",
-    year: "03-01-2025",
-    image: "/images/LoveReddy.jpg",
-  },
+ {
+  title: "Uppu Kappurambu",
+  description: "Uppu Kappurambu is a satirical Telugu comedy‑drama set in a quirky rural village where the graveyard runs out of burial space. The new village head (Keerthy Suresh) and a gravedigger (Suhas) attempt to resolve the crisis, sparking humorous yet heartfelt reflections on tradition, leadership, and community.",
+  category: "amazon-prime",
+  year: "04‑07‑2025", // OTT premiere on Amazon Prime Video
+  image: "/images/UppuKappurambu.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=PvtdFWv1d9k",
+  genre: "Comedy, Drama",
+  cast: [
+    "Keerthy Suresh",
+    "Suhas",
+    "Babu Mohan",
+    "Shatru",
+    "Talluri Rameshwari",
+    "Subhalekha Sudhakar",
+    "Duvvasi Mohan"
+  ],
+  tags: [
+    "Uppu Kappurambu 2025",
+    "Keerthy Suresh",
+    "Uppu Kappurambu Suhas",
+    "Telugu Amazon Prime movies",
+    "Uppu Kappurambu OTT release",
+    "Telugu satirical comedy drama",
+    "Uppu Kappurambu plot summary",
+    "Uppu Kappurambu village satire"
+  ]
+},
+
+  {
+  title: "Jagamerigina Satyam",
+  description: "A gripping Telugu romantic thriller set in 1994 Telangana, where an innocent farmer’s son falls in love with the sarpanch’s niece—igniting jealousy, betrayal, and a false murder accusation.",
+  category: "sun-nxt",
+  year: "04‑07‑2025", // OTT premiere on Sun NXT
+  image: "/images/JagameriginaSatyam.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=rDoWO6XzxzY",
+  genre: "Romance, Thriller, Drama",
+  cast: [
+    "Avinash Varma",
+    "Aadya Reddy",
+    "Neelima Pathakamsetti",
+    "R Vasudeva Rao",
+    "Nithin Bhogaraju"
+  ],
+  tags: [
+    "Jagamerigina Satyam 2025",
+    "Avinash Varma",
+    "Telugu Sun NXT movies",
+    "Jagamerigina Satyam OTT release",
+    "Telugu romantic thriller",
+    "Jagamerigina Satyam plot summary",
+    "Dimda Telangana village story"
+  ]
+},
+
+  {
+  title: "Usha Parinayam",
+  description: "Usha Parinayam is a Telugu romantic drama about Honey and Usha—two individuals who initially reject each other at a matchmaking event but reconnect as immigrants abroad. Against cultural expectations, they navigate love, identity, and emotional growth.",
+  category: "bms-stream",
+  year: "14‑11‑2024", // OTT premiere date on ETV Win
+  image: "/images/UshaParinayam.jpeg",
+  trailerUrl: "", // Trailer not officially listed
+  genre: "Romance, Drama",
+  cast: [
+    "Sree Kamal",
+    "Tanvi Akaanksha",
+    "Surya Srinivas",
+    "Seerat Kapoor",
+    "Ali",
+    "Vennela Kishore",
+    "Sivaji Raja",
+    "Aamani"
+  ],
+  tags: [
+    "Usha Parinayam 2024",
+    "Sree Kamal",
+    "Tanvi Akaanksha",
+    "Telugu romantic drama",
+    "ETV Win Telugu 2024",
+    "Usha Parinayam plot",
+    "Vijaya Bhaskar film",
+    "Usha Parinayam immigrant romance"
+  ]
+},
+
+ {
+  title: "Thug Life",
+  description: "Thug Life is a sprawling Tamil-language gangster action drama directed by Mani Ratnam. It follows a mafia kingpin as he raises an orphaned boy—only to face betrayal, murder, and power struggles when that son turns into a rival.",
+  category: "netflix",
+  year: "03‑07‑2025", // OTT premiere on Netflix
+  image: "/images/ThugLife.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=BOZaRvNIdCw",
+  genre: "Crime, Action, Drama",
+  cast: [
+    "Kamal Haasan",
+    "Silambarasan TR",
+    "Trisha Krishnan",
+    "Aishwarya Lekshmi",
+    "Ali Fazal",
+    "Joju George",
+    "Nassar",
+    "Ashok Selvan"
+  ],
+  tags: [
+    "Thug Life 2025",
+    "Kamal Haasan Thug Life",
+    "Mani Ratnam gangster drama",
+    "Netflix Tamil movies",
+    "Thug Life OTT release",
+    "Silambarasan TR",
+    "A R Rahman score",
+    "Thug Life plot summary"
+  ]
+},
+
+{
+  title: "AIR",
+  description: "AIR: All India Rankers is a Telugu web series on ETV Win that follows three tenth-grade students navigating intense academic pressure, friendship, and unexpected consequences as they join a high-strung IIT coaching college.",
+  category: "etv-win",
+  year: "03‑07‑2025",
+  image: "/images/AIR.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example",
+  genre: "Comedy, Drama, Coming‑of‑Age",
+  cast: [
+    "Harsh Roshan",
+    "Bhanu Prakash",
+    "Jayateertha Molugu",
+    "Sunil",
+    "Chaitanya Rao Madadi",
+    "Harsha Chemudu",
+    "Sandeep Raj",
+    "Jeevan Kumar Naidu",
+    "Akshara Nalla",
+    "Ramana Bhargav"
+  ],
+  tags: [
+    "AIR 2025",
+    "All India Rankers Telugu",
+    "Harsh Roshan",
+    "ETV Win Originals",
+    "student life drama",
+    "competitive exam pressure",
+    "Telugu web series 2025"
+  ]
+},
+
+ {
+  title: "23 (Iravai Moodu)",
+  description: "A tense Telugu thriller‑drama inspired by true events, where a young man’s attempt at quick gains leads to a tragic bus arson killing 23 people. Through his legal and emotional journey, the film probes systemic injustice shaped by caste and power.",
+  category: "amazon‑prime",
+  year: "27‑06‑2025", // OTT premiere on Amazon Prime, Aha Video, and ETV Win
+  image: "/images/23 (Iravai Moodu).jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example", // Official trailer link if available
+  genre: "Crime, Drama, Thriller",
+  cast: [
+    "Teja R",
+    "Tanmai Kushi",
+    "Jhansi",
+    "Pawon Ramesh",
+    "Thagubothu Ramesh",
+    "Praneeth"
+  ],
+  tags: [
+    "23 Iravai Moodu 2025",
+    "Teja R",
+    "Tanmai Kushi",
+    "Telugu crime drama",
+    "Amazon Prime Video Telugu",
+    "23 film social justice",
+    "Raj Rachakonda film"
+  ]
+},
+
+{
+  title: "Oka Padhakam Prakaram",
+  description: "Oka Padhakam Prakaram is a Telugu legal thriller about Siddharth Neelakanta—a public prosecutor who finds himself framed for a series of murders in Visakhapatnam. As he investigates the conspiracy entwined with powerful forces, the film explores justice, betrayal, and institutional corruption.",
+  category: "sun-nxt",
+  year: "27‑06‑2025", // OTT premiere date on Sun NXT
+  image: "/images/OkaPathakamPrakaaram.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=PFVkjJZR9lA", // Official Sun NXT trailer
+  genre: "Crime, Thriller, Legal Drama",
+  cast: [
+    "Sairam Shankar",
+    "P. Samuthirakani",
+    "Ashima Narwal",
+    "Shruti Sodhi",
+    "Bhanu Sri",
+    "Pallavi Gowda"
+  ],
+  tags: [
+    "Oka Padhakam Prakaram 2025",
+    "Sairam Shankar thriller",
+    "Telugu Sun NXT movies",
+    "legal conspiracy drama",
+    "Visakhapatnam murders",
+    "Sun NXT Telugu thriller",
+    "Vinod Vijayan film"
+  ]
+},
+{
+  title: "Saaree",
+  description: "A haunting Telugu‑Hindi psychological thriller where a holiday crush turns into a dangerous obsession. After his advances are rejected, Kittu becomes fixated on a woman named Aaradhya—leading to disturbing, real‑world consequences.",
+  category: "lionsgate-play",
+  year: "27‑06‑2025", // OTT debut on Lionsgate Play & OTTplay Premium
+  image: "/images/Saaree.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=Z5wUgeechdA",
+  genre: "Psychological Thriller, Drama",
+  cast: [
+    "Satya Yadu",
+    "Aaradhya Devi",
+    "Darbha Appaji Ambarisha",
+    "Kalpalatha",
+    "Sahil Sambyal"
+  ],
+  tags: [
+    "Saaree 2025",
+    "Ram Gopal Varma",
+    "Satya Yadu",
+    "Aaradhya Devi",
+    "Lionsgate Play psychological thriller",
+    "Telugu Hindi thriller",
+    "obsession crime drama",
+    "Saaree plot summary"
+  ]
+},
+
+{
+  title: "Viraatapalem: PC Meena Reporting",
+  description: "A supernatural‑tinged mystery thriller set in 1980s rural Andhra Pradesh, where Police Constable Meena investigates a chilling curse that kills newly married brides. She risks becoming next by entering marriage herself to uncover the truth.",
+  category: "zee5",
+  year: "26‑06‑2025", // OTT premiere on ZEE5
+  image: "/images/Viraatapalem.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=475g1Om2w-c",
+  genre: "Mystery, Thriller, Supernatural",
+  cast: [
+    "Abhignya Vuthaluru",
+    "Charan Lakkaraju",
+    "Lavanya Sahukara",
+    "Ramaraju",
+    "Gowtham Raju",
+    "Satish"
+  ],
+  tags: [
+    "Viraatapalem PC Meena Reporting 2025",
+    "Abhignya Vuthaluru",
+    "Telugu ZEE5 series",
+    "supernatural mystery thriller",
+    "PC Meena investigative web series",
+    "Viraatapalem plot twist"
+  ]
+},
+
+ {
+  title: "Oka Brundavanam",
+  description: "Oka Brundavanam is an emotional Telugu road‑trip drama about an aspiring filmmaker (Vikram) and a determined young woman (Maha) who team up to help a lonely child reunite with her secret benefactor—unfolding a heartwarming journey of hope, belonging, and unexpected connections.",
+  category: "etv-win",
+  year: "20‑06‑2025", // OTT premiere on ETV Win
+  image: "/images/OkaBrundavanam.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=oGnN6dtednw",
+  genre: "Drama, Adventure, Family",
+  cast: [
+    "Balu",
+    "Shinnova",
+    "Sanvitha",
+    "Subhalekha Sudhakar",
+    "Sivaji Raja",
+    "Annapurnamma"
+  ],
+  tags: [
+    "Oka Brundavanam 2025",
+    "Telugu ETV Win movie",
+    "family drama 2025",
+    "child reunification story",
+    "Oka Brundavanam plot",
+    "Satya Botcha directorial debut"
+  ]
+},
+
+ {
+  title: "Ghatikachalam",
+  description: "Ghatikachalam is a Telugu psychological horror thriller that follows Kaushik, a timid medical student whose life spirals into terror when a malevolent spirit named Ghatikachalam begins whispering through his mind and seizes control of his actions.",
+  category: "amazon-prime",
+  year: "20‑06‑2025", // OTT premiere date on Amazon Prime Video
+  image: "/images/Ghatikachalam.jpeg",
+  trailerUrl: "", // Official trailer not confirmed
+  genre: "Horror, Psychological Thriller",
+  cast: [
+    "Nikhil Devadula",
+    "Samyu Reddy",
+    "Tanmai Khushi",
+    "Arjun Vihaan",
+    "Durga Devi",
+    "Aarvika Gupta"
+  ],
+  tags: [
+    "Ghatikachalam 2025",
+    "Nikhil Devadula horror",
+    "Telugu psychological thriller",
+    "Amazon Prime Telugu movies",
+    "Ghatikachalam OTT release",
+    "spirit possession movie",
+    "Kaushik possession story"
+  ]
+},
+
+  {
+  title: "Alappuzha Gymkhana",
+  description: "Alappuzha Gymkhana is a grounded Malayalam sports‑drama laced with humor, following a bunch of plus-two failures who take up boxing to get into college via sports quota. It’s less about winning matches and more about friendship, self‑worth, and life beyond the ring.",
+  category: "aha",
+  year: "13‑06‑2025", // OTT premiere date
+  image: "/images/AlappuzhaGymkhana.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example", // placeholder if needed
+  genre: "Sports, Comedy, Drama",
+  cast: [
+    "Naslen",
+    "Lukman Avaran",
+    "Ganapathi S. Poduval",
+    "Sandeep Pradeep",
+    "Franco Francis",
+    "Anagha Ravi",
+    "Shiva Hariharan"
+  ],
+  tags: [
+    "Alappuzha Gymkhana 2025",
+    "Naslen",
+    "Khalid Rahman",
+    "Mal﻿ayalam sports drama",
+    "SonyLIV Telugu movie",
+    "Alappuzha boxing film",
+    "coming of age sports"
+  ]
+},
+
+ {
+  title: "Kolla",
+  description: "Kolla is a Telugu-dubbed crime thriller streaming on ETV Win. It follows two women who open a beauty parlour as a cover to execute a daring bank heist in rural India—blending suspense, style, and unexpected twists.",
+  category: "etv-win",
+  year: "19‑06‑2025", // OTT premiere on ETV Win
+  image: "/images/Kolla.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=tpUA1krfieY",
+  genre: "Crime, Thriller, Heist",
+  cast: [
+    "Rajisha Vijayan",
+    "Priya Prakash Varrier",
+    "Vinay Forrt",
+    "Alencier Ley Lopez",
+    "Shebin Benson",
+    "Jeo Baby"
+  ],
+  tags: [
+    "Kolla 2025",
+    "Telugu ETV Win movie",
+    "female-led heist",
+    "beauty parlour bank robbery",
+    "Telugu crime thriller 2025",
+    "ETV Win original film"
+  ]
+},
+
+ {
+  title: "Haddhu Ledhu Raa",
+  description: "Haddhu Ledhu Raa is a Telugu action-thriller capturing a deep bond of friendship between a doctor and a petrol bunk owner who take on a corrupt local politician after tragedy strikes close to home.",
+  category: "amazon-prime",
+  year: "21‑03‑2024", // theatrical release date; OTT platform availability may follow later
+  image: "/images/HaddhuLedhuRaa.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=nlN0OGpfOsI",
+  genre: "Action, Drama, Thriller",
+  cast: [
+    "Ashish Gandhi",
+    "Ashok",
+    "Hrithika Srinivas",
+    "Varsha Vishwanath",
+    "Tanikella Bharani",
+    "Rajiv Kanakala"
+  ],
+  tags: [
+    "Haddhu Ledhu Raa 2024",
+    "Ashish Gandhi",
+    "Telugu action thriller",
+    "friendship drama",
+    "Rajashekkar Raavi film",
+    "Telugu movie 2024"
+  ]
+},
+
+ {
+  title: "Subham",
+  description: "Subham is a quirky Telugu horror‑comedy produced by Samantha Ruth Prabhu in her debut venture. Set in a small coastal town, the story follows a cable TV operator whose wife—and several other village women—become obsessed with a nightly TV serial, leading to comical supernatural chaos.",
+  category: "jiohotstar",
+  year: "13‑06‑2025", // OTT premier on Jio Hotstar in multiple Indian languages
+  image: "/images/Subham.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example", // Official trailer link if available
+  genre: "Horror, Comedy",
+  cast: [
+    "Harshith Reddy",
+    "Gavireddy Srinivas",
+    "Charan Peri",
+    "Shriya Kontham",
+    "Shravani Lakshmi",
+    "Shalini Kondepudi",
+    "Vamshidhar Goud",
+    "Samantha Ruth Prabhu (cameo)"
+  ],
+  tags: [
+    "Subham 2025",
+    "Samantha Ruth Prabhu",
+    "Telugu horror comedy",
+    "JioHotstar Telugu movie",
+    "Subham OTT release",
+    "TV serial possession plot",
+    "Praveen Kandregula film"
+  ]
+},
+
+ {
+  title: "Eleven",
+  description: "Eleven is a Tamil‑Telugu bilingual crime thriller following ACP Aravind (Naveen Chandra) as he investigates a series of twin murders orchestrated by a masked killer manipulating surviving twins into killing their siblings.",
+  category: "amazon-prime",
+  year: "13‑06‑2025", // OTT debut date
+  image: "/images/Eleven.jpeg",
+  trailerUrl: "", // Official link not confirmed
+  genre: "Crime, Thriller, Mystery",
+  cast: [
+    "Naveen Chandra",
+    "Reyaa Hari",
+    "Abhirami",
+    "Shashank",
+    "Dileepan",
+    "Riythvika",
+    "Aadukalam Naren",
+    "Ravi Varma",
+    "Arjai",
+    "Kireeti Damaraju"
+  ],
+  tags: [
+    "Eleven 2025",
+    "Naveen Chandra",
+    "Reyaa Hari",
+    "Tamil Telugu crime thriller",
+    "Eleven OTT release",
+    "Lokkesh Ajls film",
+    "Twin murders mystery",
+    "D Imman score",
+    "Amazon Prime Telugu",
+    "Aha Tamil"
+  ]
+},
+
+ {
+  title: "Blind Spot",
+  description: "Blind Spot is a Telugu crime-thriller where Officer Vikram investigates what appears to be a suicide, only to uncover a complex murder mystery among family members and staff, revealing dark secrets in a tightly wound residence.",
+  category: "amazon-prime",
+  year: "13‑06‑2025", // OTT premiere on Amazon Prime Video
+  image: "/images/BlindSpot.jpeg",
+  trailerUrl: "", // official trailer link not confirmed
+  genre: "Crime, Thriller, Mystery",
+  cast: [
+    "Naveen Chandra",
+    "Rashi Singh",
+    "Ali Reza",
+    "Ravi Varma",
+    "Gayatri Bhargavi",
+    "Harsh Roshan",
+    "Kishore Kumar Polimera",
+    "Harika Pedada"
+  ],
+  tags: [
+    "Blind Spot 2025",
+    "Naveen Chandra",
+    "Telugu crime thriller",
+    "Amazon Prime Telugu",
+    "Blind Spot OTT release",
+    "murder mystery",
+    "divya death investigation"
+  ]
+},
+
+  {
+  title: "DD Next Level",
+  description: "DD Next Level is a Tamil‑language horror‑comedy where a YouTube film critic gets trapped inside a cursed film and must survive until the credits roll to save his family. Blending meta‑humor, genre satire, and supernatural suspense, the film plays on the dynamics between critics and creators.",
+  category: "zee5",
+  year: "13‑06‑2025", // Streaming premiere on ZEE5 (also in Telugu, Kannada, Malayalam)
+  image: "/images/DDNextLevel.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=DPiZBLoE4F8",
+  genre: "Horror, Comedy, Mystery",
+  cast: [
+    "Santhanam",
+    "Selvaraghavan",
+    "Gautham Vasudev Menon",
+    "Geethika Tiwary",
+    "Nizhalgal Ravi",
+    "Yashika Aannand",
+    "Rajendran",
+    "Redin Kingsley"
+  ],
+  tags: [
+    "DD Next Level 2025",
+    "Santhanam horror comedy",
+    "DD Next Level Zee5",
+    "Tamil horror spoof",
+    "Dhilluku Dhuddu franchise",
+    "meta horror thriller",
+    "S. Prem Anand film"
+  ]
+},
+
+{
+  title: "Dear Uma",
+  description: "Dear Uma is a Telugu medical-romantic drama about Dev (an aspiring rock star) and Uma (a diligent medical student). Their lives intersect in a story against the backdrop of medical mafia, redemption, and emotional awakening.",
+  category: "sun-nxt",
+  year: "13‑06‑2025", // OTT release date on Sun NXT
+  image: "/images/DearUma.jpeg",
+  trailerUrl: "", // Official trailer link not confirmed
+  genre: "Romance, Drama, Social",
+  cast: [
+    "Pruthvi Ambaar",
+    "Sumaya Reddy",
+    "Kamal Kamaraju",
+    "Saptagiri",
+    "Ajay Ghosh",
+    "Rajeev Kanakala",
+    "Prudhvi Raj",
+    "Aamani",
+    "Roopa Lakshmi"
+  ],
+  tags: [
+    "Dear Uma 2025",
+    "Sumaya Reddy",
+    "Pruthvi Ambaar",
+    "Telugu Sun NXT movies",
+    "medical mafia drama",
+    "Telugu romantic drama",
+    "Dear Uma plot summary",
+    "Sai Rajesh Mahadev film",
+    "Suma Chitra Arts"
+  ]
+},
+
+ {
+  title: "Ace",
+  description: "Ace is a 2025 Tamil–Telugu bilingual crime-comedy thriller starring Vijay Sethupathi as ‘Bolt’ Kannan—a man with a shady past who lands in Malaysia, becomes entangled in a botched heist, and must navigate a quirky underworld with twists, romance, and dark humour.",
+  category: "amazon-prime",
+  year: "13‑06‑2025", // Amazon Prime OTT debut in Tamil & Telugu
+  image: "/images/Ace.jpeg",
+  trailerUrl: "", 
+  genre: "Crime, Comedy, Thriller",
+  cast: [
+    "Vijay Sethupathi",
+    "Rukmini Vasanth",
+    "Yogi Babu",
+    "B.S. Avinash",
+    "Babloo Prithiveeraj",
+    "Divya Pillai",
+    "Ramesh Thilak"
+  ],
+  tags: [
+    "Ace 2025",
+    "Vijay Sethupathi Ace",
+    "Tamil Telugu crime comedy",
+    "Amazon Prime Ace",
+    "Arumuga Kumar film",
+    "Malaysia heist story",
+    "Rukmini Vasanth debut",
+    "Ace movie review"
+  ]
+},
+
+  {
+  title: "Rana Naidu S2",
+  description: "Rana Naidu Season 2 is a gritty Indian action-crime drama on Netflix. Rana (Rana Daggubati) takes on one final dangerous job to secure his family’s future, navigating emotional conflicts, power struggles, and a relentless adversary Rauf.",
+  category: "netflix",
+  year: "13‑06‑2025", // Season 2 premiere date on Netflix
+  image: "/images/RanaNaiduS2.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=d‑dPJFzqU78",
+  genre: "Crime, Thriller, Drama",
+  cast: [
+    "Rana Daggubati",
+    "Venkatesh Daggubati",
+    "Arjun Rampal",
+    "Surveen Chawla",
+    "Kriti Kharbanda",
+    "Sushant Singh",
+    "Abhishek Banerjee",
+    "Dino Morea",
+    "Gaurav Chopra",
+    "Suchitra Pillai"
+  ],
+  tags: [
+    "Rana Naidu Season 2",
+    "Rana Daggubati",
+    "Venkatesh Daggubati",
+    "Netflix Indian series",
+    "crime family drama",
+    "Arjun Rampal villain",
+    "Karan Anshuman series",
+    "Indian thriller 2025"
+  ]
+},
+
+  {
+  title: "Karthika Missing Case",
+  description: "Karthika Missing Case is a Telugu mystery‑thriller on Aha Video. A detective (Kathir) and his team race against time after Karthika (Anandhi) disappears—uncovering dangerous truths tied to power, exploitation, and surrogacy along the way.",
+  category: "aha",
+  year: "13‑06‑2025", // OTT premiere on Aha Video in Telugu
+  image: "/images/KarthikaMissingCase.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=RTSWZMeYlqs",
+  genre: "Mystery, Thriller, Drama",
+  cast: [
+    "Kathir",
+    "Anandhi",
+    "Narain",
+    "Pavithra Lakshmi",
+    "Natarajan Subramaniam"
+  ],
+  tags: [
+    "Karthika Missing Case 2025",
+    "Kathir Anandhi",
+    "Telugu Aha Video thriller",
+    "missing person investigation",
+    "surrogacy thriller",
+    "juvis production"
+  ]
+},
+
+{
+  title: "Dear Daddy",
+  description: "Dear Daddy is a heartfelt Telugu family drama that explores the emotional bond between a father and daughter, Vismaya. After her mother remarries, Vismaya maintains a memory diary and goes on a transformative trip with her stepfather, discovering love, acceptance, and hope along the way.",
+  category: "etv-win",
+  year: "08‑06‑2025", // OTT premiere on ETV Win
+  image: "/images/DearDaddy.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=kushZe4AIqc", // from ETV Win promo
+  genre: "Drama, Family",
+  cast: [
+    "Sharanya Pradeep",
+    "Ravi Varma",
+    "Vismaya (child actor name not given)"
+  ],
+  tags: [
+    "Dear Daddy 2025",
+    "Telugu family drama",
+    "father daughter bond movie",
+    "ETV Win Original",
+    "Vismaya diary story",
+    "emotional OTT drama"
+  ]
+},
+
+ {
+  title: "Single",
+  description: "Single is a fun‑filled Telugu romantic comedy where Vijay (Sree Vishnu), a determined bachelor, stages a faux rescue mission at a metro station to woo Purva (Ketika Sharma), only to accidentally draw the affection of Harini (Ivana), leading to a chaotic and humorous triangular romance.",
+  category: "amazon‑prime",
+  year: "06‑06‑2025", // OTT premiere date on Amazon Prime Video
+  image: "/images/Single.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example", // replace with official trailer link
+  genre: "Romance, Comedy",
+  cast: [
+    "Sree Vishnu",
+    "Ketika Sharma",
+    "Ivana",
+    "Vennela Kishore",
+    "VTV Ganesh",
+    "Kalpalatha",
+    "Reba Monica John (cameo)",
+    "Narne Nithin",
+    "Maanasa Choudhary"
+  ],
+  tags: [
+    "Single 2025",
+    "Sree Vishnu",
+    "Ketika Sharma",
+    "Ivana",
+    "Telugu romantic comedy",
+    "Amazon Prime Telugu movie",
+    "fake rescue romance",
+    "modern dating comedy"
+  ]
+},
+
+  {
+  title: "Devika & Danny",
+  description: "Devika & Danny is a Telugu supernatural drama web series on JioHotstar. Devika, a modest village music teacher, meets Danny—a spirit with unfinished business—and chooses to help him, sparking a poignant tale of love, mystery, and self-discovery.",
+  category: "jiohotstar",
+  year: "06‑06‑2025", // OTT premiere date
+  image: "/images/Devika&Danny.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=Bkkp5fvGvhA",
+  genre: "Supernatural, Drama, Fantasy",
+  cast: [
+    "Ritu Varma",
+    "Surya Vashistta",
+    "Shiva Kandukuri",
+    "Subbaraju",
+    "Kovai Sarala",
+    "Sonia Singh",
+    "Mounika Reddy",
+    "Viva Harsha",
+    "Gokaraju Ramana"
+  ],
+  tags: [
+    "Devika & Danny 2025",
+    "Ritu Varma Telugu OTT debut",
+    "Supernatural romance series",
+    "JioHotstar Telugu series",
+    "Danny spirit mystery",
+    "B Kishore WebSeries",
+    "Joy Films production"
+  ]
+}
+,
+ {
+  title: "Pelli Kani Prasad",
+  description: "Pelli Kani Prasad is a Telugu comedy‑drama starring Sapthagiri as a 38‑year‑old man stuck in the marriage market due to his father’s dowry principles. When Priya marries him to settle abroad, comedic and emotional twists follow as he reveals he’ll never return to Malaysia.",
+  category: "etv-win",
+  year: "05‑06‑2025", // OTT debut on ETV Win
+  image: "/images/PelliKaniPrasad.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=Uek3nUhNIJM",
+  genre: "Comedy, Drama",
+  cast: [
+    "Sapthagiri",
+    "Priyanka Sharma",
+    "Muralidhar Goud",
+    "Vadlamani Srinivas",
+    "Annapurna",
+    "Laxman Meesala",
+    "Pramodini Pammi",
+    "Mahaboob Basha",
+    "Ramprasad"
+  ],
+  tags: [
+    "Pelli Kani Prasad 2025",
+    "Sapthagiri comedy drama",
+    "Priyanka Sharma",
+    "Telugu ETV Win movies",
+    "dowry satire film",
+    "small town Telugu comedy",
+    "Malaysia plot twist"
+  ]
+},
+
+ {
+  title: "Jigel",
+  description: "Jigel is a Telugu romantic comedy‑thriller about a stylish ‘locker hacker’ Nandu (Thrigun) hired to open an age‑old safe in a zamindar’s palace, but soon becomes entwined in greed, deception, and a race to find the original key.",
+  category: "sun-nxt",
+  year: "05‑06‑2025", // OTT premiere on Sun NXT
+  image: "/images/Jigel.jpeg",
+  trailerUrl: "", // Official trailer link if available
+  genre: "Romance, Comedy, Thriller",
+  cast: [
+    "Thrigun",
+    "Megha Chowdhury",
+    "Posani Krishna Murali",
+    "Sayaji Shinde",
+    "Raghu Babu",
+    "Balireddy Pruthviraj",
+    "Prudvi"
+  ],
+  tags: [
+    "Jigel 2025",
+    "Thrigun",
+    "Megha Chowdhury",
+    "Telugu Sun NXT movies",
+    "romantic heist thriller",
+    "locker heist film",
+    "Telugu comedy thriller",
+    "Jigel plot summary"
+  ]
+},
+
+ {
+  title: "Tourist Family",
+  description: "Tourist Family is a heartfelt Tamil–Telugu bilingual comedy‑drama about a Sri Lankan Tamil family fleeing economic hardship who pose as Malayalees in Chennai to rebuild their lives—with warmth, laughter, and unexpected bonds.",
+  category: "jiohotstar",
+  year: "02‑06‑2025", // OTT debut date on JioHotstar
+  image: "/images/TouristFamily.jpeg",
+  trailerUrl: "", // Official trailer if applicable
+  genre: "Drama, Comedy",
+  cast: [
+    "M. Sasikumar",
+    "Simran",
+    "Yogi Babu",
+    "M. S. Bhaskar",
+    "Ramesh Thilak",
+    "Bagavathi Perumal",
+    "Mithun Jai Shankar",
+    "Kamalesh Jegan",
+    "Ilango Kumaravel",
+    "Sreeja Ravi"
+  ],
+  tags: [
+    "Tourist Family 2025",
+    "Sasikumar",
+    "Simran",
+    "Tamil family drama",
+    "JioHotstar Tamil film",
+    "Sri Lankan Tamil refugees",
+    "Slice of life comedy drama",
+    "Abishan Jeevinth debut"
+  ]
+},
+
+ {
+  title: "Retro",
+  description: "Retro is a stylized Tamil‑Telugu bilingual action‑drama directed by Karthik Subbaraj. Packed with romance, cult intrigue, and violent underworld loyalties, it follows Paarivel “Paari” Kannan (Suriya) as he escapes his gangster past to reclaim love and identity.",
+  category: "netflix",
+  year: "30‑05‑2025", // OTT premiere on Netflix
+  image: "/images/Retro.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example", // replace with official trailer if available
+  genre: "Action, Romance, Thriller",
+  cast: [
+    "Suriya",
+    "Pooja Hegde",
+    "Joju George",
+    "Jayaram",
+    "Karunakaran",
+    "Prakash Raj",
+    "Nassar",
+    "Vidhu"
+  ],
+  tags: [
+    "Retro 2025",
+    "Suriya",
+    "Pooja Hegde",
+    "Karthik Subbaraj film",
+    "Netflix Tamil movie",
+    "Romantic crime thriller",
+    "Indian cult mystery",
+    "Santhosh Narayanan music",
+    "Stone Bench Films"
+  ]
+},
+
+ {
+  title: "Thudarum",
+  description: "Thudarum is a Malayalam crime thriller starring Mohanlal as Shanmugham (‘Benz’), a taxi driver whose life is upended when his beloved Ambassador car is seized by the police. What follows is a gripping search that unearths family secrets, emotional trauma, and underworld betrayal.",
+  category: "jiohotstar",
+  year: "30‑05‑2025", // OTT premiere on JioHotstar
+  image: "/images/Thudarum.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=83Mc7EhifCk",
+  genre: "Crime, Drama, Thriller",
+  cast: [
+    "Mohanlal",
+    "Shobana",
+    "Prakash Varma",
+    "Farhaan Faasil",
+    "Maniyanpilla Raju",
+    "Binu Pappu",
+    "Irshad Ali",
+    "Aarsha Chandini Baiju",
+    "Thomas Mathew",
+    "Krishna Prabha"
+  ],
+  tags: [
+    "Thudarum 2025",
+    "Mohanlal Shobana reunion",
+    "Malayalam crime thriller",
+    "JioHotstar Malayalam movie",
+    "Shanmugham taxi driver",
+    "family revenge drama",
+    "Rejaputhra Visual Media"
+  ]
+},
+
+ {
+  title: "HIT: The Third Case",
+  description: "HIT: The Third Case is a gritty Telugu neo‑noir crime thriller featuring SP Arjun Sarkaar (Nani) investigating a grisly cult-linked murder spree. As he uncovers dark secrets involving ritual killings and organ harvesting, the case reveals betrayal, power, and personal sacrifice.",
+  category: "amazon-prime",
+  year: "29‑05‑2025", // OTT premiere date on Netflix
+  image: "/images/HIT.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=example",
+  genre: "Crime, Mystery, Thriller",
+  cast: [
+    "Nani",
+    "Srinidhi Shetty",
+    "Rao Ramesh",
+    "Surya Srinivas",
+    "Adil Pala",
+    "Prateik Babbar",
+    "Samuthirakani",
+    "Komalee Prasad",
+    "Adivi Sesh",
+    "Tisca Chopra"
+  ],
+  tags: [
+    "HIT The Third Case 2025",
+    "Nani HIT 3",
+    "Srinidhi Shetty",
+    "Sailesh Kolanu",
+    "Netflix Telugu thriller",
+    "crime cult mystery",
+    "Arjun Sarkaar cop",
+    "Homicide Intervention Team"
+  ]
+},
+
+{
+  title: "Chaurya Paatham",
+  description: "Chaurya Paatham is a Telugu crime‑comedy heist film about Vedanth, an aspiring filmmaker who plans a bank robbery disguised as a documentary crew in India’s most peaceful village. Twists ensue when deeper secrets emerge under the village’s tranquil surface.",
+  category: "amazon‑prime",
+  year: "27‑05‑2025", // streaming debut on Amazon Prime Video in India
+  image: "/images/ChauryaPaatham.jpeg",
+  trailerUrl: "", // official trailer URL if available
+  genre: "Crime, Comedy, Drama",
+  cast: [
+    "Indhra Ram",
+    "Payal Radhakrishna",
+    "Rajeev Kanakala",
+    "Mast Ali",
+    "Anji Valguman",
+    "Supriya Aysola",
+    "Madee Manepalli"
+  ],
+  tags: [
+    "Chaurya Paatham 2025",
+    "Telugu heist comedy",
+    "Indhra Ram debut",
+    "village bank robbery",
+    "Amazon Prime Telugu",
+    "Nikhil Gollamari film",
+    "rural thriller twist"
+  ]
+},
+
+ {
+  title: "Tantra",
+  description: "Tantra is a Telugu horror‑thriller where Rekha (Ananya Nagalla), who can perceive spirits, becomes entwined in occult mysteries after encountering a malevolent tantric—leading to terrifying rituals and personal discovery.",
+  category: "amazon-prime",
+  year: "24‑05‑2025", // OTT premiere on Amazon Prime Video
+  image: "/images/Tantra.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=DQISJrXu_iA",
+  genre: "Horror, Thriller, Supernatural",
+  cast: [
+    "Ananya Nagalla",
+    "Dhanush Raghumudri",
+    "Saloni Aswani",
+    "Temper Vamsi",
+    "Meesala Lakshman",
+    "Manoj Muthyam",
+    "Kushalini Pulapa",
+    "Bhaskar Manyam"
+  ],
+  tags: [
+    "Tantra 2024",
+    "Ananya Nagalla Tantra",
+    "Telugu horror thriller",
+    "Amazon Prime Video Telugu",
+    "Srinivas Gopisetti film",
+    "occult supernatural mystery",
+    "spirit perception story",
+    "Rahul Dhruvan score"
+  ]
+},
+
+ {
+  title: "Sarangapani Jathakam",
+  description: "A satirical Telugu comedy‑drama about Sarangapani, a firm believer in astrology who plans to commit a murder to avoid a foretold fate. His journey becomes a hilarious exploration of superstition, destiny, and the unpredictability of life.",
+  category: "amazon-prime",
+  year: "23‑05‑2025", // OTT debut on Amazon Prime Video
+  image: "/images/SarangapaniJathakam.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=7tS59iXITXI",
+  genre: "Comedy, Drama",
+  cast: [
+    "Priyadarshi Pulikonda",
+    "Roopa Koduvayur",
+    "Srinivas Avasarala",
+    "Tanikella Bharani",
+    "Vennela Kishore",
+    "Naresh",
+    "Harsha Chemudu",
+    "Viva Harsha"
+  ],
+  tags: [
+    "Sarangapani Jathakam 2025",
+    "Priyadarshi Pulikonda",
+    "Telugu Amazon Prime movies",
+    "Mohana Krishna Indraganti",
+    "comedy drama astrology",
+    "Vivek Sagar music",
+    "Sridevi Movies",
+    "fate vs free will film"
+  ]
+},
+
+ {
+  title: "#Viral Prapancham",
+  description: "#Viral Prapancham is a Telugu screen‑life thriller that unravels entirely through video calls and social media feeds. It follows two young women whose long-distance online relationships expose them to cybercrimes and betrayal, exploring digital obsession and revenge in a claustrophobic, real-time style.",
+  category: "sun-nxt",
+  year: "23‑05‑2025", // Streaming debut on Sun NXT
+  image: "/images/ViralPrapancham.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=bh85OlONg6k",
+  genre: "Mystery, Thriller, Screen‑Life",
+  cast: [
+    "Priyanka Sharma",
+    "Nitya Shetty",
+    "Sai Ronak",
+    "Sunny Naveen"
+  ],
+  tags: [
+    "Viral Prapancham 2025",
+    "Telugu screenlife thriller",
+    "Sun NXT Telugu movies",
+    "cybercrime film",
+    "digital relationships",
+    "Brijesh Tangi",
+    "real time video call thriller"
+  ]
+},
+
+ {
+  title: "Pendulum",
+  description: "Pendulum is a Telugu psychological thriller about Dr. Mahesh (Vijay Babu), who awakens after a mysterious accident and discovers his dreams may be premonitions. As dreams and reality intertwine, he must uncover the truth behind unsettling visions and hidden secrets.",
+  category: "etv-win",
+  year: "22‑05‑2025", // OTT premiere date on ETV Win
+  image: "/images/Pendulum.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=hPmDNjsdx3I",
+  genre: "Mystery, Thriller, Psychological",
+  cast: [
+    "Vijay Babu",
+    "Anumol",
+    "Prakash Bare",
+    "Indrans",
+    "Neena Kurup",
+    "Shaju KS",
+    "Deepu Navaikulam"
+  ],
+  tags: [
+    "Pendulum 2025",
+    "Vijay Babu thriller",
+    "Telugu ETV Win movie",
+    "dream mystery film",
+    "time loop thriller",
+    "Rejin S Babu film",
+    "telugu psychological thriller"
+  ]
+},
+
+  {
+  title: "Bhavani Ward 1997",
+  description: "Bhavani Ward 1997 is a Telugu musical psychological horror-thriller. Ajay's girlfriend, Diya, becomes possessed by a vengeful spirit tied to a haunted hospital ward. As Ajay confronts paranormal events and tragic love, the story delves into urban legends, vengeance, and emotional terror.",
+  category: "amazon-prime",
+  year: "23‑05‑2025", // Amazon Prime Video streaming debut
+  image: "/images/BhavaniWard.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=9BotQZzcqbU",
+  genre: "Horror, Thriller, Psychological",
+  cast: [
+    "Gayatri Gupta",
+    "Ganesh Reddy Budupu",
+    "Pooja Kendre",
+    "Sai Sathish Parvathaneni",
+    "Jabardasth Apparao",
+    "Meesam Suresh",
+    "Vijayesh Jalem"
+  ],
+  tags: [
+    "Bhavani Ward 1997 2025",
+    "Gayatri Gupta",
+    "Telugu horror thriller",
+    "G D Narasimmha",
+    "Amazon Prime Telugu",
+    "haunted hospital ward",
+    "musical horror drama"
+  ]
+},
+
+ {
+  title: "Arjun Son Of Vyjayanthi",
+  description: "Arjun S/O Vyjayanthi is an intense Telugu action‑drama where Arjun (Kalyan Ram), an IPS aspirant turned vigilante gangster, must protect his estranged mother Vyjayanthi IPS (Vijayashanti) from a terrorist's vendetta, blending family bonds with high‑stakes conflict.",
+  category: "amazon‑prime",
+  year: "16‑05‑2025", // Official OTT premiere date in India
+  image: "/images/ArjunSonOfVyjayanthi.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=hFNCZ_oVOZ4",
+  genre: "Action, Drama, Thriller",
+  cast: [
+    "Nandamuri Kalyan Ram",
+    "Vijayashanti",
+    "Saiee Manjrekar",
+    "Sohail Khan",
+    "Srikanth",
+    "Babloo Prithiveeraj",
+    "B. S. Avinash",
+    "Bharath Reddy"
+  ],
+  tags: [
+    "Arjun S/O Vyjayanthi 2025",
+    "Kalyan Ram",
+    "Vijayashanti",
+    "Amazon Prime Telugu",
+    "mother son drama",
+    "terrorist revenge thriller",
+    "Pradeep Chilukuri film"
+  ]
+},
+
+{
+  title: "Amruthangamaya",
+  description: "Amruthangamaya is a compact Telugu action‑romantic drama about Arjun, a struggling filmmaker whose life takes a harrowing turn when he thwarts a planned railway bombing. The film explores love, ambition, danger and redemption—all in just under an hour.",
+  category: "bms‑stream",
+  year: "16‑05‑2025",
+  image: "/images/Amruthangamaya.jpeg",
+  trailerUrl: "",
+  genre: "Action, Romance, Drama",
+  cast: [
+    "Kiran Thatikayala",
+    "Mounika Samineni"
+  ],
+  tags: [
+    "Amruthangamaya 2025",
+    "Telugu indie film",
+    "BookMyShow Stream original",
+    "filmmaker thriller short film",
+    "emotional redemption story",
+    "AI‑scored background music"
+  ]
+},
+
+ {
+  title: "Anaganaga",
+  description: "Anaganaga is a poignant Telugu family drama streaming on ETV Win. It centers on Vyas (Sumanth), a school teacher who challenges conventional rote learning with storytelling-based teaching. Facing resistance from his wife (who is also school principal) and the system, he fights to start his own school to nurture struggling students—exploring education, father–son bonds, and personal redemption.",
+  category: "etv-win",
+  year: "15‑05‑2025", // OTT premiere date on ETV Win
+  image: "/images/Anaganaga.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=uPis2HS-y60",
+  genre: "Family, Drama, Social",
+  cast: [
+    "Sumanth",
+    "Kajal Choudhary",
+    "Master Viharsh",
+    "Srinivas Avasarala",
+    "Anu Hasan",
+    "Rakesh Rachakonda",
+    "B. V. S. Ravi"
+  ],
+  tags: [
+    "Anaganaga 2025",
+    "Sumanth family drama",
+    "ETV Win Telugu film",
+    "education reform narrative",
+    "father son bond movie",
+    "Viharsh child actor",
+    "Sunny Sanjay directorial debut"
+  ]
+},
+
+ {
+  title: "Jolly O Gymkhana",
+  description: "Jolly O Gymkhana is a Tamil black comedy about a biryani‑serving family that uses a lawyer’s corpse to execute a ₹10 crore bank withdrawal after being scammed by a corrupt MLA—blending dark satire, multiple subplots, and a large ensemble of quirky characters.",
+  category: "aha",
+  year: "30‑12‑2024", // OTT premiere date on Aha
+  image: "/images/JollyOGymkhana.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=3zMvd6wX4LU",
+  genre: "Comedy, Crime, Satire",
+  cast: [
+    "Prabhu Deva",
+    "Madonna Sebastian",
+    "Abhirami",
+    "Yogi Babu",
+    "John Vijay",
+    "Robo Shankar",
+    "Redin Kingsley",
+    "Pujita Ponnada",
+    "Sai Dheena",
+    "Y.G. Mahendran"
+  ],
+  tags: [
+    "Jolly O Gymkhana 2024",
+    "Prabhu Deva comedy film",
+    "Aha Tamil black comedy",
+    "dark satire crime",
+    "Sakthi Chidambaram film",
+    "dead body heist comedy"
+  ]
+},
+
+{
+  title: "Robinhood",
+  description: "Robinhood is a Telugu action‑comedy heist entertainer. Ram (Nithiin), a modern‑day Robin Hood orphan, steals from the rich to help the needy and ends up protecting Neera (Sreeleela) from a global drug kingpin in a quirky village conspiracy.",
+  category: "zee5",
+  year: "10‑05‑2025", // OTT premiere date on ZEE5 & Zee Telugu
+  image: "/images/Robinhood.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=j9DY0g5XnfU",
+  genre: "Action, Comedy, Thriller",
+  cast: [
+    "Nithiin",
+    "Sreeleela",
+    "Vennela Kishore",
+    "Rajendra Prasad",
+    "Devdatta Nage",
+    "Shine Tom Chacko",
+    "Subhalekha Sudhakar",
+    "Aadukalam Naren",
+    "David Warner (cameo)"
+  ],
+  tags: [
+    "Robinhood 2025",
+    "Nithiin action comedy",
+    "Sreeleela debut Bollywood style",
+    "ZEE5 Telugu movie",
+    "Venky Kudumula film",
+    "modern Robin Hood heist",
+    "David Warner cameo"
+  ]
+},
+
+{
+  title: "Karna Pisachi",
+  description: "Karna Pisachi is a Telugu suspense thriller about Karna Devatha—a mythological goddess who transforms into Karna Pisachi due to human error. The narrative follows her journey to reclaim divine essence amidst supernatural chaos.",
+  category: "amazon-prime",
+  year: "10‑05‑2025", // Amazon Prime Video debut in India
+  image: "/images/KarnaPisachi.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=H3wQuPXhfXc",
+  genre: "Suspense, Thriller, Mythological",
+  cast: [
+    "Pranavi Yathirajyam",
+    "Mangalampalli Nikhil",
+    "Ramya Sree",
+    "Bharat Kumar Sigireddy"
+  ],
+  tags: [
+    "Karna Pisachi 2025",
+    "Telugu Amazon Prime thriller",
+    "goddess myth thriller",
+    "pranavi Yathirajyam debut",
+    "Vijay Malladi film",
+    "Karna Devatha transformation"
+  ]
+}
+,
+ {
+  title: "Mercy Killing",
+  description: "Mercy Killing is a Telugu-action drama based on a cruel betrayal within a coastal-fishing community. A teenage girl seeks justice under Article 21 while uncovering buried truths and loss in a gripping emotional journey.",
+  category: "amazon-prime",
+  year: "12‑04‑2024",              
+  image: "/images/MercyKilling.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=RQ4Xx_idrwc",
+  genre: "Action, Drama, Romance",
+  cast: [
+    "Parvateesam",
+    "P. Sai Kumar",
+    "Ishwarya Vullingala",
+    "Harika Pedada"
+  ],
+  tags: [
+    "Mercy Killing 2024",
+    "Parvateesam",
+    "P Sai Kumar",
+    "Telugu Amazon Prime video",
+    "Article 21 justice film",
+    "Venkataramana Surapalli",
+    "coastal drama thriller"
+  ]
+},
+{
+  title: "Kaalamega Karigindhi",
+  description: "Kaalamega Karigindhi is a poetic Telugu romantic drama about Phanindra, who returns to his childhood village decades later, hoping to reconnect with his first love, Bindu. Told almost entirely in Telugu with lyrical dialogue, the film unfolds like a visual poem of nostalgia, yearning, and unspoken love.",
+  category: "sun-nxt",
+  year: "09‑05‑2025", // OTT premiere on Sun NXT
+  image: "/images/KaalamegaKarigindhi1.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=rb0CakjZ9f8",
+  genre: "Romance, Drama, Art House",
+  cast: [
+    "Vinay Kumar",
+    "Shravani Majjari",
+    "Aravind Mudigonda",
+    "Nomina Tarae"
+  ],
+  tags: [
+    "Kaalamega Karigindhi 2025",
+    "Telugu poetic romance",
+    "first love nostalgia",
+    "Singara Mohan directorial debut",
+    "Sun NXT Telugu film",
+    "nostalgic school love drama"
+  ]
+},
+
+ {
+  title: "Odela 2",
+  description: "Odela 2 is a Telugu supernatural thriller and sequel to *Odela Railway Station*, where a vengeful spirit named Tirupathi returns to terrorize the village. A fierce Aghori devotee Shiva Shakti (Tamannaah Bhatia) arrives to confront the evil, blending spiritual lore with horror intensity.",
+  category: "amazon‑prime",
+  year: "08‑05‑2025",  // OTT premiere date on Prime Video
+  image: "/images/Odela2.jpeg",
+  trailerUrl: "", // Official trailer link if needed
+  genre: "Supernatural, Thriller, Horror",
+  cast: [
+    "Tamannaah Bhatia",
+    "Hebah Patel",
+    "Vasishta N. Simha",
+    "Murali Sharma",
+    "Pooja Reddy Bora"
+  ],
+  tags: [
+    "Odela 2 2025",
+    "Tamannaah supernatural thriller",
+    "Telugu Amazon Prime",
+    "Odela Railway Station sequel",
+    "Aghori spirit hunter",
+    "Sampath Nandi film",
+    "village horror remake"
+  ]
+},
+
+ {
+  title: "Jack",
+  description: "Jack is a quirky Telugu spy‑action‑comedy starring Siddhu Jonnalagadda as an overeager RAW aspirant who goes rogue to prevent a terror attack, combining slapstick humor, amateur detective tropes, and earnest emotion.",
+  category: "netflix",
+  year: "08‑05‑2025", // OTT premiere on Netflix
+  image: "/images/Jack.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=orJ_CQ3VU28",
+  genre: "Spy, Comedy, Action",
+  cast: [
+    "Siddhu Jonnalagadda",
+    "Vaishnavi Chaitanya",
+    "Prakash Raj",
+    "Naresh",
+    "Brahmaji",
+    "Ravi Prakash"
+  ],
+  tags: [
+    "Jack 2025",
+    "Siddhu Jonnalagadda spy comedy",
+    "Netflix Telugu movie",
+    "Bommarillu Bhaskar film",
+    "RAW aspirant story",
+    "action comedy thriller"
+  ]
+}
+,
+  {
+  title: "Good Bad Ugly",
+  description: "Good Bad Ugly is a stylish, high‑voltage Tamil‑language action thriller starring Ajith Kumar as ‘Red Dragon’, a reformed gangster drawn back into violence when his son is framed. Packed with homage‑laden sequences and mass‑appeal action, it's built for fans.",
+  category: "netflix",
+  year: "08‑05‑2025", // OTT premiere date on Netflix
+  image: "/images/GoodBadUgly.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=ntjzS6fi1zk",
+  genre: "Action, Thriller, Fan‑Service",
+  cast: [
+    "Ajith Kumar",
+    "Trisha Krishnan",
+    "Arjun Das",
+    "Yogi Babu",
+    "Jackie Shroff",
+    "Shine Tom Chacko"
+  ],
+  tags: [
+    "Good Bad Ugly 2025",
+    "Ajith Kumar action thriller",
+    "fan‑service Tamil film",
+    "Netflix Tamil movie",
+    "Adhik Ravichandran",
+    "Red Dragon saga",
+    "Mythri Movie Makers"
+  ]
+},
+
+ {
+  title: "Akkada Ammayi Ikkada Abbayi",
+  description: "Akkada Ammayi Ikkada Abbayi is a mild Telugu rural comedy‑drama following Krishna, a civil engineer with a rule never to help anyone, who arrives in Bhairi Lanka—a village with bizarre customs around its only woman, Raja—leading to romance, conflict, and cultural misunderstandings.",
+  category: "etv-win",
+  year: "08‑05‑2025", // OTT debut on ETV Win
+  image: "/images/AkkadaAmmayiIkkadaAbbai1.jpg",
+  trailerUrl: "", // Official trailer link if available
+  genre: "Comedy, Drama, Romance",
+  cast: [
+    "Pradeep Machiraju",
+    "Deepika Pilli",
+    "Vennela Kishore",
+    "Satya",
+    "Getup Srinu",
+    "Muralidhar Goud",
+    "G. M. Sundar",
+    "John Vijay",
+    "Rohini",
+    "Jhansi"
+  ],
+  tags: [
+    "Akkada Ammayi Ikkada Abbayi 2025",
+    "Pradeep Machiraju",
+    "Deepika Pilli debut",
+    "ETV Win Telugu movie",
+    "rural romance comedy",
+    "peculiar village customs",
+    "Nitin Bharath film"
+  ]
+},
+
+{
+  title: "28 Degree Celsius",
+  description: "28 Degree Celsius is a gripping Telugu romance thriller that explores intense emotional conflicts set against a suspenseful backdrop, blending love and mystery seamlessly.",
+  category: "amazon-prime",
+  year: "29-04-2025",
+  image: "/images/28DegreeCelsius.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Romance, Thriller",
+  cast: [
+    "Lead Actor",
+    "Lead Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "28 Degree Celsius 2025",
+    "Telugu Amazon Prime movies",
+    "Romantic thriller",
+    "Amazon Prime Telugu 2025",
+    "28 Degree Celsius plot summary",
+    "28 Degree Celsius box office"
+  ]
+},
+
+{
+  title: "MAD Square",
+  description: "MAD Square is a Telugu comedy-drama that explores quirky relationships and everyday chaos with humor and heart, delivering light-hearted entertainment for all ages.",
+  category: "netflix",
+  year: "25-04-2025",
+  image: "/images/MADSquare1.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Comedy, Drama",
+  cast: [
+    "Lead Actor",
+    "Supporting Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "MAD Square 2025",
+    "Telugu Netflix movies",
+    "Comedy drama",
+    "Netflix Telugu 2025",
+    "MAD Square plot summary",
+    "MAD Square box office"
+  ]
+},
+
+ {
+  title: "Yaathisai",
+  description: "Yaathisai is a gripping Telugu action-drama that follows a determined protagonist on a journey of courage, justice, and redemption amid intense conflicts.",
+  category: "aha",
+  year: "25-04-2025",
+  image: "/images/Yaathisai.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Action, Drama",
+  cast: [
+    "Lead Actor",
+    "Supporting Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "Yaathisai 2025",
+    "Telugu Aha movies",
+    "Action drama",
+    "Aha Telugu 2025",
+    "Yaathisai plot summary",
+    "Yaathisai box office"
+  ]
+},
+
+ {
+  title: "Mazaka",
+  description: "Mazaka is a lively Telugu romantic comedy that blends humor and heart, following the quirky love story of two mismatched individuals navigating relationships and misunderstandings.",
+  category: "amazon-prime",
+  year: "25-04-2025",
+  image: "/images/Mazaka.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Romance, Comedy",
+  cast: [
+    "Lead Actor",
+    "Lead Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "Mazaka 2025",
+    "Telugu Amazon Prime movies",
+    "Romantic comedy",
+    "Amazon Prime Telugu 2025",
+    "Mazaka plot summary",
+    "Mazaka box office"
+  ]
+},
+
+ {
+  title: "Veera Dheera Soora",
+  description: "Veera Dheera Soora is an intense Telugu action-drama that follows a fearless hero confronting challenges and fighting injustice to protect his loved ones.",
+  category: "amazon-prime",
+  year: "24-04-2025",
+  image: "/images/VeeraDheeraSoora.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Action, Drama",
+  cast: [
+    "Lead Actor",
+    "Supporting Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "Veera Dheera Soora 2025",
+    "Telugu Amazon Prime movies",
+    "Action drama",
+    "Amazon Prime Telugu 2025",
+    "Veera Dheera Soora plot summary",
+    "Veera Dheera Soora box office"
+  ]
+},
+
+ {
+  title: "L2: Empuraan",
+  description: "L2: Empuraan is a gripping Telugu action-thriller centered on high-stakes missions, intense conflicts, and a protagonist caught in a deadly game of power and survival.",
+  category: "jiohotstar",
+  year: "24-04-2025",
+  image: "/images/L2-Empuraan.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Action, Thriller",
+  cast: [
+    "Lead Actor",
+    "Supporting Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "L2 Empuraan 2025",
+    "Telugu JioHotstar movies",
+    "Action thriller",
+    "JioHotstar Telugu 2025",
+    "L2 Empuraan plot summary",
+    "L2 Empuraan box office"
+  ]
+},
+
+  {
+  title: "Guardian",
+  description: "Guardian is a chilling Telugu horror film that delves into supernatural mysteries and terrifying encounters, keeping viewers on the edge of their seats.",
+  category: "aha",
+  year: "24-04-2025",
+  image: "/images/Guardian1.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Horror",
+  cast: [
+    "Lead Actor",
+    "Supporting Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "Guardian 2025",
+    "Telugu Aha movies",
+    "Horror film",
+    "Aha Telugu 2025",
+    "Guardian plot summary",
+    "Guardian box office"
+  ]
+},
+
+{
+  title: "Pranayam 1947",
+  description: "Pranayam 1947 is a poignant Telugu drama set against the backdrop of India's independence, exploring love, sacrifice, and the trials of the era.",
+  category: "aha",
+  year: "24-04-2025",
+  image: "/images/Pranayam1947.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Drama",
+  cast: [
+    "Lead Actor",
+    "Supporting Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "Pranayam 1947 2025",
+    "Telugu Aha movies",
+    "Historical drama",
+    "Aha Telugu 2025",
+    "Pranayam 1947 plot summary",
+    "Pranayam 1947 box office"
+  ]
+},
+
+{
+  title: "Chhaava",
+  description: "Chhaava is a powerful historical Telugu film that portrays the valor, leadership, and emotional journey of legendary warriors from India’s past.",
+  category: "netflix",
+  year: "12-04-2025",
+  image: "/images/Chhavva.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Historical, Drama",
+  cast: [
+    "Lead Actor",
+    "Lead Actress",
+    "Supporting Actor"
+  ],
+  tags: [
+    "Chhaava 2025",
+    "Telugu Netflix movies",
+    "Historical Telugu films",
+    "Netflix Telugu 2025",
+    "Chhaava plot summary",
+    "Chhaava box office"
+  ]
+},
+
+{
+  title: "Court: State vs A Nobody",
+  description: "Court is a compelling Telugu legal drama where junior lawyer Surya Teja (Priyadarshi Pulikonda) takes on a POCSO case involving a teenager (Harsh Roshan) falsely accused of statutory rape. As he navigates courtroom power dynamics against a corrupt patriarch Mangapathi (Sivaji), the film explores justice, prejudice, and moral redemption.",
+  category: "netflix",
+  year: "11‑04‑2025", // OTT premiere date on Netflix
+  image: "/images/Court.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Legal, Drama, Crime",
+  cast: [
+    "Priyadarshi Pulikonda",
+    "P. Sai Kumar",
+    "Sivaji",
+    "Rohini",
+    "Harsha Vardhan",
+    "Subhalekha Sudhakar",
+    "Harsh Roshan",
+    "Sridevi"
+  ],
+  tags: [
+    "Court 2025",
+    "Priyadarshi Pulikonda",
+    "P Sai Kumar",
+    "Telugu courtroom drama",
+    "Netflix Telugu 2025",
+    "POCSO legal thriller",
+    "Ram Jagadeesh debut"
+  ]
+},
+
+ {
+  title: "Shanmukha",
+  description: "Shanmukha is a Telugu occult crime thriller where SI Karthi (Aadi Saikumar) and Sara (Avika Gor) investigate mysterious disappearances linked to ritualistic occult practices around a boy born with six heads. Their journey uncovers dark secrets, temple mysteries, and a twisted climax involving ancient beliefs.",
+  category: "aha",
+  year: "11‑04‑2025", // OTT premiere on Aha Video
+  image: "/images/Shanmukha.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Thriller, Fantasy, Mystery",
+  cast: [
+    "Aadi Saikumar",
+    "Avika Gor",
+    "Aditya Om",
+    "Chirag Jani",
+    "Krishnudu",
+    "Ariyana Glory",
+    "Chitram Seenu",
+    "CVL Narasimha Rao"
+  ],
+  tags: [
+    "Shanmukha 2025",
+    "Aadi Saikumar",
+    "Avika Gor comeback",
+    "Telugu Aha thriller",
+    "occult mystery thriller",
+    "Shanmugam Sappani film",
+    "Ravi Basrur score"
+  ]
+},
+
+ {
+  title: "Racharikam",
+  description: "Racharikam is a gritty Telugu political drama set in the 1980s in Rachakonda. It follows Bhargavi and Vivek Reddy’s quest for political dominance amid caste-based oppression, while Bhargavi’s romantic bond with Shiva (a youth leader) threatens powerful family and political hierarchies.",
+  category: "lionsgate-play",
+  year: "11‑04‑2025", // OTT premiere date on Lionsgate Play
+  image: "/images/Racharikam.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=r72ffaghNTE", // Official trailer
+  genre: "Political, Drama, Thriller",
+  cast: [
+    "Apsara Rani",
+    "Varun Sandesh",
+    "Vijay Shankar",
+    "Srikanth Iyengar",
+    "Esshwar",
+    "Vijay Ram Raju",
+    "Hyper Aadi",
+    "Satish Saripalli"
+  ],
+  tags: [
+    "Racharikam 2025",
+    "Apsara Rani",
+    "Varun Sandesh",
+    "Telugu political drama",
+    "Lionsgate Play Telugu",
+    "Suresh Lankalapalli film",
+    "1980s village politics"
+  ]
+},
+
+ {
+  title: "Tuk Tuk",
+  description: "Tuk Tuk is a Telugu supernatural fantasy comedy about three teenage friends in a Chittoor village who fix up an old scooter into a festival rickshaw—only to discover it’s possessed by a young woman’s spirit. Their light‑hearted hustle spirals into a poignant mystery of love, fate, and redemption.",
+  category: "etv-win",
+  year: "10‑04‑2025", // OTT premiere on ETV Win following theatrical release
+  image: "/images/TukTuk.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Fantasy, Comedy, Supernatural",
+  cast: [
+    "Harsh Roshan",
+    "Karthikeya Dev",
+    "Steven Madhu",
+    "Saanve Megghana",
+    "Nihal Kodhaty",
+    "Dayanand Reddy"
+  ],
+  tags: [
+    "Tuk Tuk 2025",
+    "Harsh Roshan",
+    "Fantasy comedy Telugu",
+    "ETV Win Telugu",
+    "supreeth c krishna",
+    "magical scooter spirit",
+    "village mystery thriller"
+  ]
+},
+
+  {
+  title: "Laxmi Kataksham",
+  description: "Laxmi Kataksham is a Telugu political drama where ex-cop Arjun (Vinay Panigrahi) returns to expose electoral fraud involving a cash-for-vote scandal masterminded by veteran politician Dharma (Sai Kumar). As deception blurs justice, Arjun confronts power, prophecy, and the chaos behind democracy.",
+  category: "amazon-prime", // or actual OTT platform
+  year: "10‑05‑2024", // Original release date in India
+  image: "/images/LaxmiKataksham.jpeg",
+  trailerUrl: "", // Add trailer link if available
+  genre: "Political, Drama",
+  cast: [
+    "Sai Kumar",
+    "Vinay Panigrahi",
+    "Deepti Varma",
+    "Charisma Sreeker",
+    "Hari Prasad",
+    "Sai Kiran Yedida",
+    "Aamani"
+  ],
+  tags: [
+    "Laxmi Kataksham 2024",
+    "Sai Kumar",
+    "Vinay Panigrahi",
+    "Telugu political drama",
+    "cash for vote film",
+    "Surya Yakkalooru",
+    "Mahathi Entertainment"
+  ]
+},
+
+ {
+  title: "14 Days Girlfriend Intlo",
+  description: "A breezy Telugu romantic comedy‑thriller set during the lockdown. Harsha (Ankith Koyya) sneaks into his girlfriend Ahana’s (Shriya Kontham) house but ends up being trapped there for 14 days while her conservative family returns unexpectedly. Hilarity, tension, and youth drama ensue.",
+  category: "amazon-prime",
+  year: "07‑03‑2025", // Theatrical release date
+  image: "/images/14DaysGirlfriendIntlo.jpeg",
+  trailerUrl: "", // Add trailer URL if available
+  genre: "Romance, Comedy, Thriller",
+  cast: [
+    "Ankith Koyya as Harsha",
+    "Shriya Kontham as Ahana",
+    "Vennela Kishore",
+    "Indraja",
+    "Lakshmi Sujatha",
+    "Prashant Sharma",
+    "Ashok Chandra"
+  ],
+  tags: [
+    "14 Days Girlfriend Intlo 2025",
+    "Ankith Koyya",
+    "Shriya Kontham",
+    "Vennela Kishore",
+    "Telugu romantic comedy",
+    "lockdown movie",
+    "Sriharsha Manne debut",
+    "gen Z entertainer"
+  ]
+},
+
+ {
+  title: "Hometown",
+  description: "A gritty Telugu web series set in a small town, ‘Hometown’ explores secrets, betrayals, and the emotional struggles of youth navigating identity, friendship, and family expectations. It’s a coming-of-age mystery drama filled with emotional depth and strong performances.",
+  category: "aha",
+  year: "04-04-2025",
+  image: "/images/Hometown.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=Hometown_Trailer", // Replace with actual if available
+  genre: "Drama, Mystery",
+  cast: [
+    "Shivani Rajashekar",
+    "Avinash Beti",
+    "Nikhil Gajula",
+    "Shriya Sree",
+    "Rajiv Kumar Aneja"
+  ],
+  tags: [
+    "Hometown 2025",
+    "Telugu web series",
+    "Aha originals",
+    "Hometown OTT release",
+    "coming of age drama",
+    "Telugu mystery series",
+    "Aha Telugu series",
+    "Shivani Rajashekar Hometown"
+  ]
+},
+
+  {
+  title: "Inti Number 13",
+  description: "Inti Number 13 is a Telugu horror-thriller where bestselling novelist Arjun moves into a gifted villa only to face horrifying supernatural occurrences. When his sister Nitya shows unsettling behavior, Arjun teams up with veteran ghost hunter Gajanand (Anandaraj) to uncover the dark history of House No. 13.",
+  category: "amazon-prime",
+  year: "01‑03‑2024", // Theatrical release date; OTT on rental starting April 2025
+  image: "/images/IntiNumber13.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=sPa6bGSA_1g",
+  genre: "Horror, Thriller, Mystery",
+  cast: [
+    "Naveed Babu",
+    "Shivangi Mehra",
+    "Anandaraj",
+    "Tanikella Bharani",
+    "Sivannarayana",
+    "Prudhvi",
+    "Nikkesha Rangwala"
+  ],
+  tags: [
+    "Inti Number 13 2024",
+    "Telugu horror thriller",
+    "Anandaraj ghost hunter",
+    "Haunted villa mystery",
+    "Amazon Prime Telugu film",
+    "Panna Royal film",
+    "House No. 13 movie"
+  ]
+},
+
+{
+  title: "Jaabilamma Neeku Antha Kopama",
+  description: "Jaabilamma Neeku Antha Kopama is a youthful Telugu romantic comedy directed by Dhanush. It follows chef‑aspirant Prabhu (Pavish Narayanan), who, after a breakup with Neela (Anikha Surendran), unexpectedly reconnects with her via a wedding invite—leading to laughter, heartbreak, and emotional growth.",
+  category: "amazon-prime",
+  year: "21‑02‑2025", // Theatrical release date; streamed on Prime from April 2025
+  image: "/images/JaabilammaNeekuAnthaKopama.jpeg",
+  trailerUrl: "", // Insert official trailer if available
+  genre: "Romance, Comedy, Drama",
+  cast: [
+    "Pavish Narayanan",
+    "Anikha Surendran",
+    "Priya Prakash Varrier",
+    "Mathew Thomas",
+    "R. Sarathkumar",
+    "Aadukalam Naren",
+    "Saranya Ponvannan",
+    "Rabia Khatun",
+    "Ramya Ranganathan",
+    "Venkatesh Menon"
+  ],
+  tags: [
+    "Jaabilamma Neeku Antha Kopama 2025",
+    "Pavish Narayanan",
+    "Anikha Surendran",
+    "Priya Prakash Varrier",
+    "Dhanush directorial",
+    "Telugu rom-com",
+    "Amazon Prime Telugu",
+    "young adult romance thriller"
+  ]
+},
+
+{
+  title: "Madhushala",
+  description: "Madhushala is a gritty Telugu crime drama streaming on ETV Win. Set in 1991, it centers around the kidnapping of an MLA’s daughter-in-law and the chaos that ensues when one of the kidnappers dies unexpectedly. As suspects—including a bold politician, a vengeful woman, and crooked aides—emerge, the MLA races against time to outmaneuver conspiracies and reclaim his loved one.",
+  category: "etv-win",
+  year: "31‑03‑2025", // OTT premiere date on ETV Win
+  image: "/images/Madhushala.webp",
+  trailerUrl: "", // Add trailer link if available
+  genre: "Crime, Thriller, Drama",
+  cast: [
+    "Varalaxmi Sarathkumar",
+    "Manoj Nandham",
+    "Annie",
+    "Inaya Sulthana",
+    "Tanikella Bharani",
+    "Raghubabu",
+    "Getup Srinu",
+    "Rocket Raghava",
+    "Chinna",
+    "Ravi Varma",
+    "Jyoth",
+    "Sana"
+  ],
+  tags: [
+    "Madhushala 2025",
+    "Varalaxmi Sarathkumar",
+    "Telugu crime drama",
+    "ETV Win Telugu",
+    "kidnap thriller",
+    "MLA kidnapping plot",
+    "G. Sudhakar",
+    "Sebastian Vargheese music"
+  ]
+},
+{
+  title: "Mazaka",
+  description: "Mazaka is a fun-filled Telugu romantic comedy about single father Venkat Ramana (Rao Ramesh) and his son Krishna (Sundeep Kishan), who unwittingly fall in love with Meera (Ritu Varma) and Yashoda (Anshu Ambani) respectively. Their love stories collide when they discover the women are relatives, forcing the duo to repair long-standing family rifts before getting married.",
+  category: "zee5",
+  year: "26‑02‑2025", // Theatrical release date
+  image: "/images/Mazaka.jpeg",
+  trailerUrl: "https://www.zzee5.com/videos/details/mazaka-trailer/0-0-1z5726863", 
+  genre: "Romance, Comedy, Family",
+  cast: [
+    "Sundeep Kishan as Krishna",
+    "Ritu Varma as Meera",
+    "Rao Ramesh as Venkat Ramana",
+    "Anshu Ambani as Yashoda",
+    "Murali Sharma as Bhargav Varma",
+    "Raghu Babu",
+    "Srinivas Reddy",
+    "Hyper Aadi",
+    "Chammak Chandra"
+  ],
+  tags: [
+    "Mazaka 2025",
+    "Sundeep Kishan",
+    "Ritu Varma",
+    "Rao Ramesh",
+    "Telugu romantic comedy",
+    "ZEE5 Telugu 2025",
+    "Trinadha Rao Nakkina film",
+    "father son duo rom‑com"
+  ]
+},
+
+ {
+  title: "Aghathiyaa",
+  description: "Aghathiyaa is a Tamil‑Telugu period horror‑thriller about Aghathiyan, an art‑director who transforms a French mansion into a haunted house set—only for real supernatural forces to emerge. As ghosts linked to colonial-era Siddha medicine surface, he uncovers dark secrets tied to love, betrayal, and mystical rituals.",
+  category: "sun‑nxt",
+  year: "28‑02‑2025", // Premiered theatrically Feb 28, 2025; OTT on Sun NXT from Mar 28
+  image: "/images/Aghathiyaa.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=KxoydJJ0dX8", 
+  genre: "Horror, Fantasy, Mystery, Thriller",
+  cast: [
+    "Jiiva as Aghathiyan",
+    "Raashii Khanna as Veena",
+    "Arjun Sarja as Siddharthan",
+    "Edward Sonnenblick as Edwin Dupleix",
+    "Matylda as Jacqueline",
+    "Yogi Babu",
+    "Redin Kingsley",
+    "Radha Ravi",
+    "Rohini",
+    "VTV Ganesh"
+  ],
+  tags: [
+    "Aghathiyaa 2025",
+    "Jiiva",
+    "Raashii Khanna",
+    "Arjun Sarja",
+    "Sun NXT horror film",
+    "Pa Vijay film",
+    "period horror thriller",
+    "Siddha medicine myth"
+  ]
+},
+
+  {
+  title: "Return of the Dragon",
+  description: "Return of the Dragon (Tamil original: *Dragon*) is a youthful Telugu action-comedy-drama about Ragavan aka “Dragon” (Pradeep Ranganathan), a college dropout who cons his way into a high-paying job and faces the consequences of deceit. The film blends humor, emotional depth, and a life lesson about shortcuts in life.",
+  category: "netflix",
+  year: "21‑02‑2025", // Pan‑Indian theatrical release date
+  image: "/images/Dragon.avif",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Comedy, Drama, Romance",
+  cast: [
+    "Pradeep Ranganathan as Ragavan ‘Dragon’",
+    "Anupama Parameswaran as Keerthi",
+    "Kayadu Lohar as Pallavi",
+    "Mysskin as Principal Mayilvahanan",
+    "Gautham Vasudev Menon as Vale Kumar",
+    "K. S. Ravikumar as Parasuram",
+    "George Maryan as Dhanapal (father)",
+    "Indumathy Manikandan as Chitra Dhanapal (mother)",
+    "VJ Siddhu as Anbu",
+    "Harshath Khan as Young Dragon"
+  ],
+  tags: [
+    "Return of the Dragon 2025",
+    "Pradeep Ranganathan",
+    "Anupama Parameswaran",
+    "Kayadu Lohar",
+    "Netflix Telugu",
+    "Dragon Telugu film",
+    "college drama film",
+    "no shortcuts life lesson"
+  ]
+},
+
+ {
+  title: "Gandhi Tatha Chettu",
+  description: "Gandhi Tatha Chettu is a Telugu social drama about Gandhi (Sukriti Veni), a 13‑year‑old girl inspired by Gandhian values who leads a peaceful resistance to save her grandfather’s beloved tree from being cut for a factory. Set in rural Telangana, the film combines environmental activism, village politics, and poignant family bonds.",
+  category: "amazon-prime",
+  year: "24‑01‑2025", // theatrical release
+  image: "/images/GandhiTathaChettu.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=A1Xozp18TMM",
+  genre: "Drama, Social",
+  cast: [
+    "Sukriti Veni Bandreddi as Gandhi",
+    "Ananda Chakrapani as Ramachandrayya (her grandfather)",
+    "Rag Mayur as Satish (the businessman)",
+    "Bhanu Prakash Kothala",
+    "Nehal Anand Kunkuma",
+    "Raghuram"
+  ],
+  tags: [
+    "Gandhi Tatha Chettu 2025",
+    "Sukriti Veni",
+    "Telugu social drama",
+    "village environmental story",
+    "Gandhian resistance film",
+    "Amazon Prime Telugu",
+    "Padmavathi Malladi directorial"
+  ]
+},
+
+  {
+  title: "Brahma Anandam",
+  description: "Brahma Anandam is a Telugu comedy‑drama about Brahma (Raja Goutham), a struggling theatre artist who reconnects with his estranged grandfather Anandamurthy (Brahmanandam). Offered financial support under unexpected conditions, what follows is an emotional journey filled with generational conflict, ambition, and heartfelt revelations.",
+  category: "aha",
+  year: "14‑02‑2025", // Theatrical release  
+  image: "/images/BrahmaAnandam.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=7J8HB06Fm18",
+  genre: "Comedy, Drama",
+  cast: [
+    "Raja Goutham as Brahma",
+    "Brahmanandam as Anandamurthy",
+    "Vennela Kishore as Giri",
+    "Priya Vadlamani as Tara",
+    "Aishwarya Holakkal",
+    "Rajeev Kanakala",
+    "Sampath Raj",
+    "Talluri Rameswari",
+    "Raghu Babu",
+    "Divija Prabhakar",
+    "Dayanand Reddy"
+  ],
+  tags: [
+    "Brahma Anandam 2025",
+    "Raja Goutham",
+    "Brahmanandam",
+    "Telugu comedy drama",
+    "Aha Video Telugu",
+    "struggling actor story",
+    "grandfather grandson emotional",
+    "Sandilya Pisapati music"
+  ]
+},
+
+  {
+  title: "Officer On Duty",
+  description: "Officer On Duty is a gritty Malayalam–Telugu crime thriller starring CI Harishankar (Kunchacko Boban), a demoted yet relentless cop investigating a counterfeit jewelry racket that spirals into a deeply personal reckoning. Haunted by his past, Harishankar uncovers layers of crime, corruption and emotional trauma, leading him to confront a dark criminal network tied to systemic abuse.",
+  category: "netflix",
+  year: "20‑03‑2025",
+  image: "/images/OfficerOnDuty.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=ddbvbH5ff5U",
+  genre: "Crime, Thriller, Drama",
+  cast: [
+    "Kunchacko Boban as CI Harishankar",
+    "Priyamani as Geetha",
+    "Jagadish as Chandrababu",
+    "Vishak Nair as Christy Savio",
+    "Vaishak Shankar as DSP Shahu Raj",
+    "Vishnu G. Warrier as Satya Mithiran",
+    "Ramzan Muhammed as Shyam Babu",
+    "Meenakshi Anoop as Nila",
+    "Leya Mammen as Celine Joan",
+    "Aishwarya Raj as Anna Louis",
+    "Srikanth Murali as SI Venu",
+    "Unni Lalu"
+  ],
+  tags: [
+    "Officer On Duty 2025",
+    "Kunchacko Boban",
+    "Priyamani",
+    "Telugu thriller film",
+    "Netflix Malayalam movie",
+    "crime investigation",
+    "Shahi Kabir screenplay",
+    "Jithu Ashraf film"
+  ]
+},
+
+ {
+  title: "Jithender Reddy",
+  description: "Jithender Reddy is a political action-drama inspired by the life of an RSS leader from Telangana. It follows Jithender (Rakesh Varre), who challenges Naxal influence and fights electoral corruption, culminating in his rise as a local MLA. The film blends political idealism, grassroots activism, and personal sacrifice.",
+  category: "etv-win",
+  year: "08-11-2024", // Theatrical release
+  image: "/images/JithenderReddy1.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=DERQlqz7Chg",
+  genre: "Action, Political Drama, Biography",
+  cast: [
+    "Rakesh Varre as Jithender Reddy",
+    "Vaishali Raj as Sharada",
+    "Riya Suman as Gayatri",
+    "Subbaraju as Gopanna",
+    "Ravi Prakash as Gattayya",
+    "Rama Rao Jadhav",
+    "Chatrapathi Sekhar",
+    "Prem Sagar"
+  ],
+  tags: [
+    "Jithender Reddy 2024",
+    "Rakesh Varre",
+    "Vaishali Raj",
+    "Telugu political biopic",
+    "ETV Win Telugu movie",
+    "Virinchi Varma film",
+    "RSS activist story",
+    "political activism film"
+  ]
+},
+
+{
+  title: "Rekhachithram",
+  description: "Rekhachithram is a gripping Malayalam‑Telugu mystery crime thriller about CI Vivek Gopinath (Asif Ali), who unearths a chilling 40‑year‑old disappearance case after a suspect reveals buried evidence during a public livestream. As detective Vivek navigates secrets tied to the film industry, bygone betrayals, and colonial myths, every clue deepens the suspense.",
+  category: "aha",
+  year: "09‑01‑2025", // Theatrical release date
+  image: "/images/Rekhachithram.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=qm23CukXzKQ",
+  genre: "Mystery, Thriller, Crime",
+  cast: [
+    "Asif Ali as CI Vivek Gopinath",
+    "Anaswara Rajan as Rekha Pathrose",
+    "Manoj K. Jayan as Vincent",
+    "Siddique as Rajendran",
+    "Indrans as Chandrappan",
+    "Harisree Ashokan as Gopinathan",
+    "Unni Lalu as Young Vincent",
+    "Saikumar as Francis Thadathil",
+    "Jagadish",
+    "Saleema",
+    "Zarin Shihab",
+    "Nishanth Sagar"
+  ],
+  tags: [
+    "Rekhachithram 2025",
+    "Asif Ali",
+    "Anaswara Rajan",
+    "Telugu Aha mystery",
+    "Malayalam thriller dubbed Telugu",
+    "Jofin T Chacko",
+    "cold case investigation",
+    "classic film disappearance"
+  ]
+},
+
+ {
+  title: "Ramam Raghavam",
+  description: "Ramam Raghavam is a poignant Telugu drama‑thriller about Dasharatha Ramam (Samuthirakani), a principled government clerk whose aimless son Raghava (Dhanraj) descends into debts and deceit—culminating in a shocking betrayal that forces both to confront morality, redemption, and emotional reckoning.",
+  category: "etv-win",
+  year: "21‑02‑2025", // Theatrical premiere, digital from 14 Mar 2025
+  image: "/images/RamamRaghavam.jpeg",
+  trailerUrl: "", // Add official trailer if available
+  genre: "Drama, Thriller, Family",
+  cast: [
+    "Samuthirakani as Dasharatha Ramam",
+    "Dhanraj Koranani as Raghava",
+    "Harish Uthaman as Deva",
+    "Satya as Anji",
+    "Vennela Kishore as Satyam",
+    "Srinivas Reddy as Atin Raju",
+    "Sunil as Naidu",
+    "Prudhvi Raj as Kasinadh",
+    "Mokksha Sengupta as Varsha",
+    "Pramodini as Kamalamma"
+  ],
+  tags: [
+    "Ramam Raghavam 2025",
+    "Samuthirakani",
+    "Dhanraj Koranani",
+    "Telugu family drama",
+    "father son betrayal",
+    "Dhanraj directorial debut",
+    "ETV Win Telugu film",
+    "moral redemption thriller"
+  ]
+},
+
+{
+  title: "Agent",
+  description: "Agent is a Telugu espionage-action thriller where rookie RAW agent Ricky (Akhil Akkineni) is sent undercover by RAW chief Colonel Mahadev (Mammootty) to neutralize Dharma (Dino Morea), a rogue former agent plotting catastrophic biological warfare. Layers of conspiracy, betrayal, and espionage collide in this high-stakes globe-trotting narrative.",
+  category: "sony-liv",
+  year: "14‑03‑2025", // Digital premiere date on Sony LIV
+  image: "/images/Agent.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Action, Thriller, Spy",
+  cast: [
+    "Akhil Akkineni as Ricardo ‘Ricky’ Singh",
+    "Mammootty as Colonel Mahadev (The Devil)",
+    "Dino Morea as Dharma (God)",
+    "Sakshi Vaidya as Vidya",
+    "Vikramjeet Virk as Deva",
+    "Denzil Smith as Abhijeet Mehta",
+    "Saurav Chakrabarti as Sidharth",
+    "Sampath Raj as Prithiviraj",
+    "Murali Sharma",
+    "Varalaxmi Sarathkumar",
+    "Urvashi Rautela (special appearance)"
+  ],
+  tags: [
+    "Agent 2023",
+    "Akhil Akkineni",
+    "Mammootty",
+    "Sony LIV Telugu",
+    "spy thriller Telugu",
+    "Surender Reddy film",
+    "RAW agent mission",
+    "Vakkantham Vamsi screenplay"
+  ]
+},
+
+ {
+  title: "Hathya",
+  description: "Hathya is a gritty Telugu political crime thriller inspired loosely by a real-life Andhra Pradesh murder. IPS officer Sudha Rao (Dhanya Balakrishna) investigates the mysterious death of politician V.S. Dayananda Reddy (Ravi Varma), uncovering deceit, power games, and corruption in the political elite.",
+  category: "amazon-prime",
+  year: "24‑01‑2025",
+  image: "/images/Hathya.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=I5kF8iN8i28",
+  genre: "Crime, Thriller, Political",
+  cast: [
+    "Dhanya Balakrishna as IPS Sudha Rao",
+    "Ravi Varma as V.S. Dayananda Reddy",
+    "Pooja Ramachandran as Shaheen",
+    "Bindu Chandramouli as Anitha",
+    "Srikanth Iyengar",
+    "Bharath Reddy as Jeevan Reddy",
+    "Raghunath Raju",
+    "Sivaji Raja"
+  ],
+  tags: [
+    "Hathya 2025",
+    "Dhanya Balakrishna",
+    "Ravi Varma",
+    "Telugu political thriller",
+    "Amazon Prime Telugu",
+    "cold case investigation",
+    "Srividya Basawa film"
+  ]
+},
+
+ {
+  title: "Laila",
+  description: "Laila is a Telugu action‑comedy with a comedic twist: beautician Sonu (Vishwak Sen) disguises himself as a woman named Laila to escape a crisis involving a local rowdy and corrupt SI. As Laila, Sonu navigates mistaken identities, quirky romance with Jenny (Akanksha Sharma), and escalating chaos in a humor‑driven, over‑the‑top setup.",
+  category: "amazon‑prime",
+  year: "14‑02‑2025", // Theatrical release date
+  image: "/images/Laila.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=FyhFBHpTh6Y", // Official trailer
+  genre: "Action, Comedy, Romance",
+  cast: [
+    "Vishwak Sen as Sonu Model / ‘Laila’",
+    "Akanksha Sharma as Jenny",
+    "Abhimanyu Singh as Rusthum",
+    "Vennela Kishore",
+    "Babloo Prithiveeraj",
+    "Vineet Kumar",
+    "Kamakshi Bhaskarla as Sundari (Sita)",
+    "Sunaina Badam as Judge",
+    "Raghu Babu",
+    "Prudhviraj",
+    "Ravi Mariya",
+    "Nagineedu",
+    "Harsha Vardhan"
+  ],
+  tags: [
+    "Laila 2025",
+    "Vishwak Sen",
+    "Akanksha Sharma",
+    "Telugu Amazon Prime movie",
+    "action comedy",
+    "cross‑dressing comedy",
+    "Ram Narayan film",
+    "beauty parlour misadventure"
+  ]
+},
+
+  {
+  title: "Thandel",
+  description: "Thandel follows Raju (Naga Chaitanya), a fearless fisherman from Srikakulam who becomes leader of his community. After drifting into Pakistani waters and landing in a prison, he and his men endure hardship overseas while Satya (Sai Pallavi) fights tirelessly back home for their release in a poignant tale of love, resilience, and patriotism.",
+  category: "netflix",
+  year: "07‑03‑2025", // OTT premiere date on Netflix
+  image: "/images/Thandel.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Action, Romance, Thriller",
+  cast: [
+    "Naga Chaitanya Akkineni as Raju",
+    "Sai Pallavi as Satya 'Bujji Thalli'",
+    "Prakash Belawadi",
+    "Aadukalam Naren",
+    "Karunakaran",
+    "Divya Pillai",
+    "Babloo Prithiveeraj",
+    "Kalpa Latha",
+    "Parvateesam",
+    "Sundip Ved"
+  ],
+  tags: [
+    "Thandel 2025",
+    "Naga Chaitanya",
+    "Sai Pallavi",
+    "Telugu Netflix movie",
+    "fisherman drama",
+    "Chandoo Mondeti film",
+    "Devi Sri Prasad soundtrack",
+    "Pakistani jail survival"
+  ]
+},
+
+  {
+  title: "Manamey",
+  description: "Manamey is a Telugu romantic comedy‑drama by Sriram Adittya. Vikram (Sharwanand), a carefree youth in London, reluctantly takes custody of his deceased friend’s child, Kushi, along with Subhadra (Krithi Shetty). What starts as chaos becomes a journey of unexpected parenthood, emotional bonds, and healing.",
+  category: "amazon-prime",
+  year: "07‑06‑2024",       // Theatrical release
+  image: "/images/Manamey.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=3zOCInbXzy8",
+  genre: "Romance, Comedy, Family Drama",
+  cast: [
+    "Sharwanand as Vikram Balisetti",
+    "Krithi Shetty as Subhadra",
+    "Vikram Aditya Sutradhar as Kushi",
+    "Tanikella Bharani as Mahendra (consulate officer)",
+    "Vennela Kishore as Doctor",
+    "Seerat Kapoor as Tanya",
+    "Thrigun as Anurag",
+    "Mounika Reddy as Shanti",
+    "Rahul Ravindran as Joseph",
+    "Rahul Ramakrishna as Ramulu ‘Rolex’",
+    "Sudarshan, Shiva Kandukuri, Ayesha Khan, Sachin Khedekar, Tulasi, Mukesh Rishi, Seetha, Zarina Wahab, Vijayakumar"
+  ],
+  tags: [
+    "Manamey 2024",
+    "Sharwanand",
+    "Krithi Shetty",
+    "Telugu romantic comedy",
+    "family entertainer",
+    "Amazon Prime Telugu",
+    "Sriram Adittya film",
+    "Hesham Abdul Wahab music"
+  ]
+},
+
+ {
+  title: "Baapu",
+  description: "Baapu is a Telugu satirical comedy‑drama set in rural Telangana. A farmer, deep in debt, contemplates an unimaginable insurance claim for his elderly father. Directed by Dayakar Reddy, the film blends dark humor with social commentary on agrarian pressure and moral dilemma.",
+  category: "jiohotstar",
+  year: "21‑02‑2025", // Theatrical release date
+  image: "/images/Baapu.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=z7at0BQMuHs",
+  genre: "Comedy, Drama, Satire",
+  cast: [
+    "Brahmaji as Mallanna (the father)",
+    "Aamani as Saroja (his wife)",
+    "Sudhakar Reddy Kethiri as Rajayya (grandfather)",
+    "Dhanya Balakrishna as Varalakshmi (daughter)",
+    "Mani Aegurla as Yadigiri (son)",
+    "Srinivas Avasarala as Ravi (lecturer)",
+    "Racha Ravi",
+    "Mani Aegurla",
+    "Milkuri Gangavva"
+  ],
+  tags: [
+    "Baapu 2025",
+    "Brahmaji",
+    "Aamani",
+    "Telugu satire film",
+    "JioHotstar Telugu",
+    "rural debt drama",
+    "dark comedy",
+    "Dayakar Reddy"
+  ]
+},
+
+{
+  title: "Rewind",
+  description: "Rewind is a Telugu sci‑fi mystery thriller starring Sai Ronak as Karthik, who discovers a time‑machine and tries to rewrite his fate—to bring back the girl he loves, Shanti (Amrutha Chowdary). As timelines unravel, he must face consequences of choice, love and regret.",
+  category: "lionsgate-play",
+  year: "18‑10‑2024",  // Theatrical release in India
+  image: "/images/Rewind.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=u0kREoS8sWU", // Official trailer
+  genre: "Romance, Science Fiction, Thriller",
+  cast: [
+    "Sai Ronak as Karthik",
+    "Amrutha Chowdary as Shanti",
+    "Suresh",
+    "Samrat Reddy",
+    "Viva Raghav",
+    "Abhishek Viswakarma",
+    "Jabardast Nagi",
+    "Funbucket Bharath",
+    "Ramu Gandham",
+    "Rajesh Vulli",
+    "Neelima Pathakamsetti"
+  ],
+  tags: [
+    "Rewind 2024",
+    "Sai Ronak",
+    "Amrutha Chowdary",
+    "Telugu sci fi thriller",
+    "time travel love story",
+    "Kalyan Chakravarthy film",
+    "Lionsgate Play Telugu"
+  ]
+},
+
+  {
+  title: "Pattudala",
+  description: "Pattudala is a tense Telugu action‑mystery thriller in which Arjun (Ajith Kumar) embarks on a desperate road‑trip across Azerbaijan to rescue his estranged wife Kayal (Trisha), who mysteriously disappears. His journey unravels betrayal, hidden danger, and emotional pain while he confronts dangerous conspiracies led by Rakshith (Arjun Sarja).",
+  category: "netflix",
+  year: "06‑02‑2025", // Theatrical release date in Tamil & Telugu
+  image: "/images/Pattudala.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Action, Mystery, Thriller",
+  cast: [
+    "Ajith Kumar as Arjun",
+    "Trisha Krishnan as Kayal Arjun",
+    "Arjun Sarja as Rakshith",
+    "Regina Cassandra as Deepika",
+    "Aarav Nafeez as Michael",
+    "Nikhil Nair",
+    "Dasarathi",
+    "Ganesh Saravanan",
+    "Ramya Subramanian"
+  ],
+  tags: [
+    "Pattudala 2025",
+    "Ajith Kumar",
+    "Trisha Krishnan",
+    "Telugu thriller",
+    "Netflix Telugu film",
+    "Magizh Thirumeni",
+    "road trip mystery",
+    "Breakdown adaptation"
+  ]
+},
+
+ {
+  title: "Sankranthiki Vasthunam",
+  description: "Sankranthiki Vasthunam is a festive Telugu action‑comedy directed by Anil Ravipudi, starring Venkatesh as YD Raju — a former cop drawn back into a rescue mission involving his ex‑lover (Meenakshi) and his doting wife (Aishwarya Rajesh). Packed with slapstick humor, quirky chaos, and high‑energy music, it’s a perfect Sankranti entertainer.",
+  category: "zee5",
+  year: "14‑01‑2025", // Theatrical release on Sankranti; OTT shortly after
+  image: "/images/SankranthikiVasthunam.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Action, Comedy, Romance",
+  cast: [
+    "Venkatesh Daggubati as YD Raju",
+    "Aishwarya Rajesh as Bhagya Lakshmi",
+    "Meenakshi Chaudhary as Meenakshi",
+    "Upendra Limaye as George Antony",
+    "Saikumar Pudipeddi as Manikya Rao",
+    "Naresh Vijay Krishna as CM Kesava",
+    "VTV Ganesh as VT",
+    "Srinivas Avasarala",
+    "Babloo Prithiveeraj",
+    "Master Revanth as Bulli Raju"
+  ],
+  tags: [
+    "Sankranthiki Vasthunam 2025",
+    "Venkatesh",
+    "Aishwarya Rajesh",
+    "Meenakshi Chaudhary",
+    "Telugu festival comedy",
+    "Anil Ravipudi film",
+    "family entertainer",
+    "Godari Gattu song"
+  ]
+},
+
+ {
+  title: "Madraskaaran",
+  description: "Madraskaaran is a rustic Tamil‑Telugu action thriller starring Shane Nigam as Sathya, who returns to his paternal village only to clash violently with local don Durai Singam (Kalaiyarasan). What begins as a personal rivalry quickly spirals into a tense cat‑and‑mouse drama filled with betrayal, emotional scars, and rural vengeance.",
+  category: "aha",
+  year: "10‑01‑2025",      // Theatrical release (Tamil)
+  image: "/images/Madraskaaran.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=eJ6ZbQxGm30",
+  genre: "Action, Thriller",
+  cast: [
+    "Shane Nigam as Sathyamoorthy (Sathya)",
+    "Kalaiyarasan as Durai Singam",
+    "Niharika Konidela as Meera",
+    "Aishwarya Dutta as Kalyani",
+    "Karunas",
+    "Pandiarajan",
+    "Ponvannan",
+    "Super Subbarayan"
+  ],
+  tags: [
+    "Madraskaaran 2025",
+    "Shane Nigam",
+    "Kalaiyarasan",
+    "Aha Video streaming",
+    "Tamil rural action",
+    "Vaali Mohan Das",
+    "Sam C S music",
+    "Sathyamoorthy revenge thriller"
+  ]
+},
+{
+  title: "Daaku Maharaaj",
+  description: "Daaku Maharaaj is a high‑octane Telugu action thriller starring Nandamuri Balakrishna as Sitaram, a civil engineer turned dacoit to protect a village and a vulnerable girl. With thunderous punch dialogues, stylish action, and a memorable soundtrack by Thaman S, the mass entertainer balances emotion, revenge, and visual flair.",
+  category: "netflix",
+  year: "21‑02‑2025", // OTT debut date on Netflix
+  image: "/images/DaakuMaharaaj.jpeg",
+  trailerUrl: "", // Add official trailer link if needed
+  genre: "Action, Drama, Thriller",
+  cast: [
+    "Nandamuri Balakrishna as Sitaram / Daaku Maharaaj",
+    "Bobby Deol as Balwanth Singh Thakur (antagonist)",
+    "Pragya Jaiswal as Kaveri (Sitaram’s wife)",
+    "Shraddha Srinath as Nandini Thakur (Bobby’s wife)",
+    "Chandini Chowdary",
+    "Urvashi Rautela",
+    "Ravi Kishan",
+    "Shine Tom Chacko",
+    "Sachin Khedekar",
+    "Makarand Deshpande",
+    "VTV Ganesh",
+    "Satya",
+    "Jeevan Kumar"
+  ],
+  tags: [
+    "Daaku Maharaaj 2025",
+    "Nandamuri Balakrishna",
+    "Bobby Deol Telugu debut",
+    "Telugu Netflix movie",
+    "action thriller",
+    "Bobby Kolli film",
+    "Thaman S background score",
+    "mass masala entertainer"
+  ]
+},
+
+  {
+  title: "Sammelanam",
+  description: "Sammelanam is a Telugu romantic comedy‑drama web series on ETV Win, exploring love, friendship, and second chances. When Ram (Ganaaditya) writes a bestselling novel revealing past betrayals, estranged friends Arjun (Vignay Abhishek), Rahul (Srikanth Gurram), Meghana (Priya Vadlamani), and Shreya (Bindu Nuthakki) reunite—sparking emotional clashes, romantic tension, and nostalgia.",
+  category: "etv-win",
+  year: "20‑02‑2025",
+  image: "/images/Sammelanam.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=BjfJSBnEk1Y",
+  genre: "Romantic Comedy, Drama",
+  cast: [
+    "Ganaaditya as Ram",
+    "Priya Vadlamani as Meghana",
+    "Vignay Abhishek as Arjun",
+    "Srikanth Gurram as Rahul",
+    "Bindu Nuthakki as Shreya",
+    "Jeevanpriya Reddy as Andallu",
+    "Shivanth Yachamaneni",
+    "Nuthakki Bindhu Bhargavi"
+  ],
+  tags: [
+    "Sammelanam 2025",
+    "Telugu web series",
+    "ETV Win original",
+    "friendship romance drama",
+    "Tharun Mahadev webseries",
+    "Priya Vadlamani",
+    "love triangle show",
+    "nostalgia teen drama"
+  ]
+},
+
+ {
+  title: "Marco (Telugu)",
+  description: "Marco is an ultra‑violent Malayalam action thriller dubbed in Telugu, featuring Marco (Unni Mukundan) seeking brutal vengeance for his adopted brother’s death. Blending neo-noir grit, sensory investigation, and unrelenting action, the film unfolds as Marco tears through a gold-smuggling syndicate while grappling with family betrayal.",
+  category: "aha",
+  year: "20‑12‑2024", // Original Malayalam theatrical debut
+  image: "/images/Marco.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=uc3mlFD-lFQ",
+  genre: "Action, Thriller, Crime",
+  cast: [
+    "Unni Mukundan as Marco",
+    "Siddique as George D’Peter",
+    "Jagadish as Tony Isaac",
+    "Abhimanyu S. Thilakan as Russell Isaac",
+    "Kabir Duhan Singh as Cyrus Isaac",
+    "Ishaan Shoukath as Victor D’Peter",
+    "Yukti Thareja as Maria",
+    "Anson Paul as Devaraj",
+    "Sreejith Ravi",
+    "Durva Thaker",
+    "Arjun Nandakumar",
+    "Ajith Koshy"
+  ],
+  tags: [
+    "Marco 2024",
+    "Unni Mukundan",
+    "Telugu Aha movie",
+    "most violent Indian film",
+    "gold smuggling thriller",
+    "Haneef Adeni film",
+    "sensory action drama",
+    "Ravi Basrur score"
+  ]
+},
+
+  {
+  title: "Bhairathi Ranagal",
+  description: "Bhairathi Ranagal is a gritty neo-noir action-drama about Shiva Rajkumar’s transformation from a frustrated lawyer in a drought-stricken Ronapura to a feared vigilante don. Catalyzed by government neglect and mining exploitation, his journey blends idealism, rage, and justice in cinematic fashion.",
+  category: "aha",
+  year: "15‑11‑2024",  // Kannada theatrical release; Telugu OTT from Feb 13, 2025
+  image: "/images/BhairathiRanagal.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=FPcYWcASe5U",
+  genre: "Action, Drama, Thriller",
+  cast: [
+    "Shiva Rajkumar as Bhairathi Ranagal",
+    "Rukmini Vasanth as Dr. Vaishali",
+    "Rahul Bose as Parande (industrialist antagonist)",
+    "Chaya Singh as Vedavathi",
+    "Devaraj",
+    "Madhu Guruswamy",
+    "Gopal Krishna Deshpande",
+    "Shabeer Kallarakkal",
+    "Babu Hirannaiah",
+    "Prathap Narayan"
+  ],
+  tags: [
+    "Bhairathi Ranagal 2024",
+    "Shiva Rajkumar",
+    "Rahul Bose",
+    "Aha Telugu movie",
+    "neo noir action thriller",
+    "prequel to Mufti",
+    "Narthan film",
+    "Ronapura injustice story"
+  ]
+},
+
+ {
+  title: "Kadhalikka Neramillai",
+  description: "Kadhalikka Neramillai is a refreshing Tamil-Telugu romantic comedy directed by Kiruthiga Udhayanidhi. Architect Shriya (Nithya Menen), disillusioned by heartbreak, chooses IVF solo, while Bengaluru engineer Siddharth 'Sid' (Ravi Mohan) opts to freeze his sperm. A mix-up binds their fate in unexpected ways, leading to mature love, parenthood, and second chances.",
+  category: "netflix",
+  year: "14‑01‑2025", // Theatrical in Tamil (Telugu OTT debut on Feb 11)
+  image: "/images/KadhalikkaNeramillai.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Romance, Comedy, Drama",
+  cast: [
+    "Ravi Mohan as Siddharth 'Sid'",
+    "Nithya Menen as Shriya Chandramohan",
+    "T.J. Bhanu as Nirupama",
+    "Yogi Babu as Gowda",
+    "Vinay Rai as Sethu",
+    "John Kokken",
+    "Lal",
+    "Mano",
+    "Lakshmy Ramakrishnan"
+  ],
+  tags: [
+    "Kadhalikka Neramillai 2025",
+    "Ravi Mohan",
+    "Nithya Menen",
+    "Telugu Netflix movie",
+    "modern rom-com",
+    "IVF romance",
+    "Kiruthiga Udhayanidhi film",
+    "AR Rahman music"
+  ]
+},
+{
+  title: "Game Changer",
+  description: "Game Changer is a lavish political‑action drama directed by S. Shankar in his Telugu debut. Ram Charan plays dual roles—Ram Nandan IAS and activist Appanna—locked in a high-stakes battle against corrupt politician Mopidevi (S.J. Suryah), as they fight electoral injustice and systemic abuse in Andhra Pradesh.",
+  category: "amazon-prime",
+  year: "10‑01‑2025", // Theatrical release during Sankranti
+  image: "/images/GameChanger.jpeg",
+  trailerUrl: "", // Add trailer if available
+  genre: "Action, Thriller, Political Drama",
+  cast: [
+    "Ram Charan as Ram Nandan / Appanna",
+    "Kiara Advani as Deepika",
+    "Anjali as Parvathy",
+    "S. J. Suryah as Bobbili Mopidevi",
+    "Srikanth as Bobbili Sathyamurthy",
+    "Sunil as Side Satyam",
+    "Jayaram as Ramachandra Reddy",
+    "Samuthirakani as Sabha",
+    "Prakash Raj, Nassar, Anjali, Naveen Chandra, Vennela Kishore"
+  ],
+  tags: [
+    "Game Changer 2025",
+    "Ram Charan",
+    "Kiara Advani",
+    "Telugu political thriller",
+    "Amazon Prime Telugu",
+    "S. Shankar film",
+    "electoral politics drama",
+    "Thaman S soundtrack"
+  ]
+},
+
+{
+  title: "Vivekanandan Viral",
+  description: "Vivekanandan Viral is a Malayalam dark-comedy drama (Telugu dubbed) where mild‑mannered SP Vivekanandan (Shine Tom Chacko) leads a double life—married by weekend, mistress-bound by weekday. When his deceit goes viral, the women seek revenge through social media activism, forcing him to face consequences of consent, power, and public shame.",
+  category: "aha",
+  year: "19‑01‑2024", // Original theatrical; Telugu OTT from 07‑02‑2025
+  image: "/images/VivekanandanViral.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=0-O4ZEGD6B4",
+  genre: "Comedy, Drama, Social Thriller",
+  cast: [
+    "Shine Tom Chacko as SP Vivekanandan",
+    "Swasika Vijay as Sithara (wife)",
+    "Grace Antony as Diana (mistress)",
+    "Mareena Michael as Aishu (YouTuber friend)",
+    "Manju Pillai as Ammini",
+    "Maala Parvathi as Savithri Teacher",
+    "Johny Antony as Padmanabhan (Pappettan)",
+    "Sminu Sijo as CPO Mercy Mathew",
+    "Sarath Sabha as Joppan",
+    "Vineeth Thattil David as CI Hameed",
+    "Sidhartha Siva as Dr. Mahalingeshwaran",
+    "Neena Kurup in supporting role"
+  ],
+  tags: [
+    "Vivekanandan Viral 2024",
+    "Shine Tom Chacko",
+    "Telugu Aha movie",
+    "comedy drama viral story",
+    "Kamal social satire",
+    "Telugu dubbed Malayalam film",
+    "women empowerment film",
+    "digital revenge plot"
+  ]
+},
+
+ {
+  title: "Kobali",
+  description: "Kobali is a gritty Telugu crime‑drama web series set in Rayalaseema’s brutal faction world. It follows Srinu (Ravi Prakash), drawn into a cycle of blood‑feud and retribution against rival family Ramana (Rocky Singh), exposing betrayal, power struggles, and the collateral damage of vengeance.",
+  category: "jiohotstar",
+  year: "04‑02‑2025", // OTT release date
+  image: "/images/Kobali.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=D87xnt3Chrw",
+  genre: "Crime, Drama, Revenge Thriller",
+  cast: [
+    "Ravi Prakash as Srinu",
+    "Rocky Singh as Ramana",
+    "Tarun Rohith as Ramu",
+    "Syamala as Meena",
+    "Bharath Reddy as Dr. Krishna",
+    "Venkat as Jagjeevan Thakur",
+    "Yog Khatri as Principal",
+    "Gaddam Naveen as Murthy",
+    "Sagar Majji as Shabir",
+    "Manikanta as Raju",
+    "Sukku Reddy as Kaasi"
+  ],
+  tags: [
+    "Kobali 2025",
+    "Telugu crime series",
+    "Rayalaseema faction drama",
+    "Ravi Prakash",
+    "Rocky Singh",
+    "Disney+ Hotstar Telugu",
+    "Revanth Levaka",
+    "revenge thriller"
+  ]
+},
+
+ {
+  title: "Dark",
+  description: "Dark is the Telugu-dubbed version of the Tamil sci-fi mystery-thriller _Black_, starring Jiiva and Priya Bhavani Shankar. A couple takes a weekend retreat to a remote row house but finds themselves trapped in a time loop during a violent storm, triggering psychological horror and eerie supernatural occurrences they must unravel before it’s too late.",
+  category: "amazon-prime",
+  year: "11‑02‑2025", // Telugu OTT premiere on Prime Video
+  image: "/images/Dark.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Mystery, Thriller, Sci‑Fi, Psychological",
+  cast: [
+    "Jiiva as Vasanth",
+    "Priya Bhavani Shankar as Aranya",
+    "Vivek Prasanna",
+    "Yog Japee as Inspector Sivaraj",
+    "Swayam Siddha",
+    "Shah Ra"
+  ],
+  tags: [
+    "Dark 2025",
+    "Jiiva",
+    "Priya Bhavani Shankar",
+    "Telugu Prime Video film",
+    "psychological mystery",
+    "K G Balasubramani thriller",
+    "Coherence adaptation",
+    "time loop horror"
+  ]
+},
+
+  {
+  title: "Identity",
+  description: "Identity is a riveting Malayalam‑Telugu psychological crime thriller where CI Allen Jacob (Vinay Rai) teams up with quirky sketch‑artist Haran Shankar (Tovino Thomas) and eyewitness Alisha (Trisha Krishnan) to uncover a serial killer’s face from fragmented memory. With twists, shadowy conspiracies, and moral complexities, it crosses language barriers with gripping narrative impact.",
+  category: "zee5",
+  year: "31‑01‑2025", // OTT premiere date on ZEE5
+  image: "/images/Identity.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=glKudDF8_b0", // Official Telugu trailer
+  genre: "Crime, Thriller, Mystery",
+  cast: [
+    "Tovino Thomas as Haran Shankar (sketch artist)",
+    "Trisha Krishnan as Alisha／Ann (eyewitness)",
+    "Vinay Rai as CI Allen Jacob",
+    "Aju Varghese as DYSP Dinesh Chandran",
+    "Mandira Bedi as Supriya Gopal",
+    "Arjun Radhakrishnan as Amar Felix",
+    "Vishak Nair as Nakul",
+    "Dhruvan in supporting role"
+  ],
+  tags: [
+    "Identity 2025",
+    "Tovino Thomas",
+    "Trisha Krishnan",
+    "Vinay Rai",
+    "ZEE5 Malayalam thriller",
+    "psychological crime mystery",
+    "sketch artist serial killer",
+    "Akhil Paul Anas Khan film"
+  ]
+}
+,
+  {
+  title: "Dhoom Dhaam",
+  description: "Dhoom Dhaam is a Telugu family‑romantic comedy‑drama about Karthik (Chetan Maddineni) and Suhana (Hebah Patel), whose arranged wedding spirals into chaos when they’re caught in a high‑stakes chase involving kidnappers, mistaken identity, and eccentric relatives. With Poland’s scenic backdrop, witty dialogues, and standout moments from Vennela Kishore, it makes for breezy OTT entertainment.",
+  category: "amazon-prime",
+  year: "08‑11‑2024", // Theatrical release date
+  image: "/images/DhoomDhaam.jpeg",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Comedy, Drama, Family",
+  cast: [
+    "Chetan Krishna (Maddineni) as Karthik",
+    "Hebah Patel as Suhana",
+    "Sai Kumar as Rama Raju (father)",
+    "Vennela Kishore",
+    "Praveen as friend",
+    "Naveen Neni",
+    "Giridhar",
+    "Banerjee",
+    "Goparaju Ramana"
+  ],
+  tags: [
+    "Dhoom Dhaam 2024",
+    "Chetan Krishna",
+    "Hebah Patel",
+    "Telugu Amazon Prime",
+    "family comedy",
+    "wedding chaos film",
+    "Sai Kishore Macha directorial",
+    "Vennela Kishore comic relief"
+  ]
+},
+
+{
+  title: "Coffee With A Killer",
+  description: "Coffee With A Killer is a Telugu-language comedy-thriller directed by R. P. Patnaik. A professional killer targets someone in a crowded coffee shop—each table hosts distinct stories, leaving one to wonder: who’s the real target, and how will he complete the job amidst chaos and comedy?",
+  category: "aha",
+  year: "31‑01‑2025", // Direct-to-OTT release on Aha
+  image: "/images/CoffeeWithAKiller.avif",
+  trailerUrl: "", // Add official trailer link if available
+  genre: "Comedy, Thriller",
+  cast: [
+    "Temper Vamshi",
+    "Ravi Prakash",
+    "Siva Karthi",
+    "Srinivasa Reddy",
+    "Ravi Babu",
+    "Satyam Rajesh",
+    "Ambati Srinu",
+    "Shree Rapaka",
+    "Gemini Suresh"
+  ],
+  tags: [
+    "Coffee With A Killer 2025",
+    "Temper Vamshi",
+    "Ravi Prakash",
+    "Telugu Aha film",
+    "coffee shop thriller",
+    "R. P. Patnaik directorial"
+  ]
+},
+
+ {
+  title: "Pushpa 2: The Rule",
+  description: "Pushpa 2: The Rule is a Telugu-language action thriller directed by Sukumar. A sequel to Pushpa: The Rise, it follows Pushpa Raj, a red sandalwood smuggler, as he expands his empire and faces intense confrontations with rival factions and authorities, particularly SP Bhanwar Singh Shekhawat, amidst political upheavals and personal challenges.",
+  category: "netflix",
+  year: "30-01-2025",
+  image: "/images/Pushpa2.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=Q679o0UrSQM",
+  genre: "Action, Crime, Thriller, Drama",
+  cast: [
+    "Allu Arjun",
+    "Rashmika Mandanna",
+    "Fahadh Faasil",
+    "Jagapathi Babu",
+    "Prakash Raj",
+    "Sunil",
+    "Rao Ramesh",
+    "Dhananjay",
+    "Anasuya Bharadwaj",
+    "Ajay Ghosh",
+    "Sreeleela"
+  ],
+  tags: [
+    "Pushpa 2 The Rule 2024",
+    "Allu Arjun",
+    "Sukumar",
+    "Telugu Netflix film",
+    "red sandalwood smuggling",
+    "pan-Indian action thriller"
+  ]
+},{
+  title: "Pothugadda",
+  description: "Pothugadda is a Telugu-language political thriller directed by Raksha Veeran. Set in the volatile village of Pothugadda in Kurnool, the film weaves a gripping tale of love and political intrigue. A young couple’s romantic getaway turns chaotic when their bus, carrying a massive bribe for elections, is hijacked, thrusting them into a high-stakes fight for survival amidst political conspiracies and power struggles.",
+  category: "etv-win",
+  year: "30-01-2025",
+  image: "/images/Pothugadda.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=3a4b5c6d7e8f", // Placeholder; actual trailer URL unavailable in sources
+  genre: "Action, Political Thriller, Romance, Drama",
+  cast: [
+    "Aadukalam Naren",
+    "Shatru",
+    "Prudhvi Dandamudi",
+    "Vismaya Sri",
+    "Prashant Karthi",
+    "Krheah Raj",
+    "Aadvik Bandaru"
+  ],
+  tags: [
+    "Pothugadda 2025",
+    "Aadukalam Naren",
+    "Shatru",
+    "Telugu ETV Win film",
+    "political thriller",
+    "Raksha Veeran directorial"
+  ]
+},
+  {
+  title: "Srikakulam Sherlockholmes",
+  description: "Srikakulam Sherlockholmes is a Telugu-language comedy thriller directed by Writer Mohan in his directorial debut. Set in 1991 Vizag, a private detective, Om, nicknamed Sherlock Holmes, investigates the murder of a young woman, Pulidandu Mary, on a beach amidst the backdrop of Rajiv Gandhi’s visit. Tasked with solving the case in seven days, he interrogates seven suspects, unraveling a conspiracy with regional humor and suspense.",
+  category: "etv-win",
+  year: "24-01-2025",
+  image: "/images/SrikakulamSherlockholmes.webp",
+  trailerUrl: "https://www.youtube.com/watch?v=4vHlebal7y", // Placeholder; actual trailer URL unavailable in sources
+  genre: "Comedy, Mystery, Thriller",
+  cast: [
+    "Vennela Kishore",
+    "Ananya Nagalla",
+    "Siya Gowtam",
+    "Ravi Teja Mahadasyam",
+    "Muralidhar Goud",
+    "Bhadram",
+    "Anish Kuruvilla",
+    "Baahubali Prabhakar",
+    "Sneha Gupta",
+    "Dokala Navya"
+  ],
+  tags: [
+    "Srikakulam Sherlockholmes 2025",
+    "Vennela Kishore",
+    "Ananya Nagalla",
+    "Telugu ETV Win film",
+    "comedy thriller",
+    "Writer Mohan directorial"
+  ]
+},
+  {
+  title: "Razakar",
+  description: "Razakar: The Silent Genocide of Hyderabad is a Telugu-language historical action drama directed by Yata Satyanarayana. Set post-India's independence in 1947, the film depicts the Hyderabad Liberation Movement of 1948, focusing on the brutal oppression of Telangana's people by the Nizam's regime and the Razakars, a paramilitary force. It explores the resistance against atrocities, led by figures like Chakali Ailamma and Sardar Vallabhbhai Patel, culminating in Operation Polo to integrate Hyderabad into India.",
+  category: "aha",
+  year: "24-01-2025",
+  image: "/images/Razakar.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=3U8h6fM3f4U",
+  genre: "Action, Drama, Historical",
+  cast: [
+    "Bobby Simha",
+    "Raj Arjun",
+    "Anasuya Bharadwaj",
+    "Vedhika",
+    "Makarand Deshpande",
+    "Tej Sapru",
+    "Indraja",
+    "Prema",
+    "Thalaivasal Vijay",
+    "Arav Chowdharry",
+    "John Vijay",
+    "Chandhunadh",
+    "Tarak Ponnappa",
+    "Keshav Deepak",
+    "Annusriya Tripathi"
+  ],
+  tags: [
+    "Razakar 2024",
+    "Bobby Simha",
+    "Raj Arjun",
+    "Telugu Aha film",
+    "Hyderabad Liberation Movement",
+    "Yata Satyanarayana directorial"
+  ]
+},
+ {
+  title: "Sivarapalli",
+  description: "Sivarapalli is a Telugu-language comedy-drama web series, a remake of the Hindi series Panchayat, directed by Bhaskhar Maurya. Set in the fictional village of Sivarapalli, Telangana, it follows Shyam, an engineering graduate from Hyderabad, who reluctantly takes up the role of Panchayat Secretary. While preparing for the GMAT to pursue his dream of moving to the USA, Shyam navigates the quirks of rural life, local politics, and humorous misadventures, forming unexpected bonds with the villagers.",
+  category: "amazon-prime",
+  year: "24-01-2025",
+  image: "/images/Sivarapalli.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=Z1JV8BhFIL",
+  genre: "Comedy, Drama, Slice-of-Life",
+  cast: [
+    "Rag Mayur",
+    "Muralidhar Goud",
+    "Rupa Lakshmi",
+    "Uday Gurrala",
+    "Sunny Palle",
+    "Pavani Karanam"
+  ],
+  tags: [
+    "Sivarapalli 2025",
+    "Rag Mayur",
+    "Muralidhar Goud",
+    "Telugu Amazon Prime series",
+    "Panchayat remake",
+    "Bhaskhar Maurya directorial"
+  ]
+},
+ {
+  title: "Fear",
+  description: "Fear is a Telugu-language psychological thriller directed by Haritha Gogineni. The film follows Sindhu, whose world unravels when her boyfriend disappears. Trapped in a mental asylum, she confronts dark forces tied to her traumatic past, battling psychological torment and sinister truths to escape and uncover the reality behind her ordeal.",
+  category: "amazon-prime",
+  year: "23-01-2025",
+  image: "/images/Fear.jpg",
+  trailerUrl: "", // Actual trailer URL unavailable in sources
+  genre: "Psychological Thriller, Drama",
+  cast: [
+    "Vedhika",
+    "Arvind Krishna",
+    "V. Jayaprakash",
+    "Pavitra Lokesh",
+    "Anish Kuruvilla"
+  ],
+  tags: [
+    "Fear 2025",
+    "Vedhika",
+    "Arvind Krishna",
+    "Telugu Amazon Prime film",
+    "psychological thriller",
+    "Haritha Gogineni directorial"
+  ]
+},
+ {
+  title: "Wife Off",
+  description: "Wife Off is a Telugu-language crime thriller written and directed by Bhanu Yerabandi. The film follows Avani, an aspiring actress, who falls in love with Abhi, a short film director. Forced into an abusive marriage with her cousin Ram, Avani’s life spirals into chaos when her husband is found dead in an apparent suicide. As she navigates rumors of her involvement in prostitution and a series of murders, dark secrets unravel, questioning her motives and connection to the crimes.",
+  category: "etv-win",
+  year: "23-01-2025",
+  image: "/images/WifeOfff.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=MfihWqcstF", // Placeholder; actual trailer URL unavailable in sources
+  genre: "Crime, Thriller, Drama",
+  cast: [
+    "Divya Sree Gurugubelli",
+    "Abhinav Manikanta",
+    "Nikhil Gajula",
+    "Sai Swetha",
+    "Veera Manohar Kaavali",
+    "Kiran Putakala"
+  ],
+  tags: [
+    "Wife Off 2025",
+    "Divya Sree",
+    "Abhinav Manikanta",
+    "Telugu ETV Win film",
+    "crime thriller",
+    "Bhanu Yerabandi directorial"
+  ]
+},
+ {
+  title: "Barroz",
+  description: "Barroz: Guardian of Treasures is a Telugu-dubbed Malayalam-language action adventure fantasy film directed by Mohanlal. Set in 1663, it follows Barroz, a loyal lieutenant of the Portuguese da Gama dynasty, tasked with guarding a hidden treasure for 400 years. Bound by ancient magic, he awaits a true descendant, Isabella, to claim the treasure, navigating a magical journey filled with mystery and adventure to fulfill his promise and return to his realm.",
+  category: "jiohotstar",
+  year: "22-01-2025",
+  image: "/images/Barroz.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=1C_FV_9HYaQ",
+  genre: "Action, Adventure, Fantasy",
+  cast: [
+    "Mohanlal",
+    "Pranav Mohanlal",
+    "Maya Rao West",
+    "June Vig",
+    "Nerea Camacho",
+    "Tuhin Menon",
+    "Cesar Lorente Raton",
+    "Ignacio Mateos",
+    "Kallirroi Tziafeta",
+    "Joshua Okesalako"
+  ],
+  tags: [
+    "Barroz 2025",
+    "Mohanlal",
+    "Pranav Mohanlal",
+    "Telugu JioHotstar film",
+    "fantasy adventure",
+    "Mohanlal directorial"
+  ]
+},
+ {
+  title: "Vidudala Part 2",
+  description: "Vidudala Part 2 is a Telugu-dubbed Tamil-language period political crime thriller directed by Vetrimaaran. A sequel to Vidudala Part 1, it explores the backstory of Perumal Vaathiyaar, a school teacher turned revolutionary leader. After his capture, Perumal recounts his transformation into the head of the 'Makkal Padai' rebel group, driven by village atrocities and systemic oppression. The film follows constable Kumaresan’s moral dilemmas amidst a gripping narrative of resistance and rebellion.",
+  category: "amazon-prime",
+  year: "19-01-2025",
+  image: "/images/Vidudala.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=3XUgUQT3M5Q",
+  genre: "Action, Crime, Drama, Thriller",
+  cast: [
+    "Vijay Sethupathi",
+    "Soori",
+    "Manju Warrier",
+    "Bhavani Sre",
+    "Gautham Vasudev Menon",
+    "Rajiv Menon",
+    "Anurag Kashyap",
+    "Kishore",
+    "Ilavarasu",
+    "Balaji Sakthivel",
+    "Saravana Subbiah",
+    "Chetan",
+    "Munnar Ramesh",
+    "Bose Venkat",
+    "Vincent Asokan",
+    "Ken Karunas"
+  ],
+  tags: [
+    "Vidudala Part 2 2025",
+    "Vijay Sethupathi",
+    "Vetrimaaran",
+    "Telugu Amazon Prime film",
+    "political thriller",
+    "Makkal Padai"
+  ]
+},
+  {
+  title: "Ramnagar Bunny",
+  description: "Ramnagar Bunny is a Telugu-language romantic comedy directed by Srinivas Mahath. The film follows Bunny, a carefree 21-year-old from Ramnagar, who squanders his father's savings and juggles multiple relationships with women like Shailu, Naina, and Deepu. His reckless lifestyle leads to complications, forcing him to confront the consequences of his actions and embark on a journey of self-discovery, learning valuable lessons about love, responsibility, and personal growth.",
+  category: "aha",
+  year: "17-01-2025",
+  image: "/images/RamnagarBunny.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=ALmffB5kJ4U",
+  genre: "Comedy, Romance, Drama",
+  cast: [
+    "Chandra Hass",
+    "Vismaya Sri",
+    "Richa Joshi",
+    "Ambika Vani",
+    "Rithu Manthra",
+    "Muralidhar Goud",
+    "Saleem Pheku",
+    "Madhunandhan",
+    "Sujatha",
+    "Vijayalakshmi",
+    "Sameer",
+    "Lakshman Tekumudi",
+    "Pranay Ganpur",
+    "Shiva",
+    "Hrishikesh Gajagouni"
+  ],
+  tags: [
+    "Ramnagar Bunny 2025",
+    "Chandra Hass",
+    "Vismaya Sri",
+    "Telugu Aha film",
+    "romantic comedy",
+    "Srinivas Mahath directorial"
+  ]
+},
+ {
+  title: "Mokshapatam",
+  description: "Mokshapatam is a Telugu-language crime thriller directed by Rahul Vanaja Rajeshwar. The film centers on Gayatri, a middle-class hotel floor manager and single mother, striving to provide a better life for her son. After her family faces financial ruin due to her husband’s friend’s death, she discovers a mysterious bag left by a hotel guest. This discovery plunges her into a web of secrets and moral dilemmas, intertwining her fate with Arjun, a passport office employee involved in illegal activities, and others navigating love, greed, and survival.",
+  category: "aha",
+  year: "14-01-2025",
+  image: "/images/Mokshapatam.jpg",
+  trailerUrl: "", // Actual trailer URL unavailable in sources
+  genre: "Crime, Thriller, Drama",
+  cast: [
+    "Thiruveer",
+    "Pooja Kiran",
+    "Tharun Ponugoti",
+    "Jenifer Emmanuel",
+    "Shanthi Rao"
+  ],
+  tags: [
+    "Mokshapatam 2025",
+    "Thiruveer",
+    "Pooja Kiran",
+    "Telugu Aha film",
+    "crime thriller",
+    "Rahul Vanaja Rajeshwar directorial"
+  ]
+},
+ {
+  title: "Sookshmadarshini",
+  description: "Sookshmadarshini is a Telugu-dubbed Malayalam-language black comedy mystery thriller directed by MC Jithin. The story follows Priyadarshini, a curious homemaker in a quiet neighborhood, who grows suspicious of her new neighbor Manuel and his elderly mother. When the mother mysteriously disappears, Priyadarshini and her friends turn amateur detectives, unraveling a web of secrets and unexpected twists that challenge their perceptions of truth and trust.",
+  category: "jiohotstar",
+  year: "11-01-2025",
+  image: "/images/Sookshmadarshini.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=Zu0uI7h4LJs",
+  genre: "Thriller, Mystery, Black Comedy",
+  cast: [
+    "Nazriya Nazim",
+    "Basil Joseph",
+    "Deepak Parambol",
+    "Merin Philip",
+    "Sidharth Bharathan",
+    "Akhila Bhargavan",
+    "Pooja Mohanraj",
+    "Kottayam Ramesh",
+    "Jaya Kurup",
+    "Nandhan Unni",
+    "Abhiram Radhakrishnan",
+    "Manohari Joy"
+  ],
+  tags: [
+    "Sookshmadarshini 2025",
+    "Nazriya Nazim",
+    "Basil Joseph",
+    "Telugu JioHotstar film",
+    "black comedy thriller",
+    "MC Jithin directorial"
+  ]
+},
+{
+  title: "Miss You",
+  description: "Miss You is a Telugu-dubbed Tamil-language romantic comedy directed by N. Rajasekar. The story follows Vasu, an aspiring film director in Chennai, whose life takes a dramatic turn after an accident causes amnesia, erasing two years of his memories. In Bangalore, he meets and falls for Subbalakshmi, a strong-willed woman fighting for social causes. As Vasu pursues her despite her rejection, he uncovers shocking truths about her past and a surprising connection to his own forgotten life, blending humor, romance, and family emotions.",
+  category: "amazon-prime",
+  year: "10-01-2025",
+  image: "/images/MissYou.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=mQz1eLqXjxg",
+  genre: "Romance, Comedy, Drama",
+  cast: [
+    "Siddharth",
+    "Ashika Ranganath",
+    "Bala Saravanan",
+    "Karunakaran",
+    "Lollu Sabha Maran",
+    "Sharath Lohithaswa",
+    "Anupama Kumar",
+    "Athulya Ravi",
+    "Nandini Rai"
+  ],
+  tags: [
+    "Miss You 2025",
+    "Siddharth",
+    "Ashika Ranganath",
+    "Telugu Amazon Prime film",
+    "romantic comedy",
+    "N. Rajasekar directorial"
+  ]
+},
+ {
+  title: "Bachhala Malli",
+  description: "Bachhala Malli is a Telugu-language tragedy drama directed by Subbu Mangadevvi. Set in the 1990s in the village of Suravaram, Tuni, Andhra Pradesh, the film follows Malli, a bright student whose life spirals into rebellion after a devastating family conflict caused by his father’s decision to remarry. Consumed by anger, Malli succumbs to alcohol, smoking, and violence, but his encounter with Kaveri sparks hope for redemption. The story explores themes of love, loss, and resilience as Malli confronts his past and seeks to rebuild his life.",
+  category: "amazon-prime",
+  year: "10-01-2025",
+  image: "/images/BachhalaMalli.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=Ocu2pWgyZ_0",
+  genre: "Tragedy, Drama, Action",
+  cast: [
+    "Allari Naresh",
+    "Amritha Aiyer",
+    "Rao Ramesh",
+    "Rohini Molleti",
+    "Hari Teja",
+    "Sai Kumar",
+    "Kota Jayaram",
+    "Achyuth Kumar",
+    "Dhanraj",
+    "Harsha Chemudu",
+    "Ankith Koyya",
+    "Harsh Roshan"
+  ],
+  tags: [
+    "Bachhala Malli 2025",
+    "Allari Naresh",
+    "Amritha Aiyer",
+    "Telugu Amazon Prime film",
+    "tragedy drama",
+    "Subbu Mangadevvi directorial"
+  ]
+},
+{
+  title: "Hide N Seek",
+  description: "Hide N Seek is a Telugu-language crime thriller directed by Basireddy Rana. Set in Kurnool, Andhra Pradesh, the film follows Shiva, a medical student aspiring to become an army doctor, who becomes entangled in a series of mysterious murders. Alongside Inspector Vaishnavi, a determined police officer, Shiva uncovers a chilling connection to a dangerous game inspired by the 'Blue Whale' challenge, revealing a sinister conspiracy that threatens a massacre in Tirupati.",
+  category: "aha",
+  year: "10-01-2025",
+  image: "/images/HideNSeek.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=9dW0X0p0j7U",
+  genre: "Crime, Thriller, Mystery",
+  cast: [
+    "Viswant Duddumpudi",
+    "Shilpa Manjunath",
+    "Rheaa Sachdeva",
+    "Tejaswi Madivada",
+    "Kashvi",
+    "Saakshi Siva",
+    "Dayanand Reddy",
+    "Sridhar Reddy",
+    "Sumanth Verella",
+    "Viva Raghava",
+    "Rohit Addanki",
+    "Akella Raghavendra"
+  ],
+  tags: [
+    "Hide N Seek 2025",
+    "Viswant Duddumpudi",
+    "Shilpa Manjunath",
+    "Telugu Aha film",
+    "crime thriller",
+    "Basireddy Rana directorial"
+  ]
+},
+ {
+  title: "Neeli Megha Shyama",
+  description: "Neeli Megha Shyama is a Telugu-language romantic comedy directed by Ravi S Varmaa. Shyam, a carefree young man from Hyderabad, clashes with his wealthy father and escapes to a trekking expedition in Manali. Guided by Megha, a spirited trek leader with a painful past, they get stranded in a snowstorm at a remote homestay. As Shyam falls for Megha’s resilience, she rebuffs him due to her recent breakup. Their journey through the Himalayas sparks humor, romance, and Shyam’s transformation into a more responsible individual, culminating in a heartfelt reunion.",
+  category: "aha",
+  year: "09-01-2025",
+  image: "/images/NeeliMeghaShyama.webp",
+  trailerUrl: "https://www.youtube.com/watch?v=l4aIDcaXMu",
+  genre: "Comedy, Romance, Drama",
+  cast: [
+    "Vishwadev Rachakonda",
+    "Payal Radhakrishna",
+    "Tanikella Bharani",
+    "Harshavardhan",
+    "Subhalekha Sudhakar",
+    "Nellore Sudharshan",
+    "Dubbing Janaki"
+  ],
+  tags: [
+    "Neeli Megha Shyama 2025",
+    "Vishwadev Rachakonda",
+    "Payal Radhakrishna",
+    "Telugu Aha film",
+    "romantic comedy",
+    "Ravi S Varmaa directorial"
+  ]
+},
+ {
+  title: "Breakout",
+  description: "Breakout is a Telugu-language survival thriller directed by Sudhakar Cherukuri. The film centers on Maniratnam, an aspiring filmmaker with monophobia, the fear of being alone. Traveling to Hyderabad for a narration meeting that gets canceled, he finds himself without a place to stay. A local mechanic, Raju, offers him shelter in his garage, where Maniratnam’s fears trap him in a tense, life-threatening situation, forcing him to confront his insecurities and survive unexpected challenges.",
+  category: "etv-win",
+  year: "09-01-2025",
+  image: "/images/Breakout.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=0y62b9zYkIE",
+  genre: "Thriller, Mystery",
+  cast: [
+    "Raja Goutham",
+    "Chitram Seenu",
+    "Kireeti Damaraju",
+    "Chakrapani Ananda"
+  ],
+  tags: [
+    "Breakout 2025",
+    "Raja Goutham",
+    "Chitram Seenu",
+    "Telugu ETV Win film",
+    "survival thriller",
+    "Sudhakar Cherukuri directorial"
+  ]
+},
+  {
+  title: "Love Reddy",
+  description: "Love Reddy is a Telugu-language romantic drama directed by Smaran Reddy. Set in a village on the Andhra-Karnataka border, it follows Narayana Reddy, a garment factory worker in his thirties, who remains single, waiting for true love. His life transforms when he meets Divya, a government officer, and falls deeply in love. Struggling to express his feelings, Narayana believes she reciprocates, but their bond is tested when Divya’s marriage is arranged with another man. The film explores Narayana’s emotional journey, family pressures, and the sacrifices made for love, culminating in a heartfelt climax.",
+  category: "aha",
+  year: "03-01-2025",
+  image: "/images/LoveReddy.jpg",
+  trailerUrl: "https://www.youtube.com/watch?v=5z3Cm0V5bQU",
+  genre: "Romance, Drama, Family",
+  cast: [
+    "Anjan Ramachendra",
+    "Shravani Reddy",
+    "NT Ramaswamy",
+    "Ganesh DS",
+    "Vani Channanrayapatna",
+    "Ravi Kalabrahma",
+    "Pallavi Parva",
+    "Jyothi Mada",
+    "Karthik Vaibhav",
+    "Manjula Reddy",
+    "Gouthami Dharmendra",
+    "Vinod Alamuru"
+  ],
+  tags: [
+    "Love Reddy 2025",
+    "Anjan Ramachendra",
+    "Shravani Reddy",
+    "Telugu Aha film",
+    "romantic drama",
+    "Smaran Reddy directorial"
+  ]
+},
   {
     title: "Katha Kamamishu",
     description: "Comedy Drama",
