@@ -173,17 +173,17 @@ export default function Page() {
             {item.title}
               </h3>
                 <p className="text-xs text-muted-foreground line-clamp-1 truncate">
-                {typeof window !== "undefined" && window.innerWidth < 640
-                  ? item.description
-                    .split(/\s+/)
-                    .slice(0, 3)
-                    .join(" ") + (item.description.split(/\s+/).length > 18 ? "..." : "")
-                  : item.description}
+                {item.genre}
                 </p>
-              <p className="text-[11px] text-muted-foreground mt-1 truncate">
+              <p className="text-[11px] text-muted-foreground mt-1 ">
             OTT Streaming:{" "}
-            {frameworks.find((f) => f.value === item.category)?.label ||
-              item.category}
+            <span
+              className={`inline-block px-2 py-0.5 rounded bg-opacity-80 font-medium text-xs ${
+                categoryColors[item.category] || "bg-gray-100"
+              }`}
+            >
+              {frameworks.find((f) => f.value === item.category)?.label || item.category}
+            </span>
               </p>
               <p className="text-[11px] text-muted-foreground mt-0.5 truncate">
             OTT Release Date: {item.year}
