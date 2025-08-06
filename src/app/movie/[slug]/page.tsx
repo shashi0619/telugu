@@ -9,12 +9,11 @@ interface Props {
 }
 
 // Server-side SEO metadata generator
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const decodedSlug = decodeURIComponent(params.slug)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // Await params to get the slug
+  const { slug } = await params;
+
+  const decodedSlug = decodeURIComponent(slug)
     .replace(/-/g, " ")
     .toLowerCase();
 
@@ -40,7 +39,7 @@ export async function generateMetadata({
     openGraph: {
       title: movie.title,
       description: movie.description,
-      url: `https://ottbiryani.com/movies/${params.slug}`,
+      url: `https://ottbiryani.com/movies/${slug}`,
       type: "video.movie",
       images: [
         {
