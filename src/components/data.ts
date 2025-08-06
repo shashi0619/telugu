@@ -2682,7 +2682,7 @@ export const items2025: Item[] = [
   description: "Ramam Raghavam is a poignant Telugu drama‑thriller about Dasharatha Ramam (Samuthirakani), a principled government clerk whose aimless son Raghava (Dhanraj) descends into debts and deceit—culminating in a shocking betrayal that forces both to confront morality, redemption, and emotional reckoning.",
   category: "etv-win",
   year: "21‑02‑2025", // Theatrical premiere, digital from 14 Mar 2025
-  image: "/images/RamamRaghavam.jpeg",
+  image: "/images/RamamRaghavam.png",
   trailerUrl: "", // Add official trailer if available
   genre: "Drama, Thriller, Family",
   cast: [
