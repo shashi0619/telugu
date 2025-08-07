@@ -136,7 +136,7 @@ export default function Page() {
 
         <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">
           {viewMode === "grid" ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
               {filteredItems.map((item) => {
                 const bgColorClass =
                   categoryColors[item.category] ||
@@ -148,7 +148,7 @@ export default function Page() {
                   <>
                     <div
                       key={`${item.title}-${item.year}`}
-                      className="relative hidden md:flex w-60 h-75 mb-12 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl mt-10"
+                      className="relative hidden md:flex  w-55 h-75 mb-12 flex-col rounded-xl bg-accent bg-clip-border text-gray-700 shadow-md cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl mt-10"
                       onClick={() => handleCardClick(item.title)}
                     >
                       <div
@@ -174,9 +174,13 @@ export default function Page() {
                           {item.title}
                         </h5>
                         <div className="mt-2 flex flex-wrap gap-2">
-                          <span className="inline-block rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-700">
-                            {frameworks.find((f) => f.value === item.category)?.label || item.category}
-                          </span>
+                            <span
+                            className={`inline-block rounded px-2 py-0.5 text-xs font-medium ${
+                              categoryColors[item.category] || "bg-gray-100 text-gray-700"
+                            }`}
+                            >
+                            {frameworks.find((f) => f.value === item.category)?.label || item.category || "Unknown"}
+                            </span>
                           <span className="inline-block rounded bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">
                             {item.year}
                           </span>
@@ -191,7 +195,7 @@ export default function Page() {
                       <div className="px-4 pb-4 pt-0 mt-auto">
                         <button
                           type="button"
-                          className="w-full select-none rounded-lg bg-blue-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                          className="w-full select-none rounded-lg bg-white text-black border border-black py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase shadow-md transition-all duration-200 hover:bg-black hover:text-white hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
                           onClick={(e) => {
                             e.stopPropagation();
                             handleCardClick(item.title);
@@ -254,40 +258,58 @@ export default function Page() {
             </div>
           ) : (
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead>
+              <table className="min-w-full border border-black dark:border-gray-700 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-900">
+                <thead className="bg-black dark:bg-gray-800">
                   <tr>
-                    <th className="px-1 sm:px-3 py-1 sm:py-2 text-left font-semibold">Title</th>
-                    <th className="px-1 sm:px-3 py-1 sm:py-2 text-left font-semibold">Date</th>
-                    <th className="px-1 sm:px-3 py-1 sm:py-2 text-left font-semibold">OTT</th>
-                    <th className="px-1 sm:px-3 py-1 sm:py-2 text-left font-semibold">Description</th>
+                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                      Title
+                    </th>
+                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                      Date
+                    </th>
+                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                      OTT
+                    </th>
+                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                      Description
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredItems.map((item) => (
+                  {filteredItems.map((item, idx) => (
                     <tr
                       key={`${item.title}-${item.year}`}
-                      className="even:bg-slate-50 dark:even:bg-transparent hover:bg-slate-100 dark:hover:bg-muted/30 transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-[1.01] active:bg-slate-100 cursor-pointer"
+                      className={`transition-all duration-200 cursor-pointer ${
+                        idx % 2 === 0
+                          ? "bg-gray-50 dark:bg-gray-800"
+                          : "bg-white dark:bg-gray-900"
+                      } hover:bg-gray-200 dark:hover:bg-gray-700`}
                       onClick={() => handleCardClick(item.title)}
                     >
                       <td
-                        className={`px-1 sm:px-3 py-1 sm:py-2 font-semibold text-black dark:text-white ${
+                        className={`px-2 sm:px-4 py-2 font-semibold text-black dark:text-white border-b border-black/10 dark:border-gray-700 ${
                           item.title.trim().split(/\s+/).length > 15
-                            ? "line-clamp-1"
-                            : "truncate"
+                            ? "truncate"
+                            : "line-clamp-1"
                         }`}
                       >
                         {item.title}
                       </td>
-                      <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground whitespace-nowrap truncate">
+                      <td className="px-2 sm:px-4 py-2 text-gray-700 dark:text-gray-300 border-b border-black/10 dark:border-gray-700 whitespace-nowrap truncate">
                         {item.year}
                       </td>
-                      <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground truncate">
+                        <td
+                        className={`px-2 sm:px-4 py-2 text-gray-700 dark:text-gray-300 border-b border-black/10 dark:border-gray-700 ${
+                          (frameworks.find((f) => f.value === item.category)?.label || item.category).trim().split(/\s+/).length > 10
+                          ? "truncate"
+                          : ""
+                        }`}
+                        >
                         {frameworks.find((f) => f.value === item.category)?.label ||
                           item.category}
-                      </td>
-                      <td className="px-1 sm:px-3 py-1 sm:py-2 text-slate-600 dark:text-muted-foreground truncated line-clamp-1">
-                        {item.description}
+                        </td>
+                      <td className="px-2 sm:px-4 py-2 text-gray-600 dark:text-gray-400 border-b border-black/10 dark:border-gray-700 line-clamp-1">
+                        {item.genre}
                       </td>
                     </tr>
                   ))}
