@@ -68,7 +68,7 @@ export const items2025: Item[] = [
   year: "Coming Soon", 
   image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/HariHaraVeeraMallu.jpeg", 
   trailerUrl: "https://www.youtube.com/watch?v=Qv-NEQJehVU", 
-  genre: "Action, Adventure, Historical Drama",
+  genre: "Action, Adventure, Historical",
   cast: [
     "Pawan Kalyan as Veera Mallu",
     "Nidhhi Agerwal as Panchami",
