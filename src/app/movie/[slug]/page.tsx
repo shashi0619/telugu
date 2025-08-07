@@ -79,20 +79,41 @@ export default async function MovieDetailsPage({ params }: Props) {
   return (
     <>
       <div className="mb-4 mx-4 mt-4">
-        <a
-          href="/"
-          className="inline-block px-2 py-2 bg-black text-white rounded-lg hover:bg-white hover:text-black border border-black transition"
+        <a href="/" className="inline-block">
+          <button
+        className="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold group"
+        type="button"
+          >
+        <div
+          className="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
         >
-          ← Back to Home
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1024 1024"
+            height="25px"
+            width="25px"
+          >
+            <path
+          d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+          fill="#000000"
+            ></path>
+            <path
+          d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+          fill="#000000"
+            ></path>
+          </svg>
+        </div>
+        <p className="translate-x-2">Go Back</p>
+          </button>
         </a>
       </div>
       <div className="p-6 max-w-4xl mx-auto space-y-6">
         <div className="bg-blue-50 rounded-md p-4">
           <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
           <SafeImage
-            src={movie.image}
-            alt={movie.title}
-            className="w-full h-96 object-cover rounded-md mb-6"
+        src={movie.image}
+        alt={movie.title}
+        className="w-full h-96 object-cover rounded-md mb-6"
           />
         </div>
 
