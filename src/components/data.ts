@@ -31,6 +31,134 @@ export const frameworks: Framework[] = [
 
 export const items2025: Item[] = [
   {
+  title: "Kingdom",
+  description: "Kingdom is a high-stakes Telugu spy thriller directed by Gowtam Tinnanuri. Vijay Deverakonda stars as Constable Surya (“Suri”), an everyday cop thrust into an undercover mission in Sri Lanka to unravel a smuggling and political conspiracy tied to his estranged brother. The story unfolds with emotional betrayals, covert operations, and intensity that sets the stage for a larger cinematic universe.",
+  category: "Netflix",
+  year: "Coming soon", // Theatrical release date; OTT likely later in 2025
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/Kingdom.jpeg",  // Update with official poster image when available
+  trailerUrl: "https://www.youtube.com/watch?v=xqdXSA8hNI4", 
+  genre: "Action, Thriller, Political",
+  cast: [
+    "Vijay Deverakonda as Constable Surya ‘Suri’",
+    "Satyadev as Siva (Surya’s brother)",
+    "Bhagyashri Borse as the female lead",
+    "Ayyappa P. Sharma",
+    "Goparaju Ramana",
+    "Manish Chaudhari",
+    "Baburaj"
+  ],
+  tags: [
+    "Kingdom on Netflix 2025",
+    "kingdom Telugu movie on which ott platform",
+    "kingdom ott release date",
+    "Vijay Deverakonda kingdom",
+    "Vijay Deverakonda",
+    "Telugu Netflix film",
+    "Gowtam Tinnanuri",
+    "undercover cop",
+    "spy action",
+    "political conspiracy",
+    "Kingdom universe"
+  ]
+},
+{
+  title: "HariHaraVeeraMallu",
+  description: "HariHaraVeeraMallu is an epic Telugu historical action-adventure streaming soon on Amazon Prime Video. Set in the 17th century Mughal Empire, the legendary outlaw Veera Mallu (Pawan Kalyan) is tasked with retrieving the fabled Koh‑i‑Noor diamond to rescue a besieged city—pitting valor, betrayal, and destiny against tyranny.",
+  category: "amazon-prime",
+  year: "Coming Soon", 
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/HariHaraVeeraMallu.jpeg", 
+  trailerUrl: "https://www.youtube.com/watch?v=Qv-NEQJehVU", 
+  genre: "Action, Adventure, Historical Drama",
+  cast: [
+    "Pawan Kalyan as Veera Mallu",
+    "Nidhhi Agerwal as Panchami",
+    "Bobby Deol as Aurangzeb",
+    "Nargis Fakhri",
+    "Nora Fatehi",
+    "Pujita Ponnada",
+    "Sathyaraj",
+    "Dalip Tahil",
+    "Sachin Khedekar"
+  ],
+  tags: [
+    "HariHaraVeeraMallu 2025",
+    "Pawan Kalyan HariHaraVeeraMallu",
+    " HariHaraVeeraMallu Amazon Prime original",
+    "HariHaraVeeraMallu ott release date",
+    " HariHaraVeeraMallu on which ott platform",
+    "Pawan Kalyan",
+    "Telugu Prime Video",
+    "Krish Jagarlamudi",
+    "period action drama",
+    "Koh-i-Noor mission",
+    "MM Keeravani score",
+    "philosophical valor"
+  ]
+},
+
+
+  {
+  title: "Rambo In Love",
+  description: "Rambo In Love is a fresh Telugu romantic comedy series that explores the chaotic love life of Rambo, a small-town guy with big emotions. As he stumbles through hilarious misunderstandings, emotional highs and lows, and unexpected twists, Rambo's quest to win over the love of his life becomes a wild rollercoaster of laughter and drama. With a youthful cast and relatable themes, the series blends heartwarming romance with situational comedy and small-town charm.",
+  category: "jiohotstar",
+  year: "29-08-2025", 
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/RamboinLove.jpeg", 
+  trailerUrl: "https://www.youtube.com/watch?v=P8jlUn1MrFQ&list=RDP8jlUn1MrFQ&start_radio=1", 
+  genre: "Romantic Comedy, Drama",
+  cast: [
+    "Abhinav Manikanta",
+    "Payal Chengappa",
+    "Bhargav Garampalli",
+    "Kavya Kashetti",
+    "Achuth Nandha JV",
+    "Pavan Yatagani",
+    "Ananya Jinka",
+    "Devika Evina"
+  ],
+  tags: [
+    "Rambo In Love 2025",
+    "Abhinav Manikanta",
+    "Payal Chengappa",
+    "Telugu rom-com series",
+    "JioHotstar original",
+    "Ajith Reddy",
+    "Telugu web series",
+    "romantic comedy",
+    "youthful drama"
+  ]
+},
+
+  {
+  title: "Constable Kanakam",
+  description: "Constable Kanakam is a Telugu cop action thriller series where junior Constable Kanakam (Varsha Bollamma) from a small town takes on a complex criminal case with wit and grit. As she tackles limited resources and escalating danger, her sharp instincts and determination drive the investigation forward.",
+  category: "etv-win",
+  year: "14-08-2025", 
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/ConstableKanakam.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=zYiUV-eNq-w", 
+  genre: "Action, Thriller, Crime",
+  cast: [
+    "Varsha Bollamma as Constable Kanakam",
+    "Megha Lekha",
+    "Rajeev Kanakala",
+    "Srinivas Avasarala",
+    "Ramana Bhargav",
+    "Kancharapalem Kishore",
+    "Rakendu Mouli",
+    "Prem Sagar",
+    "Suchitraa Anandan"
+  ],
+  tags: [
+    "Constable Kanakam 2025",
+    "Varsha Bollamma",
+    "ETV Win original",
+    "female cop thriller",
+    "Telugu web series",
+    "Prasanth Kumar Dimmala",
+    "small town crime drama"
+  ]
+},
+
+  {
     title: "Arabia Kadali",
     description:
       "A gripping Telugu web series about Andhra fishermen who drift into international waters and are imprisoned in a foreign country. Their journey of survival, brotherhood, and justice unfolds with emotional depth and intensity.",
@@ -78,6 +206,87 @@ export const items2025: Item[] = [
   },
 
   {
+  title: "Badmashulu",
+  description: "Badmashulu is a heartwarming Telugu comedy‑drama about Tirupati, a quirky tailor, and Muthyalu, his fun‑loving barber friend. Known in their village for petty mischief, the duo’s antics land them in police custody. But the real twist unfolds when they’re suspected of a computer theft at a school—what follows is a series of absurd, deadpan vignettes that explore friendship, redemption, and rural life with a charming, low‑key absurdity.",
+  category: "etv-win",
+  year: "07-08-2025",
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/Badmashulu.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=VA2Hqukd-iE", 
+  genre: "Comedy, Drama, Slice‑of‑Life",
+  cast: [
+    "Mahesh Chinthala as Tirupati (tailor)",
+    "Vidyasagar Karampuri as Muthyalu (barber)",
+    "Muralidhar Goud",
+    "Deeksha Koteshwar",
+    "Kavitha Srirangam",
+    "Sudhakar Reddy Kethiri",
+    "Anjaiah N"
+  ],
+  tags: [
+    "Badmashulu 2025",
+    "Mahesh Chinthala",
+    "Vidyasagar Karampuri",
+    "ETV Win Telugu",
+    "rural comedy drama",
+    "friendship story",
+    "Shankar Cheguri",
+    "slice of life Telugu film"
+  ]
+},
+{
+  title: "Paranthu Po",
+  description: "A heartwarming road‑trip musical comedy that follows Gokul, an overworked single father, and his energetic son Anbu as they escape their structured urban life. Their spontaneous journey turns into a poignant exploration of family bonds, self‑discovery, and the beauty of life’s unscripted detours.",
+  category: "jiohotstar",
+  year: "05-08-2025", // OTT premiere on JioHotstar
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/ParanthuPo.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=aZgGWvOvvsM",
+  genre: "Musical Comedy, Drama,",
+  cast: [
+    "Shiva (Mirchi Shiva) as Gokul",
+    "Mithul Ryan as Anbu",
+    "Grace Antony as Glory",
+    "Anjali",
+    "Aju Varghese",
+    "Vijay Yesudas"
+  ],
+  tags: [
+    "Paranthu Po 2025",
+    "Ram director",
+    "road trip musical",
+    "father-son bond",
+    "JioHotstar Tamil",
+    "Yuvan Shankar Raja",
+    "light-hearted drama"
+  ]
+},
+
+{
+  title: "Sitaare Zameen Par",
+  description: "Sitaare Zameen Par is a heartfelt Hindi sports drama in which a disgraced basketball coach, sentenced to community service after a DUI, finds redemption by training a team of athletes with intellectual disabilities. As he overcomes his own biases, he learns powerful lessons in empathy, perseverance, and the true meaning of leadership.",
+  category: "YouTube‑Paid",
+  year: "01‑08‑2025", 
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/SitaareZameenPar.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=YH6k5weqwy8", 
+  genre: "Drama, Sports, Inspirational",
+  cast: [
+    "Aamir Khan as Gulshan (the coach)",
+    "Genelia Deshmukh",
+    "Supporting cast includes actors portraying the team members"
+  ],
+  tags: [
+    "Sitaare Zameen Par 2025",
+    "Aamir Khan",
+    "Inspirational true‑spirit film",
+    "Sports drama",
+    "Neurodiversity representation",
+    "YouTube pay‑per‑view",
+    "Remake of Champions"
+  ]
+},
+
+
+
+  {
     title: "Thammudu",
     description:
       "Thammudu is an emotionally charged action thriller exploring sibling bonds and a high-stakes one-night survival scenario. Released theatrically on 4 July 2025 and streaming on Netflix from 1 August 2025, the film features Nithiin in a gritty new avatar. Despite its strong visuals and performances, the movie drew mixed reviews due to uneven writing and pacing.",
@@ -100,6 +309,39 @@ export const items2025: Item[] = [
       "Thammudu survival thriller",
     ],
   },
+  {
+  title: "Oh Bhama Ayyo Rama",
+  description: "Ram, a young man with dreams of moving abroad, has distanced himself from cinema due to a painful past. His life takes a dramatic turn when Satyabhama, a free‑spirited and unpredictable woman, enters his world. With her chaotic charm, she rekindles his hidden love for filmmaking and forces him to confront emotional wounds linked to his lost mother. As their bond deepens, buried secrets about his past and his mother’s legacy surface—leading Ram on a poignant journey of self‑rediscovery and creative revival.",
+  category: "amazon-prime",
+  year: "01-08-2025",
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/OhBhamaAyyoRama.jpeg",
+  trailerUrl: "https://www.youtube.com/watch?v=NVgZYVwn8_4",
+  genre: "Romantic Drama, Comedy",
+  cast: [
+    "Suhas as Ram",
+    "Malavika Manoj as Satyabhama",
+    "Anita Hassanandani as Meenakshi (Ram's mother)",
+    "Ali",
+    "Ravinder Vijay",
+    "Babloo Prithiveeraj",
+    "Prabhas Sreenu",
+    "Raghu Karumanchi",
+    "Moin Mohammad",
+    "Sathvik Anand",
+    "Nayani Pavani"
+  ],
+  tags: [
+    "Oh Bhama Ayyo Rama 2025",
+    "Suhas",
+    "Malavika Manoj debut",
+    "Telugu romantic drama",
+    "director Ram Godhala",
+    "Radhan music",
+    "rediscovery through love",
+    "cinema healing"
+  ]
+},
+
 
   {
     title: "Kannappa",
@@ -440,7 +682,7 @@ export const items2025: Item[] = [
     year: "11‑07‑2025", // OTT premiere on Sony LIV
     image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/Narivetta.jpeg",
     trailerUrl: "https://www.youtube.com/watch?v=SVvzV2L4TUw",
-    genre: "Action, Thriller, Political Drama",
+    genre: "Action, Thriller, Political",
     cast: [
       "Tovino Thomas",
       "Suraj Venjaramoodu",
@@ -665,7 +907,7 @@ export const items2025: Item[] = [
   year: "03‑07‑2025",
   image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/AIR.jpeg",
   trailerUrl: "https://www.youtube.com/watch?v=example",
-  genre: "Comedy, Drama, Coming‑of‑Age",
+  genre: "Comedy, Drama, ",
   cast: [
     "Harsh Roshan",
     "Bhanu Prakash",
@@ -694,7 +936,7 @@ export const items2025: Item[] = [
   description: "A tense Telugu thriller‑drama inspired by true events, where a young man’s attempt at quick gains leads to a tragic bus arson killing 23 people. Through his legal and emotional journey, the film probes systemic injustice shaped by caste and power.",
   category: "amazon‑prime",
   year: "27‑06‑2025", // OTT premiere on Amazon Prime, Aha Video, and ETV Win
-  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/23 (Iravai Moodu).jpeg",
+  image: "https://shashimern.s3.eu-north-1.amazonaws.com/images/23.jpeg",
   trailerUrl: "https://www.youtube.com/watch?v=example", // Official trailer link if available
   genre: "Crime, Drama, Thriller",
   cast: [
