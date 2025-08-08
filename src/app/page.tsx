@@ -288,7 +288,7 @@ export default function Page() {
                     >
                       <td
                         className={`px-2 sm:px-4 py-2 font-semibold text-black dark:text-white border-b border-black/10 dark:border-gray-700 ${
-                          item.title.trim().split(/\s+/).length > 15
+                          item.title.trim().split(/\s+/).length > 12
                             ? "truncate"
                             : "line-clamp-1"
                         }`}
