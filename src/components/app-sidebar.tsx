@@ -81,6 +81,7 @@ const data: SidebarData = {
       url: "#",
       icon: BookOpen,
       items: [
+        { title: "2026", url: "#" },
         { title: "2025", url: "#" },
         { title: "2024", url: "#" },
         { title: "2023", url: "#" },

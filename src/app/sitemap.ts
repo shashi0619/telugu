@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
-import { items2025, items2024, items2023, items2022 } from "@/components/data";
+import { items2026, items2025, items2024, items2023, items2022 } from "@/components/data";
 
-const allItems = [...items2025, ...items2024, ...items2023, ...items2022];
+const allItems = [...items2026, ...items2025, ...items2024, ...items2023, ...items2022];
 
 function toSlug(title: string) {
   return encodeURIComponent(title.replace(/\s+/g, "-").toLowerCase());

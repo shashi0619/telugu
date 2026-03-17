@@ -17,14 +17,14 @@ import {
 } from "@/components/ui/sidebar";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
-import { frameworks, items2025, items2024, items2023, items2022 } from "@/components/data";
+import { frameworks, items2026, items2025, items2024, items2023, items2022 } from "@/components/data";
 
 // Module-level: built once, included in SSR HTML so Google can crawl it
-const allItemsStatic = [...items2025, ...items2024, ...items2023, ...items2022];
+const allItemsStatic = [...items2026, ...items2025, ...items2024, ...items2023, ...items2022];
 const itemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "New Telugu Movies on OTT 2025",
+  "name": "New Telugu Movies on OTT 2025 & 2026",
   "description": "Latest Telugu movies released on OTT platforms this week and this month",
   "numberOfItems": allItemsStatic.length,
   "itemListElement": allItemsStatic.map((item, i) => ({
@@ -60,7 +60,7 @@ export default function Page() {
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"grid" | "table">("grid");
 
-  const allItems = useMemo(() => [...items2025, ...items2024, ...items2023, ...items2022], []);
+  const allItems = useMemo(() => [...items2026, ...items2025, ...items2024, ...items2023, ...items2022], []);
 
   const extractYear = (date: string): string => {
     const parts = date.split("-");
@@ -159,7 +159,7 @@ export default function Page() {
         {/* SEO H1 + intro */}
         <div className="px-4 pt-4 pb-0 sm:px-6">
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-            Telugu OTT Release Dates 2025
+            Telugu OTT Release Dates 
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
             Latest Telugu movies on Amazon Prime, Netflix, JioHotstar, Aha, ZEE5 and more — updated regularly.
@@ -173,8 +173,6 @@ export default function Page() {
                 const bgColorClass =
                   categoryColors[item.category] ||
                   "bg-gray-100 hover:bg-gray-200 active:bg-gray-200";
-                const countWords = (str: string) => str.trim().split(/\s+/).length;
-                const isLongTitle = countWords(item.title) > 15;
 
                 return (
                   <div key={`${item.title}-${item.year}`} className="contents">
@@ -183,25 +181,26 @@ export default function Page() {
                       onClick={() => handleCardClick(item.title)}
                     >
                       <div
-                        className={`relative mx-4 -mt-8 h-36 w-36 self-center overflow-hidden rounded-xl bg-gradient-to-r ${bgColorClass} bg-clip-border text-white shadow-lg`}
-                        style={{
-                          marginBottom: "-1.5rem",
-                          zIndex: 2,
-                          backgroundImage: item.image
-                            ? `url(${item.image}), linear-gradient(to right, #3b82f6, #2563eb)`
-                            : undefined,
-                          backgroundSize: item.image ? "cover" : undefined,
-                          backgroundPosition: item.image ? "center" : undefined,
-                        }}
+                        className={`relative mx-4 -mt-8 h-36 w-36 self-center overflow-hidden rounded-xl bg-gradient-to-r ${bgColorClass} bg-clip-border text-white shadow-lg flex-shrink-0`}
+                        style={{ marginBottom: "-1.5rem", zIndex: 2 }}
                       >
-                        {!item.image && (
-                          <div className="flex items-center justify-center h-full w-full text-lg font-bold opacity-60">
+                        {item.image ? (
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="h-full w-full object-cover"
+                            onError={(e) => {
+                              (e.target as HTMLImageElement).style.display = "none";
+                            }}
+                          />
+                        ) : (
+                          <div className="flex items-center justify-center h-full w-full text-sm font-bold opacity-60">
                             No Image
                           </div>
                         )}
                       </div>
                       <div className="flex-1 flex flex-col px-4 pt-10 pb-2">
-                        <h5 className="mb-2 block font-sans text-lg font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased line-clamp-1">
+                        <h5 className="mb-2 block font-sans text-base font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased truncate" title={item.title}>
                           {item.title}
                         </h5>
                         <div className="mt-2 flex flex-wrap gap-2">
@@ -245,23 +244,22 @@ export default function Page() {
                       className="border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-white dark:bg-gray-800 md:hidden cursor-pointer min-h-[120px]"
                       onClick={() => handleCardClick(item.title)}
                     >
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        width={20}
-                        height={20}
-                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-md mr-3 flex-shrink-0"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).src =
-                            "https://placehold.co/100x100?text=Fallback";
-                        }}
-                      />
+                      {item.image ? (
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-md mr-3 flex-shrink-0"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.display = "none";
+                          }}
+                        />
+                      ) : (
+                        <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-md mr-3 flex-shrink-0 flex items-center justify-center text-[10px] font-semibold text-white text-center px-1 ${bgColorClass.split(" ")[0]}`}>
+                          No Image
+                        </div>
+                      )}
                       <div className="flex-1 min-w-0">
-                        <h3
-                          className={`font-semibold text-foreground text-sm sm:text-base ${
-                            isLongTitle ? "line-clamp-1" : "truncate"
-                          }`}
-                        >
+                        <h3 className="font-semibold text-foreground text-sm sm:text-base truncate" title={item.title}>
                           {item.title}
                         </h3>
                         <p className="text-xs text-muted-foreground line-clamp-1 truncate">
@@ -287,21 +285,21 @@ export default function Page() {
               })}
             </div>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="min-w-full border border-black dark:border-gray-700 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-900">
+            <div className="overflow-x-auto w-full">
+              <table className="w-full border border-black dark:border-gray-700 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-900 text-sm">
                 <thead className="bg-black dark:bg-gray-800">
                   <tr>
-                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                    <th className="px-3 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
                       Title
                     </th>
-                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                    <th className="px-3 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700 whitespace-nowrap">
                       Date
                     </th>
-                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                    <th className="px-3 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700 whitespace-nowrap">
                       OTT
                     </th>
-                    <th className="px-2 sm:px-4 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
-                      Description
+                    <th className="hidden sm:table-cell px-3 py-2 text-left font-bold text-white border-b border-black dark:border-gray-700">
+                      Genre
                     </th>
                   </tr>
                 </thead>
@@ -316,30 +314,17 @@ export default function Page() {
                       } hover:bg-gray-200 dark:hover:bg-gray-700`}
                       onClick={() => handleCardClick(item.title)}
                     >
-                      <td
-                        className={`px-2 sm:px-4 py-2 font-semibold text-black dark:text-white border-b border-black/10 dark:border-gray-700 ${
-                          item.title.trim().split(/\s+/).length > 12
-                            ? "truncate"
-                            : "line-clamp-1"
-                        }`}
-                      >
+                      <td className="px-3 py-2 font-semibold text-black dark:text-white border-b border-black/10 dark:border-gray-700">
                         {item.title}
                       </td>
-                      <td className="px-2 sm:px-4 py-2 text-gray-700 dark:text-gray-300 border-b border-black/10 dark:border-gray-700 whitespace-nowrap truncate">
+                      <td className="px-3 py-2 text-gray-700 dark:text-gray-300 border-b border-black/10 dark:border-gray-700 whitespace-nowrap">
                         {item.year}
                       </td>
-                        <td
-                        className={`px-2 sm:px-4 py-2 text-gray-700 dark:text-gray-300 border-b border-black/10 dark:border-gray-700 ${
-                          (frameworks.find((f) => f.value === item.category)?.label || item.category).trim().split(/\s+/).length > 10
-                          ? "truncate"
-                          : ""
-                        }`}
-                        >
-                        {frameworks.find((f) => f.value === item.category)?.label ||
-                          item.category}
-                        </td>
-                      <td className="px-2 sm:px-4 py-2 text-gray-600 dark:text-gray-400 border-b border-black/10 dark:border-gray-700 line-clamp-1">
-                        {item.genre}
+                      <td className="px-3 py-2 text-gray-700 dark:text-gray-300 border-b border-black/10 dark:border-gray-700 whitespace-nowrap">
+                        {frameworks.find((f) => f.value === item.category)?.label || item.category}
+                      </td>
+                      <td className="hidden sm:table-cell px-3 py-2 text-gray-600 dark:text-gray-400 border-b border-black/10 dark:border-gray-700">
+                        <div className="line-clamp-1">{item.genre}</div>
                       </td>
                     </tr>
                   ))}

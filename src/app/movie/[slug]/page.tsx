@@ -1,4 +1,4 @@
-import { items2025, items2024, items2023, items2022, frameworks } from "@/components/data";
+import { items2026, items2025, items2024, items2023, items2022, frameworks } from "@/components/data";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import SafeImage from "@/components/SafeImage";
@@ -7,7 +7,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-const allItems = [...items2025, ...items2024, ...items2023, ...items2022];
+const allItems = [...items2026, ...items2025, ...items2024, ...items2023, ...items2022];
 
 function findMovie(slug: string) {
   const decodedSlug = decodeURIComponent(slug).replace(/-/g, " ").toLowerCase();
