@@ -84,8 +84,8 @@ export default function Page() {
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block text-lg md:text-xl font-bold text-black dark:text-white truncate">
-                    <BreadcrumbLink href="#">
-                      Welcome to OTT Biriyani!
+                    <BreadcrumbLink href="/" aria-label="OTT Biryani Home">
+                      OTT Biryani
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                 </BreadcrumbList>
@@ -104,11 +104,12 @@ export default function Page() {
           </div>
           <div className="flex items-center gap-2">
             <input
-              type="text"
+              type="search"
               placeholder="Search movies..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="px-3 py-1.5 text-sm rounded-md border border-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 w-64"
+              aria-label="Search Telugu movies"
+              className="px-3 py-1.5 text-sm rounded-md border border-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 w-48 sm:w-64 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
             />
             <button
               type="button"
@@ -134,6 +135,16 @@ export default function Page() {
           </div>
         </header>
 
+        {/* SEO H1 + intro */}
+        <div className="px-4 pt-4 pb-0 sm:px-6">
+          <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+            Telugu OTT Release Dates 2025
+          </h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            Latest Telugu movies on Amazon Prime, Netflix, JioHotstar, Aha, ZEE5 and more — updated regularly.
+          </p>
+        </div>
+
         <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">
           {viewMode === "grid" ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
@@ -145,9 +156,8 @@ export default function Page() {
                 const isLongTitle = countWords(item.title) > 15;
 
                 return (
-                  <>
+                  <div key={`${item.title}-${item.year}`} className="contents">
                     <div
-                      key={`${item.title}-${item.year}`}
                       className="relative hidden md:flex  w-55 h-75 mb-12 flex-col rounded-xl bg-accent bg-clip-border text-gray-700 shadow-md cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl mt-10"
                       onClick={() => handleCardClick(item.title)}
                     >
@@ -211,7 +221,6 @@ export default function Page() {
 
 
                     <div
-                      key={`${item.title}-${item.year}-mobile`}
                       className="border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-white dark:bg-gray-800 md:hidden cursor-pointer min-h-[120px]"
                       onClick={() => handleCardClick(item.title)}
                     >
@@ -252,7 +261,7 @@ export default function Page() {
                         </p>
                       </div>
                     </div>
-                  </>
+                  </div>
                 );
               })}
             </div>
