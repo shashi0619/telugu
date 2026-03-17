@@ -23,6 +23,10 @@ export async function generateStaticParams() {
   }));
 }
 
+function toSlug(title: string) {
+  return encodeURIComponent(title.replace(/\s+/g, "-").toLowerCase());
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const movie = findMovie(slug);
@@ -54,12 +58,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: descSnippet || `Watch ${movie.title} on ${platformLabel}. Genre: ${movie.genre}. Cast: ${castText}.`,
     keywords: Array.isArray(movie.tags) ? movie.tags : [],
     alternates: {
-      canonical: `https://www.ottbiryani.com/movie/${slug}`,
+      canonical: `https://www.ottbiryani.com/movie/${toSlug(movie.title)}`,
     },
     openGraph: {
       title: `${movie.title} | OTT Biryani`,
       description: movie.description,
-      url: `https://www.ottbiryani.com/movie/${slug}`,
+      url: `https://www.ottbiryani.com/movie/${toSlug(movie.title)}`,
       type: "video.movie",
       siteName: "OTT Biryani",
       images: [
@@ -106,7 +110,7 @@ export default async function MovieDetailsPage({ params }: Props) {
     "image": fullImageUrl,
     "genre": movie.genre,
     "datePublished": movie.year,
-    "url": `https://www.ottbiryani.com/movie/${slug}`,
+    "url": `https://www.ottbiryani.com/movie/${toSlug(movie.title)}`,
     "actor": castList.map((c) => ({
       "@type": "Person",
       "name": c.split(" as ")[0].trim(),
@@ -128,7 +132,7 @@ export default async function MovieDetailsPage({ params }: Props) {
         "@type": "ListItem",
         "position": 2,
         "name": movie.title,
-        "item": `https://www.ottbiryani.com/movie/${slug}`,
+        "item": `https://www.ottbiryani.com/movie/${toSlug(movie.title)}`,
       },
     ],
   };

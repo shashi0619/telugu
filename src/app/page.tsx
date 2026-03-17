@@ -19,6 +19,22 @@ import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ExampleCombobox } from "@/components/ui/combobox";
 import { frameworks, items2025, items2024, items2023, items2022 } from "@/components/data";
 
+// Module-level: built once, included in SSR HTML so Google can crawl it
+const allItemsStatic = [...items2025, ...items2024, ...items2023, ...items2022];
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "New Telugu Movies on OTT 2025",
+  "description": "Latest Telugu movies released on OTT platforms this week and this month",
+  "numberOfItems": allItemsStatic.length,
+  "itemListElement": allItemsStatic.map((item, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": item.title,
+    "url": `https://www.ottbiryani.com/movie/${encodeURIComponent(item.title.replace(/\s+/g, "-").toLowerCase())}`,
+  })),
+};
+
 const categoryColors: Record<string, string> = {
   "amazon-prime": "bg-amber-100 hover:bg-amber-200 active:bg-amber-200",
   netflix: "bg-red-100 hover:bg-red-200 active:bg-red-200",
@@ -69,6 +85,11 @@ export default function Page() {
   };
 
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+    />
     <SidebarProvider>
       <AppSidebar
         selectedOtt={selectedOtt}
@@ -329,5 +350,6 @@ export default function Page() {
         </div>
       </SidebarInset>
     </SidebarProvider>
+    </>
   );
 }
