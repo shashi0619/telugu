@@ -167,12 +167,12 @@ export default function Page() {
 
           {/* Year tabs */}
           <div className="flex gap-2 mt-3 flex-wrap">
-            {["2026", "2025", "2024", "2023", "2022"].map((year) => (
+            {["All", "2026", "2025", "2024", "2023", "2022"].map((year) => (
               <button
                 key={year}
-                onClick={() => setSelectedYear(year)}
+                onClick={() => setSelectedYear(year === "All" ? "" : year)}
                 className={`px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
-                  selectedYear === year
+                  (year === "All" ? selectedYear === "" : selectedYear === year)
                     ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white"
                     : "bg-white text-gray-700 border-gray-300 hover:border-black dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:border-white"
                 }`}

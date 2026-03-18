@@ -18,7 +18,7 @@ const websiteJsonLd = {
   "@type": "WebSite",
   "name": "OTT Biryani",
   "url": "https://www.ottbiryani.com",
-  "description": "Telugu OTT release dates 2025 – latest movies on Netflix, Amazon Prime, JioHotstar, Aha, ZEE5 and more.",
+  "description": "Telugu OTT release dates 2026 – latest movies on Netflix, Amazon Prime, JioHotstar, Aha, ZEE5 and more.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
