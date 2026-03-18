@@ -56,7 +56,7 @@ const categoryColors: Record<string, string> = {
 export default function Page() {
   const router = useRouter();
   const [selectedOtt, setSelectedOtt] = useState("");
-  const [selectedYear, setSelectedYear] = useState("");
+  const [selectedYear, setSelectedYear] = useState("2026");
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"grid" | "table">("grid");
 
@@ -159,11 +159,28 @@ export default function Page() {
         {/* SEO H1 + intro */}
         <div className="px-4 pt-4 pb-0 sm:px-6">
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-            Telugu OTT Release Dates 
+            Telugu OTT Release Dates
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
             Latest Telugu movies on Amazon Prime, Netflix, JioHotstar, Aha, ZEE5 and more — updated regularly.
           </p>
+
+          {/* Year tabs */}
+          <div className="flex gap-2 mt-3 flex-wrap">
+            {["2026", "2025", "2024", "2023", "2022"].map((year) => (
+              <button
+                key={year}
+                onClick={() => setSelectedYear(year)}
+                className={`px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
+                  selectedYear === year
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white"
+                    : "bg-white text-gray-700 border-gray-300 hover:border-black dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:border-white"
+                }`}
+              >
+                {year}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">
