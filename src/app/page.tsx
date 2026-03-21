@@ -183,7 +183,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6">
+        <div className="flex flex-1 flex-col gap-4 p-4 sm:p-6 bg-gray-50 dark:bg-transparent">
           {viewMode === "grid" ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
               {filteredItems.map((item) => {
@@ -194,7 +194,7 @@ export default function Page() {
                 return (
                   <div key={`${item.title}-${item.year}`} className="contents">
                     <div
-                      className="relative hidden md:flex  w-55 h-75 mb-12 flex-col rounded-xl bg-white dark:bg-gray-800/90 dark:border dark:border-gray-700/60 bg-clip-border text-gray-700 dark:text-gray-200 shadow-md dark:shadow-gray-900/60 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl dark:hover:shadow-gray-900 dark:hover:border-gray-500 mt-10"
+                      className="relative hidden md:flex  w-55 h-75 mb-12 flex-col rounded-xl bg-white dark:bg-gray-800/90 border border-gray-200 hover:border-gray-300 dark:border-gray-700/60 dark:hover:border-gray-500 bg-clip-border text-gray-700 dark:text-gray-200 shadow-md dark:shadow-gray-900/60 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl dark:hover:shadow-gray-900 mt-10"
                       onClick={() => handleCardClick(item.title)}
                     >
                       <div
@@ -258,7 +258,7 @@ export default function Page() {
 
 
                     <div
-                      className="border border-transparent hover:border-primary/50 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-white dark:bg-gray-800 md:hidden cursor-pointer min-h-[120px]"
+                      className="border border-gray-200 hover:border-gray-300 dark:border-gray-700/60 dark:hover:border-gray-500 shadow-md hover:shadow-2xl rounded-xl p-3 flex flex-row items-center transition-all duration-300 ease-in-out transform hover:scale-[1.02] bg-white dark:bg-gray-800 md:hidden cursor-pointer min-h-[120px]"
                       onClick={() => handleCardClick(item.title)}
                     >
                       {item.image ? (
