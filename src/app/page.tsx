@@ -36,21 +36,21 @@ const itemListJsonLd = {
 };
 
 const categoryColors: Record<string, string> = {
-  "amazon-prime": "bg-amber-100 hover:bg-amber-200 active:bg-amber-200",
-  netflix: "bg-red-100 hover:bg-red-200 active:bg-red-200",
-  jiohotstar: "bg-green-100 hover:bg-green-200 active:bg-green-200",
-  aha: "bg-blue-100 hover:bg-blue-200 active:bg-blue-200",
-  "sun-nxt": "bg-orange-100 hover:bg-orange-200 active:bg-orange-200",
-  "sony-liv": "bg-purple-100 hover:bg-purple-200 active:bg-purple-200",
-  "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200",
-  zee5: "bg-teal-100 hover:bg-teal-200 active:bg-teal-200",
-  "etv-win": "bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-200",
-  "lionsgate-play": "bg-pink-100 hover:bg-pink-200 active:bg-pink-200",
-  "bms-stream": "bg-white hover:bg-yellow-100 active:bg-yellow-200",
-  "disney-hotstar": "bg-blue-200 hover:bg-blue-300 active:bg-blue-300",
-  jiocinema: "bg-red-200 hover:bg-red-300 active:bg-red-300",
-  "hungama-play": "bg-green-200 hover:bg-green-300 active:bg-green-300",
-  "galaxy-ott": "bg-purple-200 hover:bg-purple-300 active:bg-purple-300",
+  "amazon-prime": "bg-amber-100 hover:bg-amber-200 active:bg-amber-200 dark:bg-amber-500/25 dark:hover:bg-amber-500/35 text-amber-800 dark:text-amber-300",
+  netflix: "bg-red-100 hover:bg-red-200 active:bg-red-200 dark:bg-red-500/25 dark:hover:bg-red-500/35 text-red-800 dark:text-red-300",
+  jiohotstar: "bg-green-100 hover:bg-green-200 active:bg-green-200 dark:bg-green-500/25 dark:hover:bg-green-500/35 text-green-800 dark:text-green-300",
+  aha: "bg-blue-100 hover:bg-blue-200 active:bg-blue-200 dark:bg-blue-500/25 dark:hover:bg-blue-500/35 text-blue-800 dark:text-blue-300",
+  "sun-nxt": "bg-orange-100 hover:bg-orange-200 active:bg-orange-200 dark:bg-orange-500/25 dark:hover:bg-orange-500/35 text-orange-800 dark:text-orange-300",
+  "sony-liv": "bg-purple-100 hover:bg-purple-200 active:bg-purple-200 dark:bg-purple-500/25 dark:hover:bg-purple-500/35 text-purple-800 dark:text-purple-300",
+  "": "bg-gray-100 hover:bg-gray-200 active:bg-gray-200 dark:bg-gray-600/40 dark:hover:bg-gray-600/60 text-gray-700 dark:text-gray-300",
+  zee5: "bg-teal-100 hover:bg-teal-200 active:bg-teal-200 dark:bg-teal-500/25 dark:hover:bg-teal-500/35 text-teal-800 dark:text-teal-300",
+  "etv-win": "bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-200 dark:bg-indigo-500/25 dark:hover:bg-indigo-500/35 text-indigo-800 dark:text-indigo-300",
+  "lionsgate-play": "bg-pink-100 hover:bg-pink-200 active:bg-pink-200 dark:bg-pink-500/25 dark:hover:bg-pink-500/35 text-pink-800 dark:text-pink-300",
+  "bms-stream": "bg-yellow-50 hover:bg-yellow-100 active:bg-yellow-100 dark:bg-yellow-500/20 dark:hover:bg-yellow-500/30 text-yellow-800 dark:text-yellow-300",
+  "disney-hotstar": "bg-blue-200 hover:bg-blue-300 active:bg-blue-300 dark:bg-blue-600/30 dark:hover:bg-blue-600/40 text-blue-900 dark:text-blue-200",
+  jiocinema: "bg-red-200 hover:bg-red-300 active:bg-red-300 dark:bg-red-600/30 dark:hover:bg-red-600/40 text-red-900 dark:text-red-200",
+  "hungama-play": "bg-green-200 hover:bg-green-300 active:bg-green-300 dark:bg-green-600/30 dark:hover:bg-green-600/40 text-green-900 dark:text-green-200",
+  "galaxy-ott": "bg-purple-200 hover:bg-purple-300 active:bg-purple-300 dark:bg-purple-600/30 dark:hover:bg-purple-600/40 text-purple-900 dark:text-purple-200",
 };
 
 export default function Page() {
@@ -194,7 +194,7 @@ export default function Page() {
                 return (
                   <div key={`${item.title}-${item.year}`} className="contents">
                     <div
-                      className="relative hidden md:flex  w-55 h-75 mb-12 flex-col rounded-xl bg-accent bg-clip-border text-gray-700 shadow-md cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl mt-10"
+                      className="relative hidden md:flex  w-55 h-75 mb-12 flex-col rounded-xl bg-white dark:bg-gray-800/90 dark:border dark:border-gray-700/60 bg-clip-border text-gray-700 dark:text-gray-200 shadow-md dark:shadow-gray-900/60 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl dark:hover:shadow-gray-900 dark:hover:border-gray-500 mt-10"
                       onClick={() => handleCardClick(item.title)}
                     >
                       <div
@@ -217,7 +217,7 @@ export default function Page() {
                         )}
                       </div>
                       <div className="flex-1 flex flex-col px-4 pt-10 pb-2">
-                        <h5 className="mb-2 block font-sans text-base font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased truncate" title={item.title}>
+                        <h5 className="mb-2 block font-sans text-base font-semibold leading-snug tracking-normal text-gray-900 dark:text-white antialiased truncate" title={item.title}>
                           {item.title}
                         </h5>
                         <div className="mt-2 flex flex-wrap gap-2">
@@ -228,21 +228,21 @@ export default function Page() {
                             >
                             {frameworks.find((f) => f.value === item.category)?.label || item.category || "Unknown"}
                             </span>
-                          <span className="inline-block rounded bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">
+                          <span className="inline-block rounded bg-blue-100 dark:bg-blue-500/20 px-2 py-0.5 text-xs font-medium text-blue-700 dark:text-blue-300">
                             {item.year}
                           </span>
                           {item.genre && (
-                            <span className="inline-block rounded bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
+                            <span className="inline-block rounded bg-green-100 dark:bg-green-500/20 px-2 py-0.5 text-xs font-medium text-green-700 dark:text-green-300">
                               {item.genre}
                             </span>
                           )}
                         </div>
-                        <p className="mt-2 text-xs text-gray-500 line-clamp-2">{item.description}</p>
+                        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400 line-clamp-2">{item.description}</p>
                       </div>
                       <div className="px-4 pb-4 pt-0 mt-auto">
                         <button
                           type="button"
-                          className="w-full select-none rounded-lg bg-white text-black border border-black py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase shadow-md transition-all duration-200 hover:bg-black hover:text-white hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                          className="w-full select-none rounded-lg bg-white dark:bg-gray-700/60 text-black dark:text-white border border-black dark:border-gray-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase shadow-md transition-all duration-200 hover:bg-black dark:hover:bg-red-600 hover:text-white dark:hover:border-red-600 hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
                           onClick={(e) => {
                             e.stopPropagation();
                             handleCardClick(item.title);
